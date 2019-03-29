@@ -1,0 +1,645 @@
+<!DOCTYPE html><script>var __pbpa = true;</script><script>var translated_warning_string = 'Warning: Never enter your Tumblr password unless \u201chttps://www.tumblr.com/login\u201d\x0ais the address in your web browser.\x0a\x0aYou should also see a green \u201cTumblr, Inc.\u201d identification in the address bar.\x0a\x0aSpammers and other bad guys use fake forms to steal passwords.\x0a\x0aTumblr will never ask you to log in from a user\u2019s blog.\x0a\x0aAre you absolutely sure you want to continue?';</script><script type="text/javascript" language="javascript" src="http://assets.tumblr.com/assets/scripts/pre_tumblelog.js?_v=b9f848c06fcba7eaf305d4a7cb7a1b98"></script><!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# blog: http://ogp.me/ns/blog#">
+
+    <!--
+        Designed by
+
+          _|_|_|      _|_|    _|_|_|_|    _|_|    _|  _|_|
+          _|    _|  _|_|_|_|    _|      _|_|_|_|  _|_|
+          _|    _|  _|          _|      _|        _|
+          _|_|_|      _|_|_|      _|_|    _|_|_|  _|
+          _|
+          _|
+
+                      _|        _|                      _|
+          _|      _|        _|_|_|    _|_|_|  _|_|_|
+          _|      _|  _|  _|    _|  _|    _|  _|    _|  _|
+            _|  _|    _|  _|    _|  _|    _|  _|    _|  _|
+              _|      _|    _|_|_|    _|_|_|  _|    _|  _|
+
+        "Linear"
+        Found at Tumblr's theme garden.
+        http://www.tumblr.com/theme/5136
+    -->
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>All Fuzzy (Object Oriented Programming Interview Cheatsheet)</title>
+    <meta name="description" content="" />
+    <meta name="author" content="Peter Vidani">
+    <meta name="viewport" content="width=700" />
+
+    <meta name="color:Accent" content="#7cc0b0">
+    <meta name="text:Disqus Shortname" content="" />
+    <meta name="if:Show RSS Link" content="1" />
+    <meta name="if:Show Archive Link" content="1" />
+    <meta name="if:Show Likes Link" content="1" />
+    <meta name="if:Show Notes" content="1" />
+    <meta name="if:Streampad" content="0">
+    <meta name="if:Endless scrolling" content="0">
+
+    <style>figure{margin:0}.tmblr-iframe{position:absolute}.tmblr-iframe.hide{display:none}.tmblr-iframe--amp-cta-button{visibility:hidden;position:fixed;bottom:10px;left:50%;transform:translateX(-50%);z-index:100}.tmblr-iframe--amp-cta-button.tmblr-iframe--loaded{visibility:visible;animation:iframe-app-cta-transition .2s ease-out}</style><link rel="stylesheet" media="screen" href="http://assets.tumblr.com/client/prod/standalone/blog-network-npf/index.build.css?_v=3fc451676906e0ce74d518ae00bb3233"><link rel="shortcut icon" href="https://66.media.tumblr.com/avatar_d8fa048812d9_128.pnj" />
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://allfuzzy.tumblr.com/rss" />
+
+    <link rel="stylesheet" href="http://static.tumblr.com/thpaaos/DIcklyl4z/reset.css" type="text/css">
+    <link rel="stylesheet" href="http://static.tumblr.com/thpaaos/3zykurl3i/jquery.fancybox-1.2.6.css" type="text/css">
+
+    <style type="text/css">
+    body {
+        color: #202020;
+        line-height: 21px;
+        background: white;
+        -webkit-text-stroke: 1px transparent;
+    }
+
+
+    @media only screen and (max-device-width: 480px) {
+        body {
+            -webkit-text-stroke: 0 black;
+        }
+    }
+
+    *:active, *:focus { outline-width: 0px; }
+    .content p, .content h1, .content h2, .content h3, .content h4, .content blockquote, .content ul, .content ol, ol.notes li, ol.notes blockquote, .content li, .content img, .content table { margin: 0 0 12px 0; }
+    a { text-decoration: none; }
+    a img { border-width: 0px; }
+
+    em { font-style: italic; }
+    strong { font-weight: bold; }
+
+    iframe#tumblr_controls { top: 8px !important; }
+
+    a.install {
+        width: 96px;
+        height: 20px;
+        background: url(http://static.tumblr.com/thpaaos/dHHkt0jor/install_theme.png);
+        display: block;
+        position: absolute;
+        top: 34px;
+        right: 3px;
+    }
+
+    .border {
+        height: 8px;
+        background: #444;
+    }
+
+    .container {
+        width: 685px;
+        padding: 0 0 30px 0;
+    }
+
+        .column.left {
+            width: 160px;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 12px;
+            text-align: right;
+            float: left;
+        }
+
+            .column.left a {
+                color: #a8a8a8;
+            }
+                .column.left a:hover {
+                    color: #7cc0b0;
+                }
+
+            .column.left a.home {
+                color: #fff;
+                font-size: 13px;
+                font-weight: bold;
+                text-transform: uppercase;
+                background: #7cc0b0;
+                margin: 91px 0 0 0;
+                padding: 2px 10px;
+                display: block;
+            }
+                .column.left a.home:hover {
+                    color: #fff;
+                }
+
+            li.post .column.left span {
+                color: #7cc0b0;
+                font-weight: bold;
+            }
+
+        li.post {
+            overflow: hidden;
+            list-style-type: none;
+        }
+
+        .column.right {
+            width: 500px;
+            font-family: Lucida, Georgia, "Times New Roman", Times, serif;
+            font-size: 14px;
+            float: right;
+        }
+
+            .column.right .static {
+                min-height: 22px;
+                border-bottom: 1px solid #e1e1e1;
+                margin: 30px 0 20px 0;
+                padding: 0 0 20px 0;
+            }
+
+                .column.right .static a {
+                    color: #a8a8a8;
+                    font-size: 11px;
+                    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                }
+                
+                    
+
+            .column.right .description {
+                border-bottom: 3px double #e1e1e1;
+                border-style: double;
+                margin: 0 0 30px 0;
+                padding: 0 0 20px 0;
+            }
+
+                
+
+                .column.right .description .twitter {
+                    border-top: 1px dotted #e8e8e8;
+                    margin: 20px 0 0 0;
+                    padding: 20px 0 12px 0;
+                }
+
+                    .column.right .description .twitter .username {
+                        margin: 0 7px 0 0;
+                        float: left;
+                    }
+
+                    .column.right .description .twitter ul#twitter {
+                        margin: 0;
+                        padding: 0;
+                        float: left;
+                    }
+                    
+                    .column.right .description .twitter li {
+                        list-style-type: none;
+                    }
+
+            li.post .column.right .content {
+                padding: 0 0 18px 0;
+            }
+
+            .container ul.allposts .postwrapper .divider {
+                width: 500px;
+                border-bottom: 1px solid #e8e8e8;
+                margin: 0 0 30px 185px;
+                clear: both;
+            }
+
+            
+                .container ul.allposts .postwrapper:last-child .divider {
+                    border-bottom: 3px double #e8e8e8;
+                    margin: 0 0 20px 185px !important;
+                }
+            
+
+            li.post .column.right .content .clear {
+                clear: both;
+            }
+
+            .column.right a {
+                color: #7cc0b0;
+            }
+                .column.right a:hover {
+                    text-decoration: underline;
+                }
+
+            .column.right h2 {
+                font-size: 18px;
+                letter-spacing: 1px;
+                line-height: 24px;
+            }
+
+                .column.right h2 a.title {
+                    color: #202020;
+                }
+
+                .column.right h2 a span,
+                a.home span {
+                    font-family: "Lucida Grande";
+                }
+
+            .column.right img {
+                max-width: 100%;
+            }
+
+            .column.right blockquote {
+                font-size: 13px;
+                border-left: 1px dotted #e1e1e1;
+                padding: 0 0 0 20px;
+            }
+
+            .column.right pre {
+                font: normal normal normal 11px/normal Courier;
+                background: #e6e6e6;
+                padding: 10px;
+                margin: 0 0 12px 0;
+            }
+
+                .column.right small {
+                    color: #a8a8a8;
+                    font-size: 11px;
+                    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                }
+
+                    .column.right small a {
+                        color: #a8a8a8;
+                    }
+
+                        .column.right small a:hover {
+                            color: #757575;
+                            text-decoration: none;
+                        }
+
+                    .column.right small.high_res {
+                        text-align: right;
+                        margin: 0 0 12px 0;
+                        display: block;
+                    }
+
+                    .column.right small a .download {
+                        width: 11px;
+                        height: 9px;
+                        background: url(http://static.tumblr.com/thpaaos/jSTkv2d7l/icon_high_resolution.png) no-repeat;
+                        margin: 0 0 0 3px;
+                        display: inline-block;
+                    }
+
+            table.chat {
+                width: 100%;
+                margin: 0 0 3px 0;
+                border-collapse: collapse;
+            }
+
+            h2 + table.chat {
+                margin: 0 0 14px 0 !important;
+            }
+
+            table.chat tr td {
+                padding: 3px 10px;
+            }
+
+            table.chat tr td.name {
+                font-weight: bold;
+                text-align: right;
+                vertical-align: top;
+            }
+
+            table.chat tr td.line1 {
+                background: #F2F2F2;
+            }
+                 
+             .album_case {
+                 width: 205px;
+                 height: 193px;
+                 background: url(http://static.tumblr.com/thpaaos/zXnkx16pe/album_case.png);
+                 margin: 0 45px 30px 0;
+                 position: relative;
+                 z-index: 10;
+                 float: left;
+             }
+
+                 img.album_art {
+                     max-width: 188px !important;
+                     margin: 3px 0 0 -250px;
+                     position: relative;
+                     left: 15px;
+                     z-index: 9;
+                     float: left;
+                 }
+ 
+             .audio .audio_player {
+                 width: 207px;
+                 opacity: 80%;
+                    -webkit-opacity: 0.8;
+                    -moz-opacity: 0.8;
+                    display: inline-block;
+             }
+
+             .audio small {
+                 display: block;
+             }
+
+            ol.notes {
+                border-bottom: 1px dotted #e8e8e8;
+                margin: 0 0 30px 0;
+                padding: 0 0 30px 0;
+            }
+
+                ol.notes img {
+                    display: none;
+                }
+                
+                ol.notes li {
+                  list-style-type: none;
+                }
+
+
+        .navigation {
+            border-bottom: 1px dotted #e8e8e8;
+            margin: 0 0 30px 0;
+            padding: 0 0 20px 0;
+            overflow: hidden;
+        }
+
+        .navigation .count {
+            float: left;
+        }
+
+        .navigation .links {
+            width: 200px;
+            float: right;
+        }
+
+            .navigation.permalink .links {
+                width: 100%;
+                overflow: hidden;
+            }
+
+                .navigation .links a.right {
+                    float: right;
+                }
+
+                .navigation .links a.left {
+                    float: left;
+                }
+
+        .loading_posts {
+            width: 24px;
+            height: 24px;
+            background: url(http://static.tumblr.com/thpaaos/395kv2j3s/ajax-loader.gif);
+            position: fixed;
+            bottom: 30px;
+            left: 725px;
+        }
+
+        #disqus_thread {
+            border-bottom: 1px solid #e8e8e8;
+            margin: 0 0 30px 0;
+            padding: 0 0 30px 0;
+        }
+
+        #streampadAudioCaption,
+        #streampadPlayerClickToPlay {
+          font-size: 11px !important;
+          font-weight: normal !important;
+        }
+
+        #streampadProfileButton,
+        #streamPadFullScreenButton,
+        #streampadPlayerBorderNum1,
+        #streampadPlayerBorderNum2,
+        #streampadPlayerBorderNum3 { display: none !important; }
+
+    
+    </style>
+
+    
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-28018879-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+    
+<link rel="alternate" href="android-app://com.tumblr/tumblr/x-callback-url/blog?blogName=allfuzzy%26postID=21184157352" /><link rel="alternate" href="ios-app://305343404/tumblr/x-callback-url/blog?blogName=allfuzzy&postID=21184157352" /><link rel="alternate" type="application/json+oembed" href="https://www.tumblr.com/oembed/1.0?url=http://allfuzzy.tumblr.com/post/21184157352/object-oriented-programming-interview-cheatsheet" title="Object Oriented Programming Interview Cheatsheet
+I got tired of all the interviews that ask you programming terminologies, so I compiled a cheatsheet that covers common object oriented programming terminologies.
+Object: An object can be anything in..."/><link rel="amphtml" href=http://allfuzzy.tumblr.com/post/21184157352/object-oriented-programming-interview-cheatsheet/amp /><script src="http://assets.tumblr.com/assets/scripts/tumblelog_post_message_queue.js?_v=a8fadfa499d8cb7c3f8eefdf0b1adfdd"></script><link rel="stylesheet" type="text/css" href="http://assets.tumblr.com/fonts/gibson/stylesheet.css?v=3"><meta name="keywords" content="programming" /><!-- BEGIN TUMBLR FACEBOOK OPENGRAPH TAGS --><!-- If you'd like to specify your own Open Graph tags, define the og:url and og:title tags in your theme's HTML. --><!-- Read more: http://ogp.me/ --><meta property="fb:app_id" content="48119224995" /><meta property="og:site_name" content="All Fuzzy" /><meta property="og:title" content="Object Oriented Programming Interview Cheatsheet" /><meta property="og:description" content="I got tired of all the interviews that ask you programming terminologies, so I compiled a cheatsheet that covers common object oriented programming terminologies. Object:  An object can be anything in..." /><meta property="og:url" content="http://allfuzzy.tumblr.com/post/21184157352/object-oriented-programming-interview-cheatsheet" /><meta property="og:type" content="article" /><meta property="og:determiner" content="a" /><meta property="og:image" content="https://66.media.tumblr.com/avatar_d8fa048812d9_512.pnj" /><meta property="al:ios:url" content="tumblr://x-callback-url/blog?blogName=allfuzzy&amp;postID=21184157352" /><meta property="al:ios:app_name" content="Tumblr" /><meta property="al:ios:app_store_id" content="305343404" /><meta property="al:android:url" content="tumblr://x-callback-url/blog?blogName=allfuzzy&amp;postID=21184157352" /><meta property="al:android:app_name" content="Tumblr" /><meta property="al:android:package" content="com.tumblr" /><!-- END TUMBLR FACEBOOK OPENGRAPH TAGS --><!-- GOOGLE CAROUSEL --><script type="application/ld+json">
+	{"@type":"SocialMediaPosting","url":"http:\/\/allfuzzy.tumblr.com\/post\/21184157352\/object-oriented-programming-interview-cheatsheet","mainEntityOfPage":true,"datePublished":"2012-04-16T01:00:00-04:00","author":"allfuzzy","headline":"Object Oriented Programming Interview Cheatsheet","articleBody":"I got tired of all the interviews that ask you programming terminologies, so I compiled a cheatsheet that covers common object oriented programming terminologies.\nObject: An object can be anything in the world with attributes and behaviours that can be written into a program.\nClass: A class refers...","@context":"http:\/\/schema.org"}</script><link rel="canonical" href="http://allfuzzy.tumblr.com/post/21184157352/object-oriented-programming-interview-cheatsheet" /></head>
+<body>
+    <div class="border"></div>
+
+    <a href="http://www.tumblr.com/theme/5136" class="install"></a>
+
+    <div class="container">
+        <div class="column right">
+            <div class="static">
+                
+                
+                
+                <a href="http://allfuzzy.tumblr.com/rss">RSS</a>&nbsp;&nbsp;&nbsp;
+                <a href="/archive">Archive</a>&nbsp;&nbsp;&nbsp;
+                <a href="http://www.tumblr.com/liked/by/allfuzzy" class="likes">Likes</a>
+            </div>
+        </div>
+
+        <div class="header">
+            <div class="column left">
+                <a href="/" class="home">All Fuzzy <span>&rarr;</span></a>
+            </div>
+
+            <div class="column right">
+                <div class="description">
+                    Jason Kim (@jasoki)
+
+                    
+                </div>
+            </div>
+            <div style="clear:both"></div>
+        </div>
+
+        <ul class="allposts">
+        
+            <div class="postwrapper">
+                <li class="post">
+                    <div class="column left">
+                        <a href="http://allfuzzy.tumblr.com/post/21184157352/object-oriented-programming-interview-cheatsheet">6 years ago  (9 notes)</a><br />
+                        
+                        
+                        
+                        
+
+                        
+                        <div class="tags" style="margin: 0 0 30px 0">
+                        
+                            <a href="http://allfuzzy.tumblr.com/tagged/programming"><span>#</span>programming</a><br />
+                        
+                        </div>
+                        
+                    </div>
+
+                    <div class="column right">
+                        <div class="content">
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                            <h2><a href="http://allfuzzy.tumblr.com/post/21184157352/object-oriented-programming-interview-cheatsheet" class="title">Object Oriented Programming Interview Cheatsheet</a></h2>
+                            <p><p>I got tired of all the interviews that ask you programming terminologies, so I compiled a cheatsheet that covers common object oriented programming terminologies.</p><p><strong>Object</strong>: 
+An object can be anything in the world with attributes and behaviours that can be written into a program.</p><p><strong>Class</strong>: 
+A class refers to a group of common objects with same attributes and methods.</p><p><strong>Constructor</strong>:
+  Method that creates an object from a class</p><p><strong>Destructor</strong>:
+  Method that deletes the object and frees up memory that the object once occupied</p><p><strong>Encapsulation</strong>
+A mechanism to restrict access to some of the object&rsquo;s components</p><p><strong>Instantiation</strong>:
+  Instantiation is an act of creating an object from a class.</p><p><strong>Instance</strong>:
+  An instance is the resulting object created from instantiating an object from a class.</p><p><strong>Initialization</strong>:
+  Initialization sets the default values for an object.</p><p><strong>Method (a.k.a function)</strong>:
+  A method defines a particular behaviour of a class.</p><p><strong>Inheritance</strong>:
+  Inheritance refers to a phenomenon where a subclass borrows attributes and methods from another class, namely a superclass.</p><p><strong>Multiple inheritance</strong>:
+  Multiple inheritance refers to the ability of a class to inherit attributes and methods from more than one superclass.</p><p><strong>Subclass (a.k.a child class)</strong>:
+  A subclass borrows attributes and methods from the superclass.</p><p><strong>Superclass (a.k.a parent class)</strong>:
+  A superclass lends attributes and methods to subclass</p><p><strong>Interface</strong>:
+  An interface is a set of related methods which are not suitable to be included in any classes.</p><p><strong>Abstract class</strong>:
+  An abstract class cannot create instances of itself.</p><p><strong>Method overloading</strong>:
+  Method overloading is the ability to create several methods with the same name that has different input and output. For example, method called &ldquo;size&rdquo; in Ruby performs differently for a string (returns length of the string) and an int value (returns the number of bytes occupied by the integer).</p><p><strong>Method overriding</strong>
+Method overriding is the ability of a subclass to replace a method that is already provided by one of its superclasses with a more specific implementation.</p>
+                                
+                            </p>
+                            
+
+                            
+
+                            <div class="clear"></div>
+                        </div>
+
+                        <div class="divider" style="margin: 0 0 20px 0 !important"></div>
+
+                        
+                        <div class="navigation permalink">
+                            <div class="links">
+                                <a href="http://allfuzzy.tumblr.com/post/20690033523" class="right">Next post</a>
+                                <a href="http://allfuzzy.tumblr.com/post/22756032631" class="left">Previous</a>
+                            </div>
+                        </div>
+                        
+
+                        
+
+                        
+<ol class="notes"><!-- START NOTES --><li class="note like tumblelog_thesuperburger without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="https://thesuperburger.tumblr.com/" title="Untitled " rel="nofollow"><img src="https://assets.tumblr.com/images/default_avatar/cone_closed_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="https://thesuperburger.tumblr.com/" title="Untitled" rel="nofollow">thesuperburger</a> liked this                                    </span><div class="clear"></div></li><li class="note like tumblelog_chouhan-maneesh without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://chouhan-maneesh.tumblr.com/" title="Untitled " rel="nofollow"><img src="https://assets.tumblr.com/images/default_avatar/cone_open_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://chouhan-maneesh.tumblr.com/" title="Untitled" rel="nofollow">chouhan-maneesh</a> liked this                                    </span><div class="clear"></div></li><li class="note like tumblelog_escshift01 without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://escshift01.tumblr.com/" title="ESC+SHIFT " rel="nofollow"><img src="https://66.media.tumblr.com/avatar_c4427eddf7fc_16.pnj" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://escshift01.tumblr.com/" title="ESC+SHIFT" rel="nofollow">escshift01</a> liked this                                    </span><div class="clear"></div></li><li class="note like tumblelog_bitchyouisahoe without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://bitchyouisahoe.tumblr.com/" title="La Reina " rel="nofollow"><img src="https://66.media.tumblr.com/avatar_c0ee5e523881_16.pnj" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://bitchyouisahoe.tumblr.com/" title="La Reina" rel="nofollow">bitchyouisahoe</a> liked this                                    </span><div class="clear"></div></li><li class="note like tumblelog_sudo-coffee without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://sudo-coffee.tumblr.com/" title="Want a cup of Java with that? " rel="nofollow"><img src="https://66.media.tumblr.com/avatar_f121e9a435d1_16.pnj" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://sudo-coffee.tumblr.com/" title="Want a cup of Java with that?" rel="nofollow">sudo-coffee</a> liked this                                    </span><div class="clear"></div></li><li class="note like tumblelog_byholyaristophanes-blog without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://byholyaristophanes-blog.tumblr.com/" title="By Holy Aristophanes! " rel="nofollow"><img src="https://66.media.tumblr.com/avatar_a32effce8c9a_16.pnj" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://byholyaristophanes-blog.tumblr.com/" title="By Holy Aristophanes!" rel="nofollow">byholyaristophanes-blog</a> liked this                                    </span><div class="clear"></div></li><li class="note reblog tumblelog_allfuzzy original_post without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://allfuzzy.tumblr.com/" title="All Fuzzy"><img src="https://66.media.tumblr.com/avatar_d8fa048812d9_16.pnj" class="avatar " alt="" /></a><span class="action" data-post-url="http://allfuzzy.tumblr.com/post/21184157352"><a rel="nofollow" href="http://allfuzzy.tumblr.com/" class="tumblelog" title="All Fuzzy">allfuzzy</a> posted this                                                                        </span><div class="clear"></div></li><!-- END NOTES --></ol></div>
+                </li>
+                
+            </div>
+        
+        </ul>
+
+
+        
+
+        <div class="column right">
+            <small>Theme: <a href="http://www.tumblr.com/theme/5136">Linear</a> by <a href="http://petervidani.com">Peter Vidani</a></small>
+        </div>
+
+        <div style="clear:both"></div>
+    </div>
+
+    
+
+    
+
+    
+
+<iframe scrolling="no" width="1" height="1" frameborder="0" style="background-color:transparent; overflow:hidden; position:absolute; top:0; left:0; z-index:9999;" id="ga_target"></iframe><script type="text/javascript">
+    (function(){
+        var analytics_frame = document.getElementById('ga_target');
+        var analytics_iframe_loaded;
+        var user_logged_in;
+        var blog_is_nsfw = 'No';
+        var addthis_enabled = true;
+
+        var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
+        var eventer = window[eventMethod];
+        var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
+        eventer(messageEvent,function(e) {
+            var message = (e.data && e.data.split) ? e.data.split(';') : '';
+            switch (message[0]) {
+                case 'analytics_iframe_loaded':
+                    analytics_iframe_loaded = true;
+                    postCSMessage();
+                    postGAMessage();
+                    postATMessage();
+                    postRapidMessage();
+                    break;
+                case 'user_logged_in':
+                    user_logged_in = message[1];
+                    postGAMessage();
+                    postATMessage();
+                    break;
+            }
+        }, false);
+
+        analytics_frame.src = "https://assets.tumblr.com/analytics.html?dfab06320413a6a34dbca419c4c70f2c#" +
+                              "http://allfuzzy.tumblr.com";
+        function postGAMessage() {
+            if (analytics_iframe_loaded && user_logged_in) {
+                var is_ajax = false;
+                analytics_frame.contentWindow.postMessage(['tick_google_analytics', is_ajax, user_logged_in, blog_is_nsfw, '/post/21184157352/object-oriented-programming-interview-cheatsheet?route=%2Fpost%2F%3Aid%2F%3Asummary'].join(';'), analytics_frame.src.split('/analytics.html')[0]);
+            }
+        }
+        function postCSMessage() {
+            COMSCORE = true;
+            analytics_frame.contentWindow.postMessage('enable_comscore;' + window.location, analytics_frame.src.split('/analytics.html')[0]);
+        }
+        function postATMessage() {
+            if (addthis_enabled && analytics_iframe_loaded) {
+                analytics_frame.contentWindow.postMessage('enable_addthis', analytics_frame.src.split('/analytics.html')[0]);
+            }
+        }
+        function postRapidMessage() {
+                            if (analytics_iframe_loaded) {
+                    var is_ajax = '';
+                    var route = '/post/:id/:summary';
+                    var tumblelog_id = 't:dqIxInPb4f4nrLIhaiicFw';
+                    var yahoo_space_id = '1197719230';
+                    var rapid_client_only = '1';
+                    var apv = '1';
+                    var rapid_ex = '';
+
+                    analytics_frame.contentWindow.postMessage(
+                        [
+                            'tick_rapid', is_ajax, route, user_logged_in, tumblelog_id,
+                            yahoo_space_id, rapid_client_only, apv, rapid_ex
+                        ].join(';'),
+                        analytics_frame.src.split('/analytics.html')[0]
+                    );
+                }
+                    }
+    })();
+</script><script type="text/javascript" nonce="4F5jt7omx5eVg3clD6di0JVOnNo">!function(s){s.src='https://px.srvcs.tumblr.com/impixu?T=1550637643&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDovL2FsbGZ1enp5LnR1bWJsci5jb20vcG9zdC8yMTE4NDE1NzM1Mi9vYmplY3Qtb3JpZW50ZWQtcHJvZ3JhbW1pbmctaW50ZXJ2aWV3LWNoZWF0c2hlZXQiLCJyZXF0eXBlIjowLCJyb3V0ZSI6Ii9wb3N0LzppZC86c3VtbWFyeSJ9&U=BFPAFMPHJN&K=d27821b4e7ce676cbbf1a7d3c1d44f7ff65592c70a8de1b214e0c6d13438c42f&R='.replace(/&R=[^&$]*/,'').concat('&R='+escape(document.referrer)).slice(0,2000).replace(/%.?.?$/,'');}(new Image());</script><noscript><img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="https://px.srvcs.tumblr.com/impixu?T=1550637643&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDovL2FsbGZ1enp5LnR1bWJsci5jb20vcG9zdC8yMTE4NDE1NzM1Mi9vYmplY3Qtb3JpZW50ZWQtcHJvZ3JhbW1pbmctaW50ZXJ2aWV3LWNoZWF0c2hlZXQiLCJyZXF0eXBlIjowLCJyb3V0ZSI6Ii9wb3N0LzppZC86c3VtbWFyeSIsIm5vc2NyaXB0IjoxfQ==&U=BFPAFMPHJN&K=95c88dd4b7f3875d1457568b3e1734a4d13034f529bcf2bc287b74e02268c2fd&R="></noscript><script nonce="4F5jt7omx5eVg3clD6di0JVOnNo">
+        (function (w,d) {
+            'use strict';
+            var l = function(el, type, listener, useCapture) {
+                el.addEventListener ?
+                el.addEventListener(type, listener, !!useCapture) :
+                el.attachEvent && el.attachEvent('on' + type, listener, !!useCapture);
+            };
+            var a = function () {
+                                if (d.getElementById('tumblr-cdx')) {
+                    return;
+                }
+                var s = d.createElement('script');
+                var el = d.getElementsByTagName('script')[0];
+                s.async = true;
+                s.src = 'http://assets.tumblr.com/assets/scripts/vendor/cedexis/1-13960-radar10.min.js?_v=8d32508b0a251bebecb4853c987c5015';
+                s.type = 'text/javascript';
+                s.id = 'tumblr-cdx';
+                d.body.appendChild(s);
+            };
+            l(w,'load',a);
+        }(window, document));
+</script><script type="text/javascript" nonce="4F5jt7omx5eVg3clD6di0JVOnNo">!function(s){s.src='https://px.srvcs.tumblr.com/impixu?T=1550637643&J=eyJ0eXBlIjoicG9zdCIsInVybCI6Imh0dHA6Ly9hbGxmdXp6eS50dW1ibHIuY29tL3Bvc3QvMjExODQxNTczNTIvb2JqZWN0LW9yaWVudGVkLXByb2dyYW1taW5nLWludGVydmlldy1jaGVhdHNoZWV0IiwicmVxdHlwZSI6MCwicm91dGUiOiIvcG9zdC86aWQvOnN1bW1hcnkiLCJwb3N0cyI6W3sicG9zdGlkIjoiMjExODQxNTczNTIiLCJibG9naWQiOiI0NTQyMTU3MiIsInNvdXJjZSI6MzN9XX0=&U=IAKLAOOMEO&K=2d277e0a76fc885079d7800e423ac6251571e83d3427c275a3ffe7f6a7e511c8&R='.replace(/&R=[^&$]*/,'').concat('&R='+escape(document.referrer)).slice(0,2000).replace(/%.?.?$/,'');}(new Image());</script><noscript><img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="https://px.srvcs.tumblr.com/impixu?T=1550637643&J=eyJ0eXBlIjoicG9zdCIsInVybCI6Imh0dHA6Ly9hbGxmdXp6eS50dW1ibHIuY29tL3Bvc3QvMjExODQxNTczNTIvb2JqZWN0LW9yaWVudGVkLXByb2dyYW1taW5nLWludGVydmlldy1jaGVhdHNoZWV0IiwicmVxdHlwZSI6MCwicm91dGUiOiIvcG9zdC86aWQvOnN1bW1hcnkiLCJwb3N0cyI6W3sicG9zdGlkIjoiMjExODQxNTczNTIiLCJibG9naWQiOiI0NTQyMTU3MiIsInNvdXJjZSI6MzN9XSwibm9zY3JpcHQiOjF9&U=IAKLAOOMEO&K=282ca3113e0801b37a49e68f9bb00b45d4f9ab8485faa7e6bffb82f49181509c&R="></noscript><noscript id="bootloader" data-bootstrap="{&quot;Components&quot;:{&quot;PostActivity&quot;:[],&quot;NotificationPoller&quot;:{&quot;messaging_keys&quot;:[],&quot;token&quot;:&quot;c86f8a500596474a7ef5034081f694bd&quot;,&quot;inbox_unread&quot;:0},&quot;DesktopDashboardLogo&quot;:{&quot;animations&quot;:[[&quot;http:\/\/assets.tumblr.com\/images\/logo\/hover-animations\/1.png?_v=161861acded461bb6e995593a3bae835&quot;,&quot;http:\/\/assets.tumblr.com\/images\/logo\/hover-animations\/1@2x.png?_v=496a774637302a598c851381d00009b0&quot;]]},&quot;TumblelogIframe&quot;:{&quot;unified&quot;:true,&quot;variant&quot;:null,&quot;isCompact&quot;:true,&quot;tumblelogBundleSrc&quot;:&quot;http:\/\/assets.tumblr.com\/client\/prod\/standalone\/tumblelog\/index.build.js?_v=409be7134ac7f924003111396e54e1b8&quot;,&quot;tumblelogName&quot;:&quot;allfuzzy&quot;,&quot;isLoggedIn&quot;:false,&quot;isFriend&quot;:false,&quot;formKey&quot;:&quot;&quot;,&quot;canSubscribe&quot;:false,&quot;isSubscribed&quot;:false,&quot;tumblelogTitle&quot;:&quot;All Fuzzy&quot;,&quot;tumblelogAvatar&quot;:&quot;https:\/\/66.media.tumblr.com\/avatar_d8fa048812d9_64.pnj&quot;,&quot;tumblelogHost&quot;:&quot;http:\/\/allfuzzy.tumblr.com&quot;,&quot;isOptica&quot;:false,&quot;isCustomTheme&quot;:true,&quot;themeHeaderImage&quot;:&quot;https:\/\/assets.tumblr.com\/images\/default_header\/optica_pattern_01_focused_v3.png?_v=f67ca5ac5d1c4a0526964674cb5a0605&quot;,&quot;themeBackgroundColor&quot;:&quot;#FAFAFA&quot;,&quot;themeTitleColor&quot;:&quot;#444444&quot;,&quot;themeAccentColor&quot;:&quot;#529ECC&quot;,&quot;brag&quot;:true,&quot;adsEnabled&quot;:true,&quot;canShowAd&quot;:false,&quot;isPremium&quot;:false,&quot;showLrecAds&quot;:false,&quot;showStickyLrecBackfill&quot;:false,&quot;showGeminiAds&quot;:false,&quot;geminiSectionCodeDesktop&quot;:&quot;a10bca9c-0c5d-4a02-ab13-14ab8513d81d&quot;,&quot;geminiSectionCodeMobile&quot;:&quot;ced63809-b609-4aca-96a0-abc099acba6b&quot;,&quot;currentPageType&quot;:&quot;single_post&quot;,&quot;currentPage&quot;:&quot;1&quot;,&quot;searchQuery&quot;:&quot;&quot;,&quot;tag&quot;:&quot;&quot;,&quot;query&quot;:&quot;&quot;,&quot;chrono&quot;:false,&quot;postId&quot;:&quot;21184157352&quot;,&quot;src&quot;:&quot;http:\/\/allfuzzy.tumblr.com\/post\/21184157352\/object-oriented-programming-interview-cheatsheet&quot;,&quot;postUrl&quot;:&quot;&quot;,&quot;isBlocked&quot;:null,&quot;isAdmin&quot;:false,&quot;lookupButtonUrl&quot;:&quot;&quot;,&quot;showSpamButton&quot;:false,&quot;showRootPostButton&quot;:false,&quot;rootPostUrl&quot;:&quot;&quot;,&quot;showRadarPostButton&quot;:false,&quot;radarKeys&quot;:&quot;&quot;,&quot;isUniblocked&quot;:false,&quot;isNsfw&quot;:false,&quot;isAdult&quot;:false,&quot;isSpam&quot;:false,&quot;isPrimaryBlog&quot;:false,&quot;canEdit&quot;:false,&quot;canReblogSelf&quot;:false,&quot;showLikeButton&quot;:false,&quot;showReblogButton&quot;:false,&quot;reblogUrl&quot;:&quot;&quot;,&quot;showFanMailButton&quot;:false,&quot;showMessagingButton&quot;:false,&quot;loginCheckIframeSrc&quot;:&quot;http:\/\/assets.tumblr.com\/assets\/html\/iframe\/login_check.html?_v=3de94a184d600617102ddd5b48fb36e9&quot;,&quot;appInstallUrls&quot;:{&quot;android&quot;:&quot;https:\/\/play.google.com\/store\/apps\/details?id=com.tumblr\u0026referrer=utm_source%3Dtumblr%26utm_medium%3Diframe%26utm_campaign%3Dblog_network_floating_cta&quot;,&quot;ios&quot;:&quot;https:\/\/itunes.apple.com\/app\/apple-store\/id305343404?pt=9029\u0026ct=blog_network_floating_cta\u0026mt=8&quot;},&quot;appOpenReferrer&quot;:&quot;tumblr_new_iframe&quot;,&quot;isShowSearch&quot;:true,&quot;supplyLogging&quot;:[],&quot;secondsSinceLastActivity&quot;:-1}},&quot;Flags&quot;:{&quot;doods&quot;:&quot;eyJmaWx0ZXJfbnNmdyI6dHJ1ZSwic2FmZV9tb2RlIjp0cnVlLCJzYWZlX21vZGVfZW5hYmxlZCI6dHJ1ZSwia2V5Y29tbWFuZF9hdXRvX3BhZ2luYXRlIjp0cnVlLCJsb2dnZWRfb3V0X3NlYXJjaCI6dHJ1ZSwia3Jha2VuX3dlYl9sb2dnaW5nX2xpYnJhcnkiOnRydWUsInNlY3VyZV9mb3JtX2tleSI6dHJ1ZSwic2VjdXJlX2Zvcm1fa2V5X2Z1bGx5X29uIjp0cnVlLCJ0dW1ibGVsb2dfcG9wb3ZlciI6dHJ1ZSwiY2Fub25pY2FsX3VybF93cml0ZXMiOnRydWUsImVuYWJsZV9jYXB0dXJlX2pzIjp0cnVlLCJwcmltYV9wb3N0X2Zvcm1zIjp0cnVlLCJsb2NrZWRfcmVibG9nX3VpIjp0cnVlLCJ0YWJsZXRfYmFubmVyX2FjdGl2ZSI6dHJ1ZSwibW9iaWxlX2Jhbm5lcl9hY3RpdmUiOnRydWUsImxvZ19zZWFyY2hfYm94Ijp0cnVlLCJ1c2VyX21lbnRpb25zIjp0cnVlLCJodG1sNV9hdWRpb19wbGF5ZXIiOnRydWUsInBvcG92ZXJfcmVjb21tZW5kYXRpb25zIjp0cnVlLCJpbmRhc2hfcmVjb21tZW5kYXRpb25zIjp0cnVlLCJwb3B0aWNhX3R1bWJsZWxvZ19wb3BvdmVycyI6dHJ1ZSwidHVtYmxyX3R2Ijp0cnVlLCJkZXByZWNhdGVfZmVhdHVyZWRfdGFncyI6dHJ1ZSwicmVibG9nX3VpX3JlZnJlc2giOnRydWUsInRhYl9zd2l0Y2hlciI6dHJ1ZSwiZmFzdF9jb21wb3NlIjp0cnVlLCJkYXNoYm9hcmRfcmVmcmVzaCI6dHJ1ZSwibW9iaWxlX3dlYl9waG90b3NldHMiOnRydWUsIm1vYmlsZV93ZWJfZ2F0ZSI6dHJ1ZSwibW9iaWxlX3dlYl9wYWdlX3RpdGxlcyI6dHJ1ZSwibW9iaWxlX3dlYl9hYnVzZV9mb3JtIjp0cnVlLCJkb250X2Nhc3RfanNfZm9sbG93cyI6dHJ1ZSwiYWRzX25ld192ZW5kb3JfYnV0dG9ucyI6dHJ1ZSwicmVhY3RpdmF0aW9uX2Zsb3ciOnRydWUsImd1bHBqc19hZG1pbiI6dHJ1ZSwiZW5hYmxlX2pzX2Vycm9yc19sb2ciOnRydWUsImVuYWJsZV9qc19lcGhlbWVyYWxfbG9nIjp0cnVlLCJsb2dfbGFkeSI6dHJ1ZSwiY3Nsb2dnZXJfanMiOnRydWUsImRpc2NvdmVyeV9odWJfYWNjZXNzIjp0cnVlLCJoZWFkZXJfYWNjb3VudF9tZW51Ijp0cnVlLCJlbmFibGVfc2hhcmVfZW1iZWRfY29kZSI6dHJ1ZSwicmVkZGl0X3NoYXJpbmciOnRydWUsInBvc3RfaXRfZm9yd2FyZCI6dHJ1ZSwicGVlcHJfc2VhcmNoX2FuZF9maWx0ZXIiOnRydWUsImludGVybnNfcGFnZSI6dHJ1ZSwiZm9sbG93ZWRfc2VhcmNoZXNfYmlnX3dlYiI6dHJ1ZSwibGl2ZXBob3Rvc193ZWIiOnRydWUsInByb2plY3RfeF9hcHBlYWwiOnRydWUsInByb2plY3RfeF93ZWJfc2Vuc2l0aXZlX2NvdmVycyI6dHJ1ZSwic2FmZV9tb2RlX293bl9wb3N0Ijp0cnVlLCJoaWRlX2RlZmF1bHRfaGVhZGVyc19ibG9nX2NhcmRzIjp0cnVlLCJ0eXBpbmdfaW5kaWNhdG9yX3dyaXRlIjp0cnVlLCJnZHByX2d1Y2VfaXNfcmVxdWlyZWQiOnRydWUsInR1bWJscl92aWRlb19zcG9uc29yZWRfZGF5Ijp0cnVlLCJhcmNoaXZlLXBsdXMiOnRydWUsImRhcmxhX2FkX2ZlZWRiYWNrIjp0cnVlLCJzdGF0dXNfaW5kaWNhdG9yIjp0cnVlLCJkaXNhYmxlX3lhaG9vX2JfY29va2llIjp0cnVlLCJsaXZlcGhvdG9zIjp0cnVlfQ==&quot;},&quot;Context&quot;:{&quot;name&quot;:&quot;default&quot;,&quot;time&quot;:1550637643000,&quot;userinfo&quot;:{&quot;primary&quot;:&quot;&quot;,&quot;name&quot;:&quot;&quot;,&quot;channels&quot;:[]},&quot;hosts&quot;:{&quot;assets_host&quot;:&quot;http:\/\/assets.tumblr.com&quot;,&quot;secure_assets_host&quot;:&quot;https:\/\/assets.tumblr.com&quot;,&quot;www_host&quot;:&quot;http:\/\/www.tumblr.com&quot;,&quot;secure_www_host&quot;:&quot;https:\/\/www.tumblr.com&quot;,&quot;embed_host&quot;:&quot;https:\/\/embed.tumblr.com&quot;,&quot;safe_host&quot;:&quot;http:\/\/safe.txmblr.com&quot;,&quot;platform_host&quot;:&quot;http:\/\/platform.tumblr.com&quot;},&quot;language&quot;:&quot;en_US&quot;,&quot;language_simple&quot;:&quot;en&quot;,&quot;assets&quot;:&quot;http:\/\/assets.tumblr.com\/client\/prod\/&quot;},&quot;Translations&quot;:{&quot;%1$sReport %2$s&#039;s post?%3$sIf it violates our community guidelines, we&#039;ll remove it.%4$s&quot;:&quot;%1$sReport %2$s&#039;s reblog?%3$sIf it violates our community guidelines, we&#039;ll remove it.%4$s&quot;,&quot;%1$sReport %2$s&#039;s reply?%3$sIf it violates our community guidelines, we&#039;ll remove it.%4$s&quot;:&quot;%1$sReport %2$s&#039;s reblog?%3$sIf it violates our community guidelines, we&#039;ll remove it.%4$s&quot;}}"></noscript><script src="http://assets.tumblr.com/client/prod/standalone/tumblelog/index.build.js?_v=409be7134ac7f924003111396e54e1b8"></script></body>
+</html>

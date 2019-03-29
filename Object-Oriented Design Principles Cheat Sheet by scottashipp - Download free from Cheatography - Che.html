@@ -1,0 +1,1219 @@
+<!DOCTYPE html><html
+lang="en"><head><title>Object-Oriented Design Principles Cheat Sheet by scottashipp - Download free from Cheatography - Cheatography.com: Cheat Sheets For Every Occasion</title><meta
+content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta
+http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta
+http-equiv="Content-Style-Type" content="text/css"><meta
+http-equiv="X-UA-Compatible" content="IE=Edge"><meta
+name="flattr:id" content="x7nj1w"><base
+href="https://www.cheatography.com/"><link
+rel="shortcut icon" href="favicon.png"><link
+rel="apple-touch-icon" href="/images/cheatography-iphone.png"><link
+rel="alternate" type="application/rss+xml" title="New Cheat Sheets RSS feed." href="http://www.cheatography.com/explore/new/rss/"><meta
+name="keywords" content="development object-oriented oop programming software "><meta
+property="fb:admins" content="860405712"/><meta
+property="fb:app_id" content="152741628156662"/><meta
+property="og:site_name" content="Cheatography"/><meta
+property="og:url" content="http://www.cheatography.com/scottashipp/cheat-sheets/object-oriented-design-principles/"/><meta
+property="og:title" content="Object-Oriented Design Principles Cheat Sheet"/><meta
+property="og:image" content="http://www.cheatography.com/storage/thumb/scottashipp_object-oriented-design-principles.600.jpg"/><meta
+property="og:type" content="cheatography:cheat_sheet"/><meta
+property="og:description" content="Object-Oriented Design Principles Cheat Sheet from scottashipp. Design principles mostly taken from Head First Object-Oriented Analysis &amp; Design"/><meta
+name="description" content="Object-Oriented Design Principles Cheat Sheet from scottashipp. Design principles mostly taken from Head First Object-Oriented Analysis &amp; Design"/> <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script> <link
+href="/styles/styles.scss.css?v=4" rel="stylesheet" type="text/css"><link
+href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet"><link
+href="/styles/bootstrap-tour-standalone.min.css" rel="stylesheet"> <script src="/scripts/bootstrap-tour-standalone.min.js"></script> <script type="text/javascript">var defaultLanguages = false;
+            var rememberTagCookieName = false;
+            var ratableCheatSheetId = false;
+            var isRateable = true;</script> <meta
+name="p:domain_verify" content="f842c4485eeea6c6d71b4314221cc6c0"/></head><body
+class="page-cheatsheet">
+ <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-4997759-8', 'auto');
+        ga('send', 'pageview');</script> <div
+id="mobile_wrap_outer"><a
+href="#" id="mobileTrigger">Show Menu</a><div
+id="mobile_wrap_inner"><div
+id="header"><div
+id="header_inner"><div
+class="adsense"><div
+class="adsense_inner"> <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <script>(adsbygoogle = window.adsbygoogle || []).push({
+                    google_ad_client: "ca-pub-2965569270921917",
+                    enable_page_level_ads: true
+                  });</script> <ins
+class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-2965569270921917"
+data-ad-slot="5963409473"
+data-ad-format="auto"></ins> <script>(adsbygoogle = window.adsbygoogle || []).push({});</script> </div></div><div
+id="topbar"><div
+class="inner"><form
+method="GET" action="/explore/search/"><p><a
+href="https://www.cheatography.com/" class="imagelink logolink"><img
+width="156" height="25" id="title_logo" src="//media.cheatography.com/images/cheatography_logo.png" alt="Cheatography"></a><input
+id="q" name="q" type="text" placeholder="e.g., Regular Expressions, Garden, Kitchen, Audio"> <button
+type="submit" id="qsubmit"><i
+class="fa fa-search"></i></button><a
+class="social_link hideMobile" href="http://www.facebook.com/Cheatography"><i
+class="fa fa-facebook-official"></i></a>
+<a
+class="social_link hideMobile" href="http://twitter.com/Cheatography/"><i
+class="fa fa-twitter"></i></a>
+<a
+class="social_link hideMobile" href="http://www.pinterest.com/cheatography/"><i
+class="fa fa-pinterest"></i></a>
+<a
+class="social_link hideMobile" href="http://www.instagram.com/newcheatsheets/"><i
+class="fa fa-instagram"></i></a></p></form> <script type="text/javascript">$(document).ready(function () {
+                    // Restore search
+                    var lastSearch = $.cookie('lastSearch');
+                    $('#q').val(lastSearch);
+                });</script> </div></div></div><div
+id="menubar"><div
+class="inner"><div
+class="clear"></div><div
+id="user_info"><div
+class="logged_in" style="vertical-align: middle; position: relative; margin: 0; white-space: nowrap; z-index: 1001;">
+<a
+style="vertical-align: middle; margin: 0; padding-right: 0;" class="imagelink gravatar replace_userlink" href="/davechild/"><img
+class="gravatar replace_usergravatar" style="background: #fff; vertical-align: middle" src="#" width="32" height="32"></a>
+<a
+style="color: #fff; vertical-align: middle" href="/davechild/" class="replace_userlink replace_username"></a>
+<a
+href="/messages/" title="You have 1 new messages." class="imageline"><i
+class="fa fa-fw fa-envelope"></i></a></div><div
+id="user_dropdown"><div
+class="biptych1"><ul><li
+class=" "><i
+class="fa fa-fw fa-star"></i><a
+href="/favourites/">Your Favourite Cheat Sheets</a></li><li
+class=" "><i
+class="fa fa-fw fa-star"></i><a
+href="/favourite-lists/">Your Favourite Lists</a></li></ul><ul><li
+class=" "><i
+class="fa fa-fw fa-envelope"></i><a
+href="/messages/">Your Messages</a></li><li
+class=" replace_userlink"><i
+class="fa fa-fw fa-trophy"></i><a
+href="/davechild/badges/">Your Badges</a></li><li
+class=" replace_userlink"><i
+class="fa fa-fw fa-heart"></i><a
+href="/davechild/followers/">Your Friends</a></li><li
+class=" replace_userlink"><i
+class="fa fa-fw fa-comments"></i><a
+href="/davechild/comments/">Your Comments</a></li></ul><ul><li
+class=" replace_userlink"><i
+class="fa fa-fw fa-smile-o"></i><a
+href="/davechild/">View Profile</a></li><li
+class=" replace_userlink"><i
+class="fa fa-fw fa-edit"></i><a
+href="/davechild/edit/">Edit Profile</a></li><li
+class=" replace_userlink"><i
+class="fa fa-fw fa-key"></i><a
+href="/davechild/password/">Change Password</a></li></ul><ul><li
+class=" replace_userlink"><i
+class="fa fa-fw fa-sign-out"></i><a
+href="/davechild/log-out/">Log out</a></li></ul></div><div
+class="biptych2"><ul><li
+class=" replace_userlink"><i
+class="fa fa-fw fa-columns"></i><a
+href="/davechild/cheat-sheets/new/">New Cheat Sheet</a></li><li
+class=" replace_userlink"><i
+class="fa fa-fw fa-link"></i><a
+href="/davechild/cheat-sheets/new-link/">New Link</a></li><li
+class=" replace_userlink"><i
+class="fa fa-fw fa-upload"></i><a
+href="/davechild/cheat-sheets/new-upload/">New Upload</a></li><li
+class=" replace_userlink"><i
+class="fa fa-fw fa-list"></i><a
+href="/davechild/lists/new/">New List</a></li></ul><ul><li
+class=" replace_userlink"><i
+class="fa fa-fw fa-columns"></i><a
+href="/davechild/cheat-sheets/live/">Live Cheat Sheets</a></li><li
+class=" replace_userlink"><i
+class="fa fa-fw fa-columns"></i><a
+href="/davechild/cheat-sheets/drafts/">Draft Cheat Sheets</a></li><li
+class=" replace_userlink"><i
+class="fa fa-fw fa-group"></i><a
+href="/davechild/cheat-sheets/collaborations/">Collaborations</a></li><li
+class=" replace_userlink"><i
+class="fa fa-fw fa-link"></i><a
+href="/davechild/cheat-sheets/links/">Links</a></li></ul><ul><li
+class=" replace_userlink"><i
+class="fa fa-fw fa-list"></i><a
+href="/davechild/lists/">Cheat Sheet Lists</a></li></ul></div><div
+class="clear"></div></div><div
+class="logged_out"><a
+class="imagelink login_button" href="/members/login">Login</a> &nbsp;or&nbsp; <a
+class="imagelink login_button" href="/members/register/">Register</a></div><div
+class="clear"></div></div>
+<nav><ul><li><a
+href="/"><i
+class="fa fa-home"></i> Home</a></li><li
+class="hidden showMobile logged_out"><a
+href="/members/login/">Login</a></li><li
+class="hidden showMobile logged_out"><a
+href="/members/register/">Register</a></li><li
+class="on"><a
+id="tourbrowse" href="/explore/"><i
+class="fa fa-columns"></i> Cheat Sheets</a><ul
+class="hideMobile"><li
+class=" "><i
+class="fa fa-fw fa-graduation-cap"></i><a
+href="/explore/new/">New Cheat Sheets</a></li><li
+class=" "><i
+class="fa fa-fw fa-star"></i><a
+href="/explore/popular/">Popular Cheat Sheets</a></li><li
+class=" menu_separate  "><i
+class="fa fa-fw fa-book"></i><a
+href="/explore/">Cheat Sheets by Topic</a></li><li
+class=" "><i
+class="fa fa-fw fa-tag"></i><a
+href="/explore/tags/">Cheat Sheets by Tag</a></li><li
+class=" "><i
+class="fa fa-fw fa-globe"></i><a
+href="/language/">Cheat Sheets by Language</a></li><li
+class=" "><i
+class="fa fa-fw fa-list"></i><a
+href="/explore/lists/">Cheat Sheets Lists</a></li><li
+class=" menu_separate  "><i
+class="fa fa-fw fa-link"></i><a
+href="/external/">Cheat Sheet Links</a></li></ul></li><li
+class=""><a
+id="tourcreate" href="/create/"><i
+class="fa fa-pencil"></i> Create</a><ul
+class="hideMobile"><li
+class=" "><i
+class="fa fa-fw fa-question"></i><a
+href="/create/">Getting Started</a></li><li
+class=" logged_in"><i
+class="fa fa-fw fa-columns"></i><a
+href="/create/cheat-sheet/">Create a New Cheat Sheet</a></li><li
+class=" logged_in"><i
+class="fa fa-fw fa-upload"></i><a
+href="/create/cheat-sheet-upload/">Upload a Cheat Sheet</a></li><li
+class=" logged_in"><i
+class="fa fa-fw fa-link"></i><a
+href="/create/cheat-sheet-link/">Link to a Cheat Sheet</a></li><li
+class=" menu_separate  logged_in"><i
+class="fa fa-fw fa-list"></i><a
+href="/create/list/">New Cheat Sheet List</a></li><li
+class="menu_separate"><i
+class="fa fa-fw fa-smile-o"></i>A <a
+href="/davechild/cheat-sheets/cheatography/">Cheat Sheet</a> for Making Cheat Sheets!</li></ul></li><li><a
+id="tourcommunity" href="/members/"><i
+class="fa fa-users"></i> Community</a><ul
+class="hideMobile"><li
+class=" "><i
+class="fa fa-fw fa-globe"></i><a
+href="/members/">Community</a></li><li
+class=" "><i
+class="fa fa-fw fa-bookmark"></i><a
+href="/blog/">Blog</a></li><li
+class=" "><i
+class="fa fa-fw fa-trophy"></i><a
+href="/badges/">Badges</a></li><li
+class=" menu_separate  logged_in"><i
+class="fa fa-fw fa-heart"></i><a
+href="/davechild/followers/">Friends</a></li><li
+class=" logged_out"><i
+class="fa fa-fw fa-user"></i><a
+href="/members/register/">Join Us!</a></li><li
+class=" menu_separate  logged_out"><i
+class="fa fa-fw fa-key"></i><a
+href="/members/login/">Login</a></li><li
+class=" menu_separate  "><i
+class="fa fa-fw fa-twitter"></i><a
+href="http://twitter.com/Cheatography/">Twitter</a></li><li
+class=" "><i
+class="fa fa-fw fa-facebook"></i><a
+href="http://www.facebook.com/Cheatography">Facebook</a></li><li
+class=" "><i
+class="fa fa-fw fa-pinterest"></i><a
+href="http://www.pinterest.com/cheatography/">Pinterest</a></li><li
+class=" "><i
+class="fa fa-fw fa-instagram"></i><a
+href="http://www.instagram.com/newcheatsheets/">Instagram</a></li></ul></li><li
+class="last"><a
+href="/help/"><i
+class="fa fa-question-circle"></i> Help</a><ul
+class="hideMobile"><li
+class=" "><i
+class="fa fa-fw fa-info-circle"></i><a
+href="/help/">General Help Information</a></li><li><i
+class="fa fa-fw fa-ticket"></i><a
+href="http://getsatisfaction.com/cheatography">Cheatography Support</a></li><li
+class="logged_in"><i
+class="fa fa-fw fa-location-arrow"></i><a
+href="/davechild/cheat-sheets/cheatography/?show_tour">Take the Tour!</a></li></ul></li></ul><div
+class="hidden showMobile logged_in" id="user_dropdown_mobile"></div></nav><div
+class="clear"></div></div></div></div><div
+id="content"itemscope itemtype="http://schema.org/CreativeWork"><div
+id="content_inner"><div
+class="hideMobile" id="cs_menu_wrapper"><div
+id="cs_menu"><div
+class="download_menu" id="tourcheatsheetmenu"><ul
+class="hideMobile noicon downloadItem"><li
+style="float: left; border-right: none;"><i
+class="fa fa-fw fa-download"></i> <a
+href="/scottashipp/cheat-sheets/object-oriented-design-principles/#downloads" onclick="trackDownloadPopup();">Download This Cheat Sheet (PDF)</a></li></ul><ul
+class="hideMobile noicon"><li><i
+class="fa fa-fw fa-comments"></i> <a
+href="/scottashipp/cheat-sheets/object-oriented-design-principles/#comments">4 Comments</a></li><li
+class="ratingStars">Rating:
+<i
+class="fa fa-spin fa-spinner"></i> <i></i> <i></i> <i></i> <i></i> <span
+id="ratingStarsCount" style="display: none;">(<a
+href="/scottashipp/cheat-sheets/object-oriented-design-principles/ratings/"></a>)</span></a></li><li><a
+href="#" title="Add or remove this cheat sheet from your favourites" class="imagelink toggle_favourite_link" id="item_cs_1958"><i
+class="fa fa-heart-o"></i></a></li></ul></div></div></div><div
+class="clear"></div><div
+id="pagetitle"><h1><span
+itemprop="name">Object-Oriented Design Principles Cheat Sheet</span> <span
+class="subhead"> by  <span
+itemprop="author" itemscope itemtype="http://schema.org/Person"><a
+href="http://www.cheatography.com/scottashipp/" class="user_hover" itemprop="url"><span
+itemprop="name">scottashipp</span></a></span></span></h1><p
+class="subdesc">Design principles mostly taken from Head First Object-Oriented Analysis &amp; Design<br> <span
+style="color: #999; white-space: nowrap;"><i
+class="fa fa-tag"></i> <a
+class="tag" href="/tag/development/">development</a></span> &nbsp; &nbsp; <span
+style="color: #999; white-space: nowrap;"><i
+class="fa fa-tag"></i> <a
+class="tag" href="/tag/programming/">programming</a></span> &nbsp; &nbsp; <span
+style="color: #999; white-space: nowrap;"><i
+class="fa fa-tag"></i> <a
+class="tag" href="/tag/oop/">oop</a></span> &nbsp; &nbsp; <span
+style="color: #999; white-space: nowrap;"><i
+class="fa fa-tag"></i> <a
+class="tag" href="/tag/software/">software</a></span> &nbsp; &nbsp; <span
+style="color: #999; white-space: nowrap;"><i
+class="fa fa-tag"></i> <a
+class="tag" href="/tag/object-oriented/">object-oriented</a></span></p><div
+class="clear"></div></div><div
+id="body_wide"><div
+id="body_wide_inner"><div
+id="body_wide_shadow"> <script type="text/javascript">var defaultRating = 4.9524;
+    var ratingCount = 7;
+    ratableCheatSheetId = '1958';
+    var hasUserRating = false;</script> <script type="text/javascript">var redirectTimeout;
+var cheat_sheet_id = 1958; // Used in ajax
+var cheatSheetName = 'Object-Oriented Design Principles Cheat Sheet';
+    var bTracking = false;
+$(document).ready(function() {
+    $('#tabs').tabs();
+    var hiddenBlocks = new Array();
+    if ($.cookie('hiddenBlocks')) {
+        hiddenBlocks = $.cookie('hiddenBlocks').split('-');
+        for (var i = 0; i < hiddenBlocks.length; i++) {
+            $('#block_' + hiddenBlocks[i]).slideUp(400);
+        }
+    }
+    $('.cheat_sheet_output_title').click(function() {
+        var block_id = this.id.substr(6);
+        // Check to see if it's hidden
+        if ($.inArray(block_id, hiddenBlocks) === -1) {
+            $('#block_' + block_id).slideUp(400);
+            hiddenBlocks[hiddenBlocks.length] = block_id;
+        } else {
+            $('#block_' + block_id).slideDown(400);
+            for (var i = 0; i < hiddenBlocks.length; i++) {
+                if (hiddenBlocks[i] == block_id) {
+                    hiddenBlocks.splice(i, 1);
+                }
+            }
+        }
+        // Now, toggle all those items with cookies
+        $.cookie('hiddenBlocks', hiddenBlocks.join('-'));
+    });
+    });</script> <div
+class="clear"></div><style type="text/css">h2, .sidebar_box h4 {
+                border-bottom: 3px solid #A3A3A3;
+            }
+
+            /*.sidebar_box.cheat_sheet_footer h4 {
+                border-bottom: 0;
+                border-radius: 3px;
+                padding: 6px 8px;
+                line-height: 1.7;
+                background: #A3A3A3;
+                                    color: #EFEFEF;
+                            }
+
+            .sidebar_box.cheat_sheet_footer a {
+                color: #A3A3A3;
+                border-color: #A3A3A3;
+            }*/
+
+            .cheat_sheet_output_wrapper {
+                background: #A3A3A3;
+                border-bottom: 3px solid #A3A3A3;
+            }
+
+                .cheat_sheet_output_wrapper a, .cheat_sheet_output_wrapper a:visited, .cheat_sheet_output_wrapper a:focus, .cheat_sheet_output_wrapper a:link, .cheat_sheet_output_wrapper a:hover {
+                    color: #A3A3A3;
+                    border-color: #A3A3A3;
+                }
+
+                .cheat_sheet_output_wrapper .cheat_sheet_output_block tr.altrow td, .cheat_sheet_output_wrapper .cheat_sheet_note {
+                    background: #EFEFEF;
+                }
+
+                .cheat_sheet_output_wrapper .cheat_sheet_note {
+                    border-top: 3px solid #A3A3A3;
+                }
+
+                .cheat_sheet_output_wrapper h3.cheat_sheet_output_title {
+                                            color: #EFEFEF;
+                                    }
+
+            /* Breaks */
+            .cheat_sheet_output_column_columnbreak, .cheat_sheet_output_column_pagebreak {
+                border-color: #eee;
+            }
+
+                .cheat_sheet_output_wrapper.cheat_sheet_output_column_columnbreak .cheat_sheet_output_block,
+                .cheat_sheet_output_wrapper.cheat_sheet_output_column_pagebreak .cheat_sheet_output_block {
+                    border-top: none;
+                }
+
+                .cheat_sheet_output_wrapper.cheat_sheet_output_column_columnbreak h3.cheat_sheet_output_title,
+                .cheat_sheet_output_wrapper.cheat_sheet_output_column_pagebreak h3.cheat_sheet_output_title {
+                    color: #999;
+                    background: #eee;
+                }
+
+            /* Buttons */
+            .button_add, .button_add:visited, .button_add:active, .button_add:hover {
+                background-color: #A3A3A3;
+                border: 1px solid #A3A3A3;
+                color: #EFEFEF;
+            }
+
+                .button_add:hover {
+                    background-color: #EFEFEF;
+                    color: #A3A3A3;
+                }
+
+            .download_menu {
+                background-color: #A3A3A3;
+            }
+
+            #content #content_inner, #cs_menu {
+                border-top-color: #A3A3A3;
+            }
+
+            #content #content_inner {
+                /*top: -3px;*/
+                border: none;
+            }
+
+            #menubar .inner {
+                border-top-color: #A3A3A3;
+            }
+
+            .cheat_sheet_output_block div {
+                border-color: #A3A3A3 !important;
+            }
+
+            .footer_popup {
+                background-color: #EFEFEF;
+                box-shadow: 0 0 3px #A3A3A3;
+            }</style><table
+border="0" cellspacing="0" width="100%" cellpadding="0" class="cheat_sheet_output"><tr><td
+width="32%" valign="top" class="cheat_sheet_output_sortable cheat_sheet_output_column_1"><div
+class="cheat_sheet_output_wrapper cheat_sheet_output_column_onecol" style="z-index: 30; page-break-inside: avoid;" id="block_5644"><h3 class="cheat_sheet_output_title" id="title_1958_5644">Basic Principles</h3><div
+class="cheat_sheet_output_block" id="block_1958_5644"><table
+border="0" cellspacing="0" cellpadding="0" id="cheat_sheet_output_table" class="cheat_sheet_output_onecol"><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">Encaps&#173;ulate what varies.</div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">Code to an interface rather than to an implem&#173;ent&#173;ation.</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">Each class in your applic&#173;ation should have only one reason to change.</div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">Classes are about behavior and functi&#173;ona&#173;lity.</div></td></tr></table></div></div><div
+class="cheat_sheet_output_wrapper cheat_sheet_output_column_twocol" style="z-index: 30; page-break-inside: avoid;" id="block_5652"><h3 class="cheat_sheet_output_title" id="title_1958_5652">Basic OO Terms</h3><div
+class="cheat_sheet_output_block" id="block_1958_5652"><table
+border="0" cellspacing="0" cellpadding="0" id="cheat_sheet_output_table" class="cheat_sheet_output_twocol"><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1"><div
+style="padding: 3px 8px;">Abstra&#173;ction</div></td><td
+valign="top" class="cheat_sheet_output_cell_2"><div
+style="padding: 3px 8px;">The process of separating ideas from specific instances of those ideas at work.</div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1"><div
+style="padding: 3px 8px;">Polymo&#173;rphism</div></td><td
+valign="top" class="cheat_sheet_output_cell_2"><div
+style="padding: 3px 8px;">The provision of a single interface to entities of different types. Subtyping.</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1"><div
+style="padding: 3px 8px;">Inheri&#173;tance</div></td><td
+valign="top" class="cheat_sheet_output_cell_2"><div
+style="padding: 3px 8px;">When an object or class is based on another object or class, using the same implem&#173;ent&#173;ation; it is a mechanism for code reuse. The relati&#173;onships of objects or classes through inheri&#173;tance give rise to a hierarchy.</div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1"><div
+style="padding: 3px 8px;">Encaps&#173;ulation</div></td><td
+valign="top" class="cheat_sheet_output_cell_2"><div
+style="padding: 3px 8px;">Enclosing objects in a common interface in a way that makes them interc&#173;han&#173;geable, and guards their states from invalid changes</div></td></tr></table></div></div><div
+class="cheat_sheet_output_wrapper cheat_sheet_output_column_twocol" style="z-index: 30; page-break-inside: avoid;" id="block_5649"><h3 class="cheat_sheet_output_title" id="title_1958_5649">Favor the following over inheri&#173;tance</h3><div
+class="cheat_sheet_output_block" id="block_1958_5649"><table
+border="0" cellspacing="0" cellpadding="0" id="cheat_sheet_output_table" class="cheat_sheet_output_twocol"><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1"><div
+style="padding: 3px 8px;">Delegation</div></td><td
+valign="top" class="cheat_sheet_output_cell_2"><div
+style="padding: 3px 8px;">When you hand over the respon&#173;sib&#173;ility for a particular task to another class or method.</div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1"><div
+style="padding: 3px 8px;">Compos&#173;ition</div></td><td
+valign="top" class="cheat_sheet_output_cell_2"><div
+style="padding: 3px 8px;">Use behavior from a family of other classes, and change that behavior at runtime.</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1"><div
+style="padding: 3px 8px;">Aggreg&#173;ation</div></td><td
+valign="top" class="cheat_sheet_output_cell_2"><div
+style="padding: 3px 8px;">When one class is used as part of another class, but still exists outside of that other class.</div></td></tr></table></div></div></td><td
+class="cheat_sheet_output_column_spacer" width="2%">&nbsp;</td><td
+width="32%" valign="top" class="cheat_sheet_output_sortable cheat_sheet_output_column_2"><div
+class="cheat_sheet_output_wrapper cheat_sheet_output_column_text" style="z-index: 30; page-break-inside: avoid;" id="block_5648"><h3 class="cheat_sheet_output_title" id="title_1958_5648">Don't Repeat Yourself (DRY)</h3><div
+class="cheat_sheet_output_block" id="block_1958_5648"><table
+border="0" cellspacing="0" cellpadding="0" id="cheat_sheet_output_table" class="cheat_sheet_output_text"><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1"><div
+style="padding: 3px 8px;">Avoid duplicate code by abstra&#173;cting out things that are common and placing those things in a single location.<br
+/>
+<br
+/>
+DRY is about having each piece of inform&#173;ation and behavior in your system in a single, sensible place.</div></td></tr></table></div></div><div
+class="hideprint" style="margin: 10px 0 20px 0;">
+ <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <ins
+class="adsbygoogle"
+style="display:inline-block;width:300px;height:250px"
+data-ad-client="ca-pub-2965569270921917"
+data-ad-slot="6925390326"></ins> <script>(adsbygoogle = window.adsbygoogle || []).push({});</script> </div><div
+class="cheat_sheet_output_wrapper cheat_sheet_output_column_onecol" style="z-index: 30; page-break-inside: avoid;" id="block_5645"><h3 class="cheat_sheet_output_title" id="title_1958_5645">Single Respon&#173;sib&#173;ility Principle</h3><div
+class="cheat_sheet_output_block" id="block_1958_5645"><table
+border="0" cellspacing="0" cellpadding="0" id="cheat_sheet_output_table" class="cheat_sheet_output_onecol"><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">Every object in your system should have a single respon&#173;sib&#173;ility, and all the object's services should be focused on carrying out that single respon&#173;sib&#173;ility.</div></td></tr></table></div></div><div
+class="cheat_sheet_output_wrapper cheat_sheet_output_column_text" style="z-index: 30; page-break-inside: avoid;" id="block_5646"><h3 class="cheat_sheet_output_title" id="title_1958_5646">Open-C&#173;losed Principle</h3><div
+class="cheat_sheet_output_block" id="block_1958_5646"><table
+border="0" cellspacing="0" cellpadding="0" id="cheat_sheet_output_table" class="cheat_sheet_output_text"><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1"><div
+style="padding: 3px 8px;">Classes should be open for extension, and closed for modifi&#173;cation.</div></td></tr></table></div></div><div
+class="cheat_sheet_output_wrapper cheat_sheet_output_column_text" style="z-index: 30; page-break-inside: avoid;" id="block_5647"><h3 class="cheat_sheet_output_title" id="title_1958_5647">Liskov Substi&#173;tution Principle (LSP)</h3><div
+class="cheat_sheet_output_block" id="block_1958_5647"><table
+border="0" cellspacing="0" cellpadding="0" id="cheat_sheet_output_table" class="cheat_sheet_output_text"><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1"><div
+style="padding: 3px 8px;">Subtypes must be substi&#173;tutable for their base types.</div></td></tr></table></div></div><div
+class="cheat_sheet_output_wrapper cheat_sheet_output_column_text" style="z-index: 30; page-break-inside: avoid;" id="block_5650"><h3 class="cheat_sheet_output_title" id="title_1958_5650">Interface Segreg&#173;ation Principle (ISP)</h3><div
+class="cheat_sheet_output_block" id="block_1958_5650"><table
+border="0" cellspacing="0" cellpadding="0" id="cheat_sheet_output_table" class="cheat_sheet_output_text"><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1"><div
+style="padding: 3px 8px;">Clients should not be forced to depend upon interfaces that they don't use.</div></td></tr></table></div></div><div
+class="cheat_sheet_output_wrapper cheat_sheet_output_column_text" style="z-index: 30; page-break-inside: avoid;" id="block_5651"><h3 class="cheat_sheet_output_title" id="title_1958_5651">Dependency Inversion Principle (DIP)</h3><div
+class="cheat_sheet_output_block" id="block_1958_5651"><table
+border="0" cellspacing="0" cellpadding="0" id="cheat_sheet_output_table" class="cheat_sheet_output_text"><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1"><div
+style="padding: 3px 8px;">a. High level modules should not depend upon low level modules. Both should depend upon abstra&#173;ctions.<br
+/>
+<br
+/>
+b. Abstra&#173;ctions should not depend upon details. Details should depend upon abstra&#173;ctions.</div></td></tr></table></div></div></td><td
+class="cheat_sheet_output_column_spacer" width="2%">&nbsp;</td><td
+width="32%" valign="top" class="cheat_sheet_output_sortable cheat_sheet_output_column_3"><div
+class="cheat_sheet_output_wrapper cheat_sheet_output_column_text" style="z-index: 30; page-break-inside: avoid;" id="block_5677"><h3 class="cheat_sheet_output_title" id="title_1958_5677">References</h3><div
+class="cheat_sheet_output_block" id="block_1958_5677"><table
+border="0" cellspacing="0" cellpadding="0" id="cheat_sheet_output_table" class="cheat_sheet_output_text"><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1"><div
+style="padding: 3px 8px;">Wood, David, Bert Bates, Kathy Sierra, Brett D. McLaug&#173;hlin, Gary Pollice, and David West. Head First Object&#173;-Or&#173;iented Analysis and Design: A Brain Friendly Guide to Object Oriented Progra&#173;mming. Cambridge: O'Reilly Media, Incorp&#173;orated, 2006. Print.<br
+/>
+<br
+/>
+&quot;&#173;Abs&#173;tra&#173;ction (computer Scienc&#173;e).&quot;&#173; Wikipedia. Wikimedia Founda&#173;tion, 18 Apr. 2014. Web. 25 Apr. 2014. &lt;<a
+href="http://en.wikipedia.org/wiki/Abstraction_(computer_science)" target="_blank">http:/&#173;/en.wi&#173;kip&#173;edi&#173;a.o&#173;rg/&#173;wik&#173;i/A&#173;bst&#173;rac&#173;tio&#173;n_(&#173;com&#173;put&#173;er_&#173;sci&#173;ence)</a>&gt;<br
+/>
+<br
+/>
+&quot;&#173;Pol&#173;ymo&#173;rphism (computer Scienc&#173;e).&quot;&#173; Wikipedia. Wikimedia Founda&#173;tion, 25 Apr. 2014. Web. 25 Apr. 2014. &lt;<a
+href="http://en.wikipedia.org/wiki/Polymorphism_(computer_science)" target="_blank">http:/&#173;/en.wi&#173;kip&#173;edi&#173;a.o&#173;rg/&#173;wik&#173;i/P&#173;oly&#173;mor&#173;phi&#173;sm_&#173;(co&#173;mpu&#173;ter&#173;_sc&#173;ience)</a>&gt;<br
+/>
+<br
+/>
+&quot;&#173;Inh&#173;eri&#173;tance (objec&#173;t-o&#173;riented Progra&#173;mmi&#173;ng).&quot; Wikipedia. Wikimedia Founda&#173;tion, 21 Apr. 2014. Web. 25 Apr. 2014. &lt;<a
+href="http://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)" target="_blank">http:/&#173;/en.wi&#173;kip&#173;edi&#173;a.o&#173;rg/&#173;wik&#173;i/I&#173;nhe&#173;rit&#173;anc&#173;e_(&#173;obj&#173;ect&#173;-or&#173;ien&#173;ted&#173;_pr&#173;ogr&#173;amming)</a>&gt;.<br
+/>
+<br
+/>
+&quot;&#173;Enc&#173;aps&#173;ulation (objec&#173;t-o&#173;riented Progra&#173;mmi&#173;ng).&quot; Wikipedia. Wikimedia Founda&#173;tion, 21 Apr. 2014. Web. 25 Apr. 2014. &lt;<a
+href="http://en.wikipedia.org/wiki/Encapsulation_(object-oriented_programming)" target="_blank">http:/&#173;/en.wi&#173;kip&#173;edi&#173;a.o&#173;rg/&#173;wik&#173;i/E&#173;nca&#173;psu&#173;lat&#173;ion&#173;_(o&#173;bje&#173;ct-&#173;ori&#173;ent&#173;ed_&#173;pro&#173;gra&#173;mming)</a>&gt;</div></td></tr></table></div></div></td></tr></table><div
+id="sponsor" style="color: #fff; text-align: center; width: 100%; padding: 0 20px; border-top: 10px solid #dddddd; margin-top: 50px; position: relative; left: -20px; right: -20px; background: #dddddd;"><div
+style="color: #fff; text-align: center; border-radius: 10px; width: 100%; position: relative; left: -20px; padding: 30px 20px; background: linear-gradient(#293044, #cd2082);"><h3 style="font-size: 2em; margin: 0 0 20px; text-align: center;">How's Your Readability?</h3><p
+style="text-align: center; margin: 0 0 30px; font-size: 1.3em; padding: 0 100px;">Cheatography is sponsored by <strong><a
+style="color: #fff; border-color: #fff;" href="https://readable.com/">Readable.com</a></strong>. Check out Readable.com to make your content and copy more engaging and support Cheatography!</p><p
+style="text-align: center; margin: 0 0 20px; font-size: 1.3em; padding: 0 100px;"><a
+style="border-radius: 5px;background: #fff; padding: 10px; color: #222; border: none;" href="https://readable.com/text/">Measure Your Readability Now!</a></p></div></div><div
+id="downloads" style="margin-top: 0;"><div
+class="clear"></div><div
+class="triptychdbll"><h2 class="notopmargin">Download the Object-Oriented Design Principles Cheat Sheet</h2><div
+class="biptych1"><div
+class="padded">
+<a
+style="line-height: 1; display: block; height: 200px; overflow: hidden; position: relative; box-shadow: 1px 1px 3px #666; " class="imagelink" href="#" onclick="showPopup('https://www.cheatography.com//scottashipp/cheat-sheets/object-oriented-design-principles/pdf/'); return false;"><img
+style="line-height: 1;" width="100%" src="//media.cheatography.com/storage/thumb/scottashipp_object-oriented-design-principles.750.jpg?last=1463126089"><span
+class="page_count" style="background-color: #EFEFEF">1 Page</span></a><div
+style="display: none;">
+<span
+itemprop="url">http://www.cheatography.com/scottashipp/cheat-sheets/object-oriented-design-principles/</span>
+<span
+itemprop="thumbnailUrl">//media.cheatography.com/storage/thumb/scottashipp_object-oriented-design-principles.750.jpg</span></div></div></div><div
+class="biptych2"><div
+class="padded"><p
+class="padded"><strong>PDF</strong> (recommended)</p><ul
+class="noicon" style="margin-bottom: 20px;"><li><i
+class="fa fa-fw fa-file-pdf-o"></i> <a
+target="_blank" href="#" onclick="showPopup('https://www.cheatography.com/scottashipp/cheat-sheets/object-oriented-design-principles/pdf/'); trackDownload('PDF', this.href); return false;">PDF (1 page)</a></li></ul><p
+class="padded"><strong>Alternative&nbsp;Downloads</strong></p><ul
+class="noicon"><li><i
+class="fa fa-fw fa-file-pdf-o"></i> <a
+target="_blank" href="#" onclick="showPopup('https://www.cheatography.com/scottashipp/cheat-sheets/object-oriented-design-principles/pdf_bw/'); trackDownload('PDF - Black and White', this.href); return false;">PDF (black and white)</a></li><li><i
+class="fa fa-fw fa-file-text-o"></i> <a
+target="_blank" href="#" onclick="showPopup('https://www.cheatography.com/scottashipp/cheat-sheets/object-oriented-design-principles/latex/'); trackDownload('LaTeX', this.href); return false;">LaTeX</a></li></ul></div></div><div
+class="clear"></div></div><div
+class="triptych3"><h2 class="notopmargin" style="padding: 0;">Share This Cheat Sheet!</h2><div
+class="imagelink addthis_toolbox addthis_default_style addthis_32x32_style" style="width:430px; margin: 30px auto; text-align: center;">
+<a
+class="addthis_button_facebook"></a>
+<a
+class="addthis_button_twitter"></a>
+<a
+class="addthis_button_google_plusone_badge" g:plusone:count="false" g:plusone:size="medium"></a>
+<a
+class="addthis_button_pinterest_share" pi:pinit:media="//media.cheatography.com/storage/thumb/scottashipp_object-oriented-design-principles.600.jpg?last=1463126089"></a>
+<a
+class="addthis_button_reddit"></a><div
+class="clear"></div>
+<a
+class="addthis_button_stumbleupon"></a>
+<a
+class="addthis_button_email"></a>
+<a
+class="addthis_button_favorites"></a>
+<a
+class="addthis_button_compact"></a></div></div><div
+class="clear"></div> <script type="text/javascript">$(document).ready(function() {
+                    $('#download_box').hide();
+                    $('#download_box').css('position', 'fixed');
+                });
+                var timeToGo = 5;
+                var downloadTimer = false;
+                var downloadTarget = false;
+                function showPopup(target) {
+window.location.replace(target);
+return false;
+                    downloadTarget = target;
+                    timeToGo = 5;
+                    doCountdown();
+                    downloadTimer = setInterval(doCountdown, 1000);
+                    $('#showClose').hide();
+                    $('#download_box').show();
+                }
+                function doCountdown() {
+                    $('#counter').text(timeToGo);
+                    timeToGo = timeToGo - 1;
+                    if (timeToGo <= 0) {
+                        $('#showClose').fadeIn();
+                        clearInterval(downloadTimer);
+                        window.location.replace(downloadTarget);
+                    }
+                }</script> <div
+style="display: none; padding: 100px; text-align: center; background: #fff; background: rgba(255, 255, 255, 0.9); z-index: 3000; left: 0; right: 0; top: 0; bottom: 0; display: none;" id="download_box"><p
+style="text-align: center; font-size: 1.5em; color: #333;">Your Download Will Begin Automatically in <span
+id="counter">5</span> Seconds.<span
+id="showClose"><br><a
+onclick="$('#download_box').hide(); return false;" id="closebox">Close</a></span></p></div></div><div
+id="comments"><div
+class="clear">&nbsp;</div><div
+class="triptych3"><div
+class="sidebar_box cheat_sheet_footer"><div
+id="tourauthors" class="sidebar_box_first_row"><h2 class="newsectiontitle notopmargin">Cheatographer</h2></div><div
+class="sidebar_box_row">
+<a
+style="float: left; margin: 6px 10px 10px 0" href="/scottashipp/" class="imagelink"><img
+class="gravatar lazy" style="vertical-align: middle;" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/761f4c5a5b2acf8b6d6ad35528a2f148.32.jpg" width="32" height="32" alt="scottashipp"></a><a
+href="/scottashipp/" class="user_hover">scottashipp</a></div><div
+class="clear"></div></div><div
+class="sidebar_box cheat_sheet_footer"><div
+class="sidebar_box_first_row"><h2 class="newsectiontitle">Metadata</h2></div><div
+class="sidebar_box_row"><ul
+class="small_content_list"><li>Languages:<meta
+itemprop="inLanguage" content="en"/>
+<a
+href="/language/en/">English</a></li><meta
+itemprop="datePublished" content="2014-04-22"><li>Published: <span
+class="publish_date">22nd April, 2014</span></li><li>Rated: <span
+itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating"><span
+itemprop="ratingValue">5</span> stars based on <span
+itemprop="reviewCount">7</span> ratings</span></li></ul></div></div><div
+class="sidebar_box"><div
+class="sidebar_box_first_row"><h2 class="newsectiontitle">Favourited By</h2></div><div
+class="sidebar_box_row"><p
+style="line-height: 36px; vertical-align: middle;">
+<a
+href="/aha/" class="imagelink user_hover" title="AHA"><img
+class="gravatar lazy" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/89d37f501d8a7e4f733fc5730c98aaf0.32.jpg" width="32" height="32" alt="AHA"></a>
+<a
+href="/quantumcalzone/" class="imagelink user_hover" title="QuantumCalzone"><img
+class="gravatar lazy" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/29d944c38ac324a0b6313e89c38fd741.32.jpg" width="32" height="32" alt="QuantumCalzone"></a>
+<a
+href="/24g/" class="imagelink user_hover" title="24G"><img
+class="gravatar lazy" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/8f4409470f066db7150109ea49271389.32.jpg" width="32" height="32" alt="24G"></a>
+<a
+href="/ned/" class="imagelink user_hover" title="ned"><img
+class="gravatar lazy" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/af8b4b3554b104b043b96d6b90db0111.32.jpg" width="32" height="32" alt="ned"></a>
+<a
+href="/nazime/" class="imagelink user_hover" title="Nazime"><img
+class="gravatar lazy" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/9a468cb927238170d6e731f639060186.32.jpg" width="32" height="32" alt="Nazime"></a>
+<a
+href="/cassiocv/" class="imagelink user_hover" title="cassiocv"><img
+class="gravatar lazy" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/d34e40e3d570984b307148929fd9261e.32.jpg" width="32" height="32" alt="cassiocv"></a>
+<a
+href="/stamse/" class="imagelink user_hover" title="stamse"><img
+class="gravatar lazy" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/f43cd00099b92498fa16a480e4f704c4.32.jpg" width="32" height="32" alt="stamse"></a>
+<a
+href="/sampsonp/" class="imagelink user_hover" title="sampsonp"><img
+class="gravatar lazy" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/a7556c5546be4ac505edd682f9dceed2.32.jpg" width="32" height="32" alt="sampsonp"></a>
+<a
+href="/pvmsikrsna/" class="imagelink user_hover" title="pvmsikrsna"><img
+class="gravatar lazy" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/d5506004f82c65dc7aefa208b4f48ec9.32.jpg" width="32" height="32" alt="pvmsikrsna"></a>
+<a
+href="/gregkang/" class="imagelink user_hover" title="gregkang"><img
+class="gravatar lazy" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/f823ff2c8805d82b57933583bc42c415.32.jpg" width="32" height="32" alt="gregkang"></a>
+<a
+href="/blkdykegoddess/" class="imagelink user_hover" title="blkdykegoddess"><img
+class="gravatar lazy" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/aa5dc65eb1e09dc4f657402646a91081.32.jpg" width="32" height="32" alt="blkdykegoddess"></a>
+<span
+class="show_more_trigger"><br>and <a
+href="javascript:return false;" onclick="$('.show_more_trigger').hide(); $('.show_more_content').show(); return false;">14 more ...</a></span> <span
+class="show_more_content hidden">                                    <a
+href="/vinceswann/" class="imagelink user_hover" title="vinceswann"><img
+class="gravatar lazy" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/9c38897eb87ca1b4f667336ca1cdf7a3.32.jpg" width="32" height="32" alt="vinceswann"></a>
+<a
+href="/hqzxjczx/" class="imagelink user_hover" title="hqzxjczx"><img
+class="gravatar lazy" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/1e5000da57284c650857695ebbabd4a3.32.jpg" width="32" height="32" alt="hqzxjczx"></a>
+<a
+href="/justinbyrne/" class="imagelink user_hover" title="justinbyrne"><img
+class="gravatar lazy" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/53ef2b45c43ab847716b507a53f761e2.32.jpg" width="32" height="32" alt="justinbyrne"></a>
+<a
+href="/andyboy/" class="imagelink user_hover" title="andyboy"><img
+class="gravatar lazy" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/a19e59498df4cff55b4a4012020727e1.32.jpg" width="32" height="32" alt="andyboy"></a>
+<a
+href="/sara/" class="imagelink user_hover" title="sara"><img
+class="gravatar lazy" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/4172bf6750f43a6de0cc374d64b4bb0f.32.jpg" width="32" height="32" alt="sara"></a>
+<a
+href="/noicouldalwaysturn2u/" class="imagelink user_hover" title="noicouldalwaysturn2u"><img
+class="gravatar lazy" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/ee0e372e85d79f422eaa8177d585e977.32.jpg" width="32" height="32" alt="noicouldalwaysturn2u"></a>
+<a
+href="/jellyd0ts/" class="imagelink user_hover" title="jellyd0ts"><img
+class="gravatar lazy" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/a3d641c00746efee4ef3177407a45a84.32.jpg" width="32" height="32" alt="jellyd0ts"></a>
+<a
+href="/brazacka/" class="imagelink user_hover" title="brazacka"><img
+class="gravatar lazy" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/ae1313a71ed1ee350736afa4537704ec.32.jpg" width="32" height="32" alt="brazacka"></a>
+<a
+href="/swederacer/" class="imagelink user_hover" title="SwedeRacer"><img
+class="gravatar lazy" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/08feecb8c53257027758111787ece922.32.jpg" width="32" height="32" alt="SwedeRacer"></a>
+<a
+href="/javier-alba/" class="imagelink user_hover" title="javier-alba"><img
+class="gravatar lazy" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/0ecf8cab14ffe9c1621e699657a4ce70.32.jpg" width="32" height="32" alt="javier-alba"></a>
+<a
+href="/earthlydelight/" class="imagelink user_hover" title="earthlydelight"><img
+class="gravatar lazy" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/b52db40534901cc5600d2708a570c3b1.32.jpg" width="32" height="32" alt="earthlydelight"></a>
+<a
+href="/freaksed/" class="imagelink user_hover" title="Freaksed"><img
+class="gravatar lazy" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/caa7e496eb9c6bd678a00bbd78bdee54.32.jpg" width="32" height="32" alt="Freaksed"></a>
+<a
+href="/mccloud/" class="imagelink user_hover" title="McCloud"><img
+class="gravatar lazy" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/43aa500f4a4f7a0b8f5edf60c62fbf53.32.jpg" width="32" height="32" alt="McCloud"></a>
+</span></p></div></div></div><div
+class="triptychdbll"><h2 class="newsectiontitle notopmargin">Comments</h2><div
+class="commentblock" id="comment29321"><p
+class="commenter">
+<a
+href="/davechild/" class="imagelink"><img
+style="margin: 0 8px 0 0;" class="lazy" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/fd7e3b77a3f3007ff30d932b65084851.32.jpg" alt="DaveChild" width="32" height="32"></a>
+<a
+href="/davechild/" class="user_hover">DaveChild</a>,
+<a
+href="https://www.cheatography.com:443/scottashipp/cheat-sheets/object-oriented-design-principles/#comment29321">17:58 27 Apr 14</a></p><p
+class="commentext">Great cheat sheet!</p><div
+class="commentreply" id="reply_29321"></div></div><div
+class="commentblock" id="comment29331"><p
+class="commenter">
+<img
+style="margin: 0 8px 0 0;" class="lazy" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/afec35c1719cb634bbe28b5e9cfc80a9.32.jpg" alt="Scott Shipp" width="32" height="32">
+Scott Shipp,
+<a
+href="https://www.cheatography.com:443/scottashipp/cheat-sheets/object-oriented-design-principles/#comment29331">12:08 6 May 14</a></p><p
+class="commentext">Thanks for the comment! Glad someone finds it useful!</p><div
+class="commentreply" id="reply_29331"></div></div><div
+class="commentblock" id="comment29634"><p
+class="commenter">
+<img
+style="margin: 0 8px 0 0;" class="lazy" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/f30af62e33d5242fc2405d23a911a109.32.jpg" alt="Muhammad" width="32" height="32">
+Muhammad,
+<a
+href="https://www.cheatography.com:443/scottashipp/cheat-sheets/object-oriented-design-principles/#comment29634">10:28 18 Jul 14</a></p><p
+class="commentext">Thanks! It really helps.</p><div
+class="commentreply" id="reply_29634"></div></div><div
+class="commentblock" id="comment29750"><p
+class="commenter">
+<img
+style="margin: 0 8px 0 0;" class="lazy" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/ef9873830ef5093e161fbd1ecd7773a2.32.jpg" alt="Thomas" width="32" height="32">
+Thomas,
+<a
+href="https://www.cheatography.com:443/scottashipp/cheat-sheets/object-oriented-design-principles/#comment29750">13:52 17 Nov 14</a></p><p
+class="commentext">Encapsulation at its finest :D</p><div
+class="commentreply" id="reply_29750"></div></div><h2 class="newsectiontitle">Add a Comment</h2><div
+id="reply_default"><div
+id="comment_form"><form
+novalidate class="pageForm" id="commentForm" method="POST" action="https://www.cheatography.com:443/scottashipp/cheat-sheets/object-oriented-design-principles/#comment_form">
+<input
+type="hidden" name="action" value="comment"/>
+<input
+type="hidden" name="spamkey" value="2.019022081288E+20">
+<input
+type="text" name="website" id="comment_form_url" value="http://"><fieldset><legend>Your Comment</legend><div
+class="formrow"><p
+class="forminfo"><span>Please enter your name.</span></p><label
+for="commenter_name">Your Name</label><input
+required  type="text" id="commenter_name" name="commenter_name"><div
+class="clear"></div><ul
+class="error off"></ul><div
+class="clear"></div></div><div
+class="formrow"><p
+class="forminfo"><span>Please enter your email address</span></p><label
+for="commenter_email">Your Email Address</label><input
+required  type="email" id="commenter_email" name="commenter_email"><div
+class="clear"></div><ul
+class="error off"></ul><div
+class="clear"></div></div><div
+class="formrow"><p
+class="forminfo"><span>Please enter your Comment.</span></p><label
+for="comment_text">Your Comment</label><textarea cols="50" rows="5" name="comment_text" id="comment_text" required  id="comment_text" name="comment_text"></textarea><div
+class="clear"></div><ul
+class="error off"></ul><div
+class="clear"></div></div><div
+class="buttonrow"><button
+name="continue" id="continue" value="continue" type="submit" id="continue" name="continue"><div><span><strong>Post</strong> Your Comment</span></div></button><div
+class="clear"></div><ul
+class="error off"></ul><div
+class="clear"></div></div></fieldset></form></div></div> <script type="text/javascript">$(document).ready(function () {
+            $("#commentForm").validate({
+                unhighlight: function (el, error, valid, _orig) {
+                    if (el.id == 'sidebar_username') {
+                    }
+                    $(el).parent().find('p').addClass("valid");
+                    $(el).parent().find('p').removeClass("invalid");
+                    $(el).parent().find('ul.error').hide('slow');
+                },
+                highlight: function (el, error, valid, _orig) {
+                    $(el).parent().find('p').removeClass("valid");
+                    $(el).parent().find('p').addClass("invalid");
+                },
+                errorPlacement: function(error, el) {
+                    $(el).parent().find('ul.error').html('<li>' + $(error).text() + '</li>');
+                    $(el).parent().find('ul.error').show('slow');
+                    //$(el).parent().find('span').html($(error).text());
+                    return true;
+                }
+            });
+        });</script> <script type="text/javascript">function replyTo(reply_comment_id, thread) {
+        if (reply_comment_id == 0) {
+            // Move comment_form to reply_default
+            $("#comment_form").prependTo("#reply_default");
+            // Set comment_reply_id to 0
+            $("#comment_reply_id").val(0);
+            $('#replytext').hide();
+        } else {
+            // Move comment_form to reply_<reply_comment_id>
+            if (thread) {
+                $("#comment_form").prependTo("#comment_thread_" + reply_comment_id);
+            } else {
+                $("#comment_form").prependTo("#reply_" + reply_comment_id);
+            }
+            // Set comment_reply_id to <reply_comment_id>
+            $("#comment_reply_id").val(reply_comment_id);
+            $('#replytext').show();
+        }
+        return false;
+    }</script> </div><div
+class="clear"></div><h2 class="newsectiontitle">Related Cheat Sheets</h2><div
+class="clear"></div><div
+id="cheat_sheet_5" class="cheat_sheet_row altrow triptych1 tag-development tag-regex tag-regular tag-expressions tag-programming lang-en rating-5" style="margin-bottom: 20px; position: relative; padding: 10px 0 0 0; min-height: 220px; background: #9B0436 url('/images/ajax-loader.gif') 50% 40% no-repeat;"><div
+style="z-index: 100; position: absolute; top: 0; padding: 0 0 0 6px; border-bottom-left-radius: 3px; right: 10px; color: #F4D4DF; background: #9B0436;"><i
+class="fa fa-star"></i> <i
+class="fa fa-star"></i> <i
+class="fa fa-star"></i> <i
+class="fa fa-star"></i> <i
+class="fa fa-star"></i></div><a
+class="lazy" data-original="//media.cheatography.com/storage/thumb/davechild_regular-expressions.400.jpg?time=1463066188" style="position: absolute; bottom: 0; left: 10px; right: 10px; background: url('/images/spacer.png') -13px -52px no-repeat; height: 220px;" href="/davechild/cheat-sheets/regular-expressions/"></a><div
+style="z-index: 801; position: absolute; bottom: 0; left: 0; right: 0; color: #F4D4DF; background: #610222;"><div
+style="padding: 10px 15px;"><strong><a
+style="font-size: 1.3em; color: #F4D4DF; border-color: #F4D4DF;" href="/davechild/cheat-sheets/regular-expressions/">Regular Expressions Cheat Sheet</a></strong><div
+class="extrainfo" style="display: none; line-height: 25px; padding: 0 0 5px;"><div
+style="padding: 5px 0 0;">A quick reference guide for regular expressions (regex), including symbols, ranges, grouping, assertions and some sample patterns to get you started.</div><div
+class="triptych1"><span
+style="white-space: nowrap;"><img
+style="position: relative; left: 0; top: 5px; padding-right: 5px;" width="16" height="16" src="//media.cheatography.com/images/users/fd7e3b77a3f3007ff30d932b65084851.16.jpg"><a
+style="color: #F4D4DF; border-color: #F4D4DF;" href="/davechild/" class="user_hover">DaveChild</a></span></div><div
+class="triptych2"><i
+class="fa fa-fw fa-calendar"></i>19 Oct 11</div><div
+class="triptych3"><i
+class="fa fa-fw fa-book"></i>1 Page</div><div
+class="clear"></div><div><i
+class="fa fa-fw fa-tag"></i><a
+style="color: #F4D4DF; border-color: #F4D4DF;" href="/tag/development/cheat-sheets/">development</a>, <a
+style="color: #F4D4DF; border-color: #F4D4DF;" href="/tag/regex/cheat-sheets/">regex</a>, <a
+style="color: #F4D4DF; border-color: #F4D4DF;" href="/tag/regular/cheat-sheets/">regular</a>, <a
+style="color: #F4D4DF; border-color: #F4D4DF;" href="/tag/expressions/cheat-sheets/">expressions</a>, <a
+style="color: #F4D4DF; border-color: #F4D4DF;" href="/tag/programming/cheat-sheets/">programming</a></div></div></div></div><div
+class="clear"></div></div><div
+id="cheat_sheet_179" class="cheat_sheet_row altrow triptych2 tag-development tag-programming tag-advanced tag-oop lang-en rating-5" style="margin-bottom: 20px; position: relative; padding: 10px 0 0 0; min-height: 220px; background: #205085 url('/images/ajax-loader.gif') 50% 40% no-repeat;"><div
+style="z-index: 100; position: absolute; top: 0; padding: 0 0 0 6px; border-bottom-left-radius: 3px; right: 10px; color: #DAE4EF; background: #205085;"><i
+class="fa fa-star"></i> <i
+class="fa fa-star"></i> <i
+class="fa fa-star"></i> <i
+class="fa fa-star"></i> <i
+class="fa fa-star"></i></div><a
+class="lazy" data-original="//media.cheatography.com/storage/thumb/david_object-oriented-design.400.jpg?time=1463135347" style="position: absolute; bottom: 0; left: 10px; right: 10px; background: url('/images/spacer.png') -13px -52px no-repeat; height: 220px;" href="/david/cheat-sheets/object-oriented-design/"></a><div
+style="z-index: 801; position: absolute; bottom: 0; left: 0; right: 0; color: #DAE4EF; background: #143253;"><div
+style="padding: 10px 15px;"><strong><a
+style="font-size: 1.3em; color: #DAE4EF; border-color: #DAE4EF;" href="/david/cheat-sheets/object-oriented-design/">Object Oriented Design Cheat Sheet</a></strong><div
+class="extrainfo" style="display: none; line-height: 25px; padding: 0 0 5px;"><div
+style="padding: 5px 0 0;">A handy guide to the basic principles of Object Oriented Programming and Design. Covers standard and accepted principles, design patterns, and more! This is not intended to teach OOP, but as a reminder for those who already learned.</div><div
+class="triptych1"><span
+style="white-space: nowrap;"><img
+style="position: relative; left: 0; top: 5px; padding-right: 5px;" width="16" height="16" src="//media.cheatography.com/images/users/aa78ce5c4fa901dc20ed88d61a0dff8e.16.jpg"><a
+style="color: #DAE4EF; border-color: #DAE4EF;" href="/david/" class="user_hover">david</a></span></div><div
+class="triptych2"><i
+class="fa fa-fw fa-calendar"></i>9 Jan 12</div><div
+class="triptych3"><i
+class="fa fa-fw fa-book"></i>2 Pages</div><div
+class="clear"></div><div><i
+class="fa fa-fw fa-tag"></i><a
+style="color: #DAE4EF; border-color: #DAE4EF;" href="/tag/development/cheat-sheets/">development</a>, <a
+style="color: #DAE4EF; border-color: #DAE4EF;" href="/tag/programming/cheat-sheets/">programming</a>, <a
+style="color: #DAE4EF; border-color: #DAE4EF;" href="/tag/advanced/cheat-sheets/">advanced</a>, <a
+style="color: #DAE4EF; border-color: #DAE4EF;" href="/tag/oop/cheat-sheets/">oop</a></div></div></div></div><div
+class="clear"></div></div><div
+id="cheat_sheet_9619" class="cheat_sheet_row altrow triptych3 tag-development tag-programming tag-software tag-characteristics tag-microservices lang-en rating-unrated" style="margin-bottom: 20px; position: relative; padding: 10px 0 0 0; min-height: 220px; background: #068350 url('/images/ajax-loader.gif') 50% 40% no-repeat;"><a
+class="lazy" data-original="//media.cheatography.com/storage/thumb/davidpol_charcteristics-of-microservices.400.jpg?time=1478241808" style="position: absolute; bottom: 0; left: 10px; right: 10px; background: url('/images/spacer.png') -13px -52px no-repeat; height: 220px;" href="/davidpol/cheat-sheets/charcteristics-of-microservices/"></a><div
+style="z-index: 801; position: absolute; bottom: 0; left: 0; right: 0; color: #D4EFE4; background: #045232;"><div
+style="padding: 10px 15px;"><strong><a
+style="font-size: 1.3em; color: #D4EFE4; border-color: #D4EFE4;" href="/davidpol/cheat-sheets/charcteristics-of-microservices/">Charcteristics of Microservices Cheat Sheet</a></strong><div
+class="extrainfo" style="display: none; line-height: 25px; padding: 0 0 5px;"><div
+class="triptych1"><span
+style="white-space: nowrap;"><img
+style="position: relative; left: 0; top: 5px; padding-right: 5px;" width="16" height="16" src="//media.cheatography.com/images/users/eb694a9eff9d21c2efc3e82183bebbd7.16.jpg"><a
+style="color: #D4EFE4; border-color: #D4EFE4;" href="/davidpol/" class="user_hover">Davidpol</a></span></div><div
+class="triptych2"><i
+class="fa fa-fw fa-calendar"></i>4 Nov 16</div><div
+class="triptych3"><i
+class="fa fa-fw fa-book"></i>1 Page</div><div
+class="clear"></div><div><i
+class="fa fa-fw fa-tag"></i><a
+style="color: #D4EFE4; border-color: #D4EFE4;" href="/tag/development/cheat-sheets/">development</a>, <a
+style="color: #D4EFE4; border-color: #D4EFE4;" href="/tag/programming/cheat-sheets/">programming</a>, <a
+style="color: #D4EFE4; border-color: #D4EFE4;" href="/tag/software/cheat-sheets/">software</a>, <a
+style="color: #D4EFE4; border-color: #D4EFE4;" href="/tag/characteristics/cheat-sheets/">characteristics</a>, <a
+style="color: #D4EFE4; border-color: #D4EFE4;" href="/tag/microservices/cheat-sheets/">microservices</a></div></div></div></div><div
+class="clear"></div></div><div
+class="clear"></div><div
+class="clear"></div></div><div
+id="login_popup" class="footer_popup"><div
+id="login_popup_inner" class="footer_popup_inner">
+Think you can make a better cheat sheet?<br>Please <a
+href="/members/login">login</a> or <a
+href="/members/register/">register</a> to make your own!</div></div><div
+class="clear"></div></div></div></div><div
+class="clear"></div></div></div><div
+class="clear"></div><div
+id="footer"><div
+id="footer_inner"><div
+class="triptych1"><h2>Latest Cheat Sheet</h2><div
+class="sidebar_box"><div
+class="sidebar_box_row"><div
+id="cheat_sheet_18856" class="cheat_sheet_row altrow tag-cms tag-top tag-food tag-nutrition tag-concerns tag-services tag-audit tag-regulations tag-f-tag lang-en rating-unrated" style="margin-bottom: 20px; position: relative; padding: 10px 0 0 0; min-height: 220px; background: #048376 url('/images/ajax-loader.gif') 50% 40% no-repeat;"><a
+class="lazy" data-original="//media.cheatography.com/storage/thumb/davidpol_483-60-food-and-nutrition-services-top-10.400.jpg?time=1550629993" style="position: absolute; bottom: 0; left: 10px; right: 10px; background: url('/images/spacer.png') -13px -52px no-repeat; height: 220px;" href="/davidpol/cheat-sheets/483-60-food-and-nutrition-services-top-10/"></a><div
+style="z-index: 801; position: absolute; bottom: 0; left: 0; right: 0; color: #D4EFEC; background: #03524A;"><div
+style="padding: 10px 15px;"><strong><a
+style="font-size: 1.3em; color: #D4EFEC; border-color: #D4EFEC;" href="/davidpol/cheat-sheets/483-60-food-and-nutrition-services-top-10/">§483.60 Food & Nutrition Services Top 10 Cheat Sheet</a></strong><div
+class="extrainfo" style="display: none; line-height: 25px; padding: 0 0 5px;"><div
+style="padding: 5px 0 0;">§483.60 Food &amp; Nutrition Services Top 10</div><div
+class="triptych1"><span
+style="white-space: nowrap;"><img
+style="position: relative; left: 0; top: 5px; padding-right: 5px;" width="16" height="16" src="//media.cheatography.com/images/users/eb694a9eff9d21c2efc3e82183bebbd7.16.jpg"><a
+style="color: #D4EFEC; border-color: #D4EFEC;" href="/davidpol/" class="user_hover">Davidpol</a></span></div><div
+class="triptych2"><i
+class="fa fa-fw fa-calendar"></i>20 Feb 19</div><div
+class="triptych3"><i
+class="fa fa-fw fa-book"></i>1 Page</div><div
+class="clear"></div><div><i
+class="fa fa-fw fa-tag"></i><a
+style="color: #D4EFEC; border-color: #D4EFEC;" href="/tag/cms/cheat-sheets/">cms</a>, <a
+style="color: #D4EFEC; border-color: #D4EFEC;" href="/tag/top/cheat-sheets/">top</a>, <a
+style="color: #D4EFEC; border-color: #D4EFEC;" href="/tag/food/cheat-sheets/">food</a>, <a
+style="color: #D4EFEC; border-color: #D4EFEC;" href="/tag/nutrition/cheat-sheets/">nutrition</a>, <a
+style="color: #D4EFEC; border-color: #D4EFEC;" href="/tag/concerns/cheat-sheets/">concerns</a> and 4 more&nbsp;...</div></div></div></div><div
+class="clear"></div></div></div></div></div><div
+class="triptych2"><h2>Most Popular Cheat Sheet</h2><div
+class="sidebar_box"><div
+class="sidebar_box_row"><div
+id="cheat_sheet_5" class="cheat_sheet_row altrow tag-development tag-regex tag-regular tag-expressions tag-programming lang-en rating-5" style="margin-bottom: 20px; position: relative; padding: 10px 0 0 0; min-height: 220px; background: #9B0436 url('/images/ajax-loader.gif') 50% 40% no-repeat;"><div
+style="z-index: 100; position: absolute; top: 0; padding: 0 0 0 6px; border-bottom-left-radius: 3px; right: 10px; color: #F4D4DF; background: #9B0436;"><i
+class="fa fa-star"></i> <i
+class="fa fa-star"></i> <i
+class="fa fa-star"></i> <i
+class="fa fa-star"></i> <i
+class="fa fa-star"></i></div><a
+class="lazy" data-original="//media.cheatography.com/storage/thumb/davechild_regular-expressions.400.jpg?time=1463066188" style="position: absolute; bottom: 0; left: 10px; right: 10px; background: url('/images/spacer.png') -13px -52px no-repeat; height: 220px;" href="/davechild/cheat-sheets/regular-expressions/"></a><div
+style="z-index: 801; position: absolute; bottom: 0; left: 0; right: 0; color: #F4D4DF; background: #610222;"><div
+style="padding: 10px 15px;"><strong><a
+style="font-size: 1.3em; color: #F4D4DF; border-color: #F4D4DF;" href="/davechild/cheat-sheets/regular-expressions/">Regular Expressions Cheat Sheet</a></strong><div
+class="extrainfo" style="display: none; line-height: 25px; padding: 0 0 5px;"><div
+style="padding: 5px 0 0;">A quick reference guide for regular expressions (regex), including symbols, ranges, grouping, assertions and some sample patterns to get you started.</div><div
+class="triptych1"><span
+style="white-space: nowrap;"><img
+style="position: relative; left: 0; top: 5px; padding-right: 5px;" width="16" height="16" src="//media.cheatography.com/images/users/fd7e3b77a3f3007ff30d932b65084851.16.jpg"><a
+style="color: #F4D4DF; border-color: #F4D4DF;" href="/davechild/" class="user_hover">DaveChild</a></span></div><div
+class="triptych2"><i
+class="fa fa-fw fa-calendar"></i>19 Oct 11</div><div
+class="triptych3"><i
+class="fa fa-fw fa-book"></i>1 Page</div><div
+class="clear"></div><div><i
+class="fa fa-fw fa-tag"></i><a
+style="color: #F4D4DF; border-color: #F4D4DF;" href="/tag/development/cheat-sheets/">development</a>, <a
+style="color: #F4D4DF; border-color: #F4D4DF;" href="/tag/regex/cheat-sheets/">regex</a>, <a
+style="color: #F4D4DF; border-color: #F4D4DF;" href="/tag/regular/cheat-sheets/">regular</a>, <a
+style="color: #F4D4DF; border-color: #F4D4DF;" href="/tag/expressions/cheat-sheets/">expressions</a>, <a
+style="color: #F4D4DF; border-color: #F4D4DF;" href="/tag/programming/cheat-sheets/">programming</a></div></div></div></div><div
+class="clear"></div></div></div></div></div><div
+class="triptych3"><h2>Random Cheat Sheet</h2><div
+class="sidebar_box"><div
+class="sidebar_box_row"><div
+id="cheat_sheet_18173" class="cheat_sheet_row altrow tag-nursing tag-medical tag-healthcare tag-magnesium tag-hypomagnesemia tag-hypermagnesemia lang-en rating-unrated" style="margin-bottom: 20px; position: relative; padding: 10px 0 0 0; min-height: 220px; background: #6E2983 url('/images/ajax-loader.gif') 50% 40% no-repeat;"><a
+class="lazy" data-original="//media.cheatography.com/storage/thumb/harpieee_hypomagnesemia-and-hypermagnesemia.400.jpg?time=1546576261" style="position: absolute; bottom: 0; left: 10px; right: 10px; background: url('/images/spacer.png') -13px -52px no-repeat; height: 220px;" href="/harpieee/cheat-sheets/hypomagnesemia-and-hypermagnesemia/"></a><div
+style="z-index: 801; position: absolute; bottom: 0; left: 0; right: 0; color: #EADCEF; background: #451A52;"><div
+style="padding: 10px 15px;"><strong><a
+style="font-size: 1.3em; color: #EADCEF; border-color: #EADCEF;" href="/harpieee/cheat-sheets/hypomagnesemia-and-hypermagnesemia/">Hypomagnesemia & Hypermagnesemia Cheat Sheet</a></strong><div
+class="extrainfo" style="display: none; line-height: 25px; padding: 0 0 5px;"><div
+class="triptych1"><span
+style="white-space: nowrap;"><img
+style="position: relative; left: 0; top: 5px; padding-right: 5px;" width="16" height="16" src="//media.cheatography.com/images/users/688f8246c56b11752bb521299a35bd1a.16.jpg"><a
+style="color: #EADCEF; border-color: #EADCEF;" href="/harpieee/" class="user_hover">harpieee</a></span></div><div
+class="triptych2"><i
+class="fa fa-fw fa-calendar"></i>4 Jan 19</div><div
+class="triptych3"><i
+class="fa fa-fw fa-book"></i>1 Page</div><div
+class="clear"></div><div><i
+class="fa fa-fw fa-tag"></i><a
+style="color: #EADCEF; border-color: #EADCEF;" href="/tag/nursing/cheat-sheets/">nursing</a>, <a
+style="color: #EADCEF; border-color: #EADCEF;" href="/tag/medical/cheat-sheets/">medical</a>, <a
+style="color: #EADCEF; border-color: #EADCEF;" href="/tag/healthcare/cheat-sheets/">healthcare</a>, <a
+style="color: #EADCEF; border-color: #EADCEF;" href="/tag/magnesium/cheat-sheets/">magnesium</a>, <a
+style="color: #EADCEF; border-color: #EADCEF;" href="/tag/hypomagnesemia/cheat-sheets/">hypomagnesemia</a>, <a
+style="color: #EADCEF; border-color: #EADCEF;" href="/tag/hypermagnesemia/cheat-sheets/">hypermagnesemia</a></div></div></div></div><div
+class="clear"></div></div></div></div></div><div
+class="clear"></div><div
+class="triptych1"><h2>About Cheatography</h2><div
+class="sidebar_box"><div
+class="sidebar_box_row"><strong><a
+href="/about/">Cheatography</a></strong> is a collection of <strong><a
+href="/explore/">4930 cheat sheets</a></strong> and quick references in <strong><a
+href="/language/">25 languages</a></strong> for everything from <strong><a
+href="/tag/linux/">linux</a></strong> to <strong><a
+href="/tag/business/">business</a></strong>!</div></div></div><div
+class="triptych2"><div
+class="sidebar_box footer_blog"><div
+class="sidebar_box_first_row"><h4><em
+style="float: right; font-weight: normal;">10th June</em>On The Blog</h4></div><div
+class="sidebar_box_row sidebar_box_last_row"><strong
+style="display: block; padding: 10px 0;"><a
+href="/blog/5-ways-cheatography-benefits-your-business/">5 Ways Cheatography Benefits Your Business</a></strong>Cheatography Cheat Sheets are a great timesaver for individuals - coders, gardeners, musicians, everybody! But businesses can benefit from them as well - read on to find out more.</div></div></div><div
+class="triptych3"><h2>Recent Activity</h2><div
+class="sidebar_box"><div
+class="sidebar_box_row footer_recent_activity_1"><a
+class="imagelink" style="float: left; margin: 5px 8px 5px 0;" href="davidpol/"><img
+class="gravatar lazy" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/eb694a9eff9d21c2efc3e82183bebbd7.32.jpg" width="32" height="32" alt="Davidpol"></a> <a
+href="davidpol/" class="user_hover">Davidpol</a> published <a
+href="/davidpol/cheat-sheets/483-60-food-and-nutrition-services-top-10/">§483.60 Food &amp; Nutrition Services Top 10</a>.<br><span
+class="sidebar_event_date">2 hours 5 mins ago</span></div><div
+class="sidebar_box_row footer_recent_activity_2"><a
+class="imagelink" style="float: left; margin: 5px 8px 5px 0;" href="zoltan/"><img
+class="gravatar lazy" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/f9b8681a722542ff61cea74c2115c915.32.jpg" width="32" height="32" alt="Zoltan"></a> <a
+href="zoltan/" class="user_hover">Zoltan</a> updated <a
+href="/zoltan/cheat-sheets/pico-8/">Pico-8</a>.<br><span
+class="sidebar_event_date">4 hours 45 mins ago</span></div><div
+class="sidebar_box_row footer_recent_activity_3"><a
+class="imagelink" style="float: left; margin: 5px 8px 5px 0;" href="mia2696/"><img
+class="gravatar lazy" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/d94f5087484ce3089f5c8239c68d92bb.32.jpg" width="32" height="32" alt="mia2696"></a> <a
+href="mia2696/" class="user_hover">mia2696</a> published <a
+href="/mia2696/cheat-sheets/port-state-control/">port state control</a>.<br><span
+class="sidebar_event_date">5 hours 43 mins ago</span></div><div
+class="sidebar_box_row footer_recent_activity_4"><a
+class="imagelink" style="float: left; margin: 5px 8px 5px 0;" href="frankieali4/"><img
+class="gravatar lazy" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/4eb5a299dc41bf853beb69def19e455e.32.jpg" width="32" height="32" alt="frankieali4"></a> <a
+href="frankieali4/" class="user_hover">frankieali4</a> published <a
+href="/frankieali4/cheat-sheets/vscode-es7-react-redux-snippets/">VSCode ES7 React/Redux snippets</a>.<br><span
+class="sidebar_event_date">6 hours 40 mins ago</span></div><div
+class="sidebar_box_row sidebar_box_last_row footer_recent_activity_5"><a
+class="imagelink" style="float: left; margin: 5px 8px 5px 0;" href="funthomas424242/"><img
+class="gravatar lazy" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/f8f392b6607e627d89adbbb0ac809e4c.32.jpg" width="32" height="32" alt="FunThomas424242"></a> <a
+href="funthomas424242/" class="user_hover">FunThomas424242</a> updated <a
+href="/funthomas424242/cheat-sheets/docker/">Docker</a>.<br><span
+class="sidebar_event_date">1 day 7 hours ago</span></div><div
+class="clear"></div></div></div><div
+class="clear"></div><div
+class="triptych1"><div
+class="sidebar_box"><div
+class="sidebar_box_first_row"><h4>Behind the Scenes</h4></div><div
+class="sidebar_box_row">If you have any problems, or just want to say hi, you can find us right here:</div><div
+class="sidebar_box_row"><div
+class="biptych1"><a
+class="imagelink" style="float: left; margin: 5px 8px 0 0;" href="davechild/"><img
+class="lazy gravatar" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/fd7e3b77a3f3007ff30d932b65084851.32.jpg" width="32" height="32" alt="DaveChild"></a> <a
+href="davechild/" class="user_hover" style="line-height: 42px;">DaveChild</a><div
+class="clear"></div></div><div
+class="biptych2"><a
+class="imagelink" style="float: left; margin: 5px 8px 0 0;" href="spaceduck/"><img
+class="lazy gravatar" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/e5f4dc698559e9cdd546c749924c2342.32.jpg" width="32" height="32" alt="SpaceDuck"></a> <a
+href="spaceduck/" class="user_hover" style="line-height: 42px;">SpaceDuck</a><div
+class="clear"></div></div><div
+class="biptych1"><a
+class="imagelink" style="float: left; margin: 5px 8px 0 0;" href="cheatography/"><img
+class="lazy gravatar" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/ae07a15380055b9d1da4dd5fb7538457.32.jpg" width="32" height="32" alt="Cheatography"></a> <a
+href="cheatography/" class="user_hover" style="line-height: 42px;">Cheatography</a><div
+class="clear"></div></div></div><div
+class="clear"></div></div></div><div
+class="triptych2"><div
+class="sidebar_box"><div
+class="sidebar_box_first_row"><h4>Cheatography RSS Feeds</h4></div><ul><li
+class="icon_feed"><a
+href="/explore/new/rss/">Latest Cheat Sheets</a></li><li
+class="icon_feed"><a
+href="/blog/rss/">Latest Blog Posts</a></li></ul></div></div><div
+class="triptych3"><div
+class="imagelink addthis_toolbox addthis_default_style addthis_32x32_style" style="margin: 0 0 50px;" addthis:url="http://www.cheatography.com" addthis:title="Cheatography: Make and Share Free Cheat Sheets!"><h2 style="margin: 0 0 5px 0;">Share Cheatography!</h2><div
+class="padded">
+<a
+class="addthis_button_facebook"></a>
+<a
+class="addthis_button_twitter"></a>
+<a
+class="addthis_button_reddit"></a>
+<a
+class="addthis_button_stumbleupon"></a>
+<a
+class="addthis_button_favorites"></a>
+<a
+class="addthis_button_compact"></a>
+<a
+class="addthis_counter addthis_bubble_style"></a></div> <script type="text/javascript">var addthis_config = {
+                            "data_track_clickback":true,
+                            "services_exclude":'print',
+                            data_ga_property:'UA-4997759-8',
+                            pubid: 'ra-4db5226a16bf710d'
+                        };</script> <script type="text/javascript" src="//s7.addthis.com/js/250/addthis_widget.js#async=1"></script> </div></div><div
+class="clear"></div><div
+class="legal"><div
+class="legal_left">
+&copy; 2011  - 2019 Cheatography.com &nbsp; | &nbsp; <a
+href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">CC License</a> &nbsp; | &nbsp; <a
+href="/terms-and-conditions/">Terms</a> &nbsp; | &nbsp;  <a
+href="/privacy/">Privacy</a></div><div
+class="legal_right">
+Site by <a
+href="https://getpostcookie.com/">Get. Post. Cookie.</a></div><div
+class="clear"></div></div><div
+class="clear"></div></div><div
+class="clear"></div></div><div
+class="clear"></div></div></div><div
+class="hidden">
+<a
+href="#welcome_popup" id="welcome_popup_trigger">open</a><div
+id="welcome_popup"><div
+id="welcome_popup_inner"><div
+style="padding: 20px; width: 400px;" ><h1 class="notopmargin">Keep Up To Date!</h1><p>We announce all new cheat sheet releases on our Twitter account. Follow us to make sure you don't miss out!</p><p
+style="text-align: center; margin: 30px; font-size: 3em;"><a
+class="imagelink" style="background: #fa6900; color: #fff; padding: 12px 25px; border-radius: 5px; white-space: nowrap;" href="http://twitter.com/Cheatography" target="_blank" onclick="$.fancybox.close();"><i
+class="fa fa-twitter"></i> Cheatography</a></p></div></div></div></div></body><head><link
+href="/scripts/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css"> <script type="text/javascript" src="/scripts/fancybox/jquery.fancybox.pack.js"></script> <script type="text/javascript" src="/scripts/jquery.cookie.js"></script> <script type="text/javascript" src="/scripts/jquery.formalize.min.js"></script> <script type="text/javascript" src="/scripts/jquery.hoverintent.js"></script> <script type="text/javascript" src="/scripts/jquery.tagsinput.min.js"></script> <script type="text/javascript" src="/scripts/jquery.matchheight.min.js"></script> <script type="text/javascript" src="/scripts/jquery.validation.min.js"></script> <script type="text/javascript" src="/scripts/jquery.hoverIntent.minified.js"></script> <script type="text/javascript" src="/scripts/chosen.jquery.min.js"></script> <script type="text/javascript" src="/scripts/jquery.lazyload.min.js"></script> <link
+href='//fonts.googleapis.com/css?family=Noto+Serif' rel='stylesheet' type='text/css'><!--[if lt IE 7]> <script type="text/javascript" src="https://www.cheatography.com/scripts/iepngfix.htc"></script> <style type="text/css">body {
+                behavior: url("https://www.cheatography.com/scripts/csshover.htc");
+            }</style><![endif]-->
+<!--[if IE 7]><style type="text/css"></style><![endif]--> <script type="text/javascript" src="/scripts/mobile.min.js"></script> <script type="text/javascript" src="/scripts/ajax.min.js"></script> <script type="text/javascript" src="/scripts/useful.min.js?v=2"></script> <script type="text/javascript">$(document).ready(function() {
+            $(".lazy").lazyload({
+                effect : "fadeIn",
+                failure_limit : 10
+            });
+            /*$("div.lazy").lazyload({
+                effect : "fadeIn"
+            });*/
+            $('#welcome_popup_trigger').fancybox({
+                'autoDimensions': true
+            });
+            setTimeout(function(){
+                if (!$.cookie('seenTwitterPrompt')) {
+                    $('#welcome_popup_trigger').trigger('click');
+                    $.cookie('seenTwitterPrompt', 'yes', { expires: 60, path: '/' });
+                }
+            }, 10000);
+            // Hide elements not relevant to non-logged-in users
+            var loggedIn = $.cookie('frontLoggedIn');
+            var loggedInUserId = $.cookie('frontUserId');
+            var isAdmin = $.cookie('frontUserAdmin');
+            if (loggedIn == 1) {
+                $.cookie('seenTwitterPrompt', 'yes', { expires: 6000, path: '/' });
+                // Replacements
+                $('.replace_username').html($.cookie('frontUserName'));
+                $('a.replace_userlink, .replace_userlink a').each(function(){
+                    var oldHref = $(this).attr('href');
+                    var newHref = oldHref.replace('davechild', $.cookie('frontUserAlias'));
+                    $(this).attr('href', newHref);
+                });
+                $('.replace_usergravatar').attr('src', $.cookie('frontUserAvatar32'));
+                // Show and hide
+                //$('.logged_in').show();
+                $('.logged_out').hide();
+
+                if (isAdmin) {
+                    $('.admin_view').show();
+                }
+
+                $('.user_view').each(function(){
+                    var userIds = $(this).attr('data-userid').split(',');
+                    if ($.inArray(loggedInUserId, userIds)) {
+                        $(this).show();
+                    }
+                });
+
+            } else {
+                $('.logged_in').hide();
+                //$('.logged_out').show();
+            }
+            addthis.init();
+        });</script> </head></html>

@@ -1,0 +1,1658 @@
+<!DOCTYPE html><html
+lang="en"><head><title>Operating Systems Cheat Sheet by makahoshi1 - Download free from Cheatography - Cheatography.com: Cheat Sheets For Every Occasion</title><meta
+content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta
+http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta
+http-equiv="Content-Style-Type" content="text/css"><meta
+http-equiv="X-UA-Compatible" content="IE=Edge"><meta
+name="flattr:id" content="x7nj1w"><base
+href="https://www.cheatography.com/"><link
+rel="shortcut icon" href="favicon.png"><link
+rel="apple-touch-icon" href="/images/cheatography-iphone.png"><link
+rel="alternate" type="application/rss+xml" title="New Cheat Sheets RSS feed." href="http://www.cheatography.com/explore/new/rss/"><meta
+property="fb:admins" content="860405712"/><meta
+property="fb:app_id" content="152741628156662"/><meta
+property="og:site_name" content="Cheatography"/><meta
+property="og:url" content="http://www.cheatography.com/makahoshi1/cheat-sheets/operating-systems/"/><meta
+property="og:title" content="Operating Systems Cheat Sheet"/><meta
+property="og:image" content="http://www.cheatography.com/storage/thumb/makahoshi1_operating-systems.600.jpg"/><meta
+property="og:type" content="cheatography:cheat_sheet"/><meta
+property="og:description" content="Operating Systems Cheat Sheet from makahoshi1. "/><meta
+name="description" content="Operating Systems Cheat Sheet from makahoshi1. "/> <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script> <link
+href="/styles/styles.scss.css?v=4" rel="stylesheet" type="text/css"><link
+href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet"><link
+href="/styles/bootstrap-tour-standalone.min.css" rel="stylesheet"> <script src="/scripts/bootstrap-tour-standalone.min.js"></script> <script type="text/javascript">var defaultLanguages = false;
+            var rememberTagCookieName = false;
+            var ratableCheatSheetId = false;
+            var isRateable = true;</script> <meta
+name="p:domain_verify" content="f842c4485eeea6c6d71b4314221cc6c0"/></head><body
+class="page-cheatsheet">
+ <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-4997759-8', 'auto');
+        ga('send', 'pageview');</script> <div
+id="mobile_wrap_outer"><a
+href="#" id="mobileTrigger">Show Menu</a><div
+id="mobile_wrap_inner"><div
+id="header"><div
+id="header_inner"><div
+class="adsense"><div
+class="adsense_inner"> <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <script>(adsbygoogle = window.adsbygoogle || []).push({
+                    google_ad_client: "ca-pub-2965569270921917",
+                    enable_page_level_ads: true
+                  });</script> <ins
+class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-2965569270921917"
+data-ad-slot="5963409473"
+data-ad-format="auto"></ins> <script>(adsbygoogle = window.adsbygoogle || []).push({});</script> </div></div><div
+id="topbar"><div
+class="inner"><form
+method="GET" action="/explore/search/"><p><a
+href="https://www.cheatography.com/" class="imagelink logolink"><img
+width="156" height="25" id="title_logo" src="//media.cheatography.com/images/cheatography_logo.png" alt="Cheatography"></a><input
+id="q" name="q" type="text" placeholder="e.g., Regular Expressions, Garden, Kitchen, Audio"> <button
+type="submit" id="qsubmit"><i
+class="fa fa-search"></i></button><a
+class="social_link hideMobile" href="http://www.facebook.com/Cheatography"><i
+class="fa fa-facebook-official"></i></a>
+<a
+class="social_link hideMobile" href="http://twitter.com/Cheatography/"><i
+class="fa fa-twitter"></i></a>
+<a
+class="social_link hideMobile" href="http://www.pinterest.com/cheatography/"><i
+class="fa fa-pinterest"></i></a>
+<a
+class="social_link hideMobile" href="http://www.instagram.com/newcheatsheets/"><i
+class="fa fa-instagram"></i></a></p></form> <script type="text/javascript">$(document).ready(function () {
+                    // Restore search
+                    var lastSearch = $.cookie('lastSearch');
+                    $('#q').val(lastSearch);
+                });</script> </div></div></div><div
+id="menubar"><div
+class="inner"><div
+class="clear"></div><div
+id="user_info"><div
+class="logged_in" style="vertical-align: middle; position: relative; margin: 0; white-space: nowrap; z-index: 1001;">
+<a
+style="vertical-align: middle; margin: 0; padding-right: 0;" class="imagelink gravatar replace_userlink" href="/davechild/"><img
+class="gravatar replace_usergravatar" style="background: #fff; vertical-align: middle" src="#" width="32" height="32"></a>
+<a
+style="color: #fff; vertical-align: middle" href="/davechild/" class="replace_userlink replace_username"></a>
+<a
+href="/messages/" title="You have 1 new messages." class="imageline"><i
+class="fa fa-fw fa-envelope"></i></a></div><div
+id="user_dropdown"><div
+class="biptych1"><ul><li
+class=" "><i
+class="fa fa-fw fa-star"></i><a
+href="/favourites/">Your Favourite Cheat Sheets</a></li><li
+class=" "><i
+class="fa fa-fw fa-star"></i><a
+href="/favourite-lists/">Your Favourite Lists</a></li></ul><ul><li
+class=" "><i
+class="fa fa-fw fa-envelope"></i><a
+href="/messages/">Your Messages</a></li><li
+class=" replace_userlink"><i
+class="fa fa-fw fa-trophy"></i><a
+href="/davechild/badges/">Your Badges</a></li><li
+class=" replace_userlink"><i
+class="fa fa-fw fa-heart"></i><a
+href="/davechild/followers/">Your Friends</a></li><li
+class=" replace_userlink"><i
+class="fa fa-fw fa-comments"></i><a
+href="/davechild/comments/">Your Comments</a></li></ul><ul><li
+class=" replace_userlink"><i
+class="fa fa-fw fa-smile-o"></i><a
+href="/davechild/">View Profile</a></li><li
+class=" replace_userlink"><i
+class="fa fa-fw fa-edit"></i><a
+href="/davechild/edit/">Edit Profile</a></li><li
+class=" replace_userlink"><i
+class="fa fa-fw fa-key"></i><a
+href="/davechild/password/">Change Password</a></li></ul><ul><li
+class=" replace_userlink"><i
+class="fa fa-fw fa-sign-out"></i><a
+href="/davechild/log-out/">Log out</a></li></ul></div><div
+class="biptych2"><ul><li
+class=" replace_userlink"><i
+class="fa fa-fw fa-columns"></i><a
+href="/davechild/cheat-sheets/new/">New Cheat Sheet</a></li><li
+class=" replace_userlink"><i
+class="fa fa-fw fa-link"></i><a
+href="/davechild/cheat-sheets/new-link/">New Link</a></li><li
+class=" replace_userlink"><i
+class="fa fa-fw fa-upload"></i><a
+href="/davechild/cheat-sheets/new-upload/">New Upload</a></li><li
+class=" replace_userlink"><i
+class="fa fa-fw fa-list"></i><a
+href="/davechild/lists/new/">New List</a></li></ul><ul><li
+class=" replace_userlink"><i
+class="fa fa-fw fa-columns"></i><a
+href="/davechild/cheat-sheets/live/">Live Cheat Sheets</a></li><li
+class=" replace_userlink"><i
+class="fa fa-fw fa-columns"></i><a
+href="/davechild/cheat-sheets/drafts/">Draft Cheat Sheets</a></li><li
+class=" replace_userlink"><i
+class="fa fa-fw fa-group"></i><a
+href="/davechild/cheat-sheets/collaborations/">Collaborations</a></li><li
+class=" replace_userlink"><i
+class="fa fa-fw fa-link"></i><a
+href="/davechild/cheat-sheets/links/">Links</a></li></ul><ul><li
+class=" replace_userlink"><i
+class="fa fa-fw fa-list"></i><a
+href="/davechild/lists/">Cheat Sheet Lists</a></li></ul></div><div
+class="clear"></div></div><div
+class="logged_out"><a
+class="imagelink login_button" href="/members/login">Login</a> &nbsp;or&nbsp; <a
+class="imagelink login_button" href="/members/register/">Register</a></div><div
+class="clear"></div></div>
+<nav><ul><li><a
+href="/"><i
+class="fa fa-home"></i> Home</a></li><li
+class="hidden showMobile logged_out"><a
+href="/members/login/">Login</a></li><li
+class="hidden showMobile logged_out"><a
+href="/members/register/">Register</a></li><li
+class="on"><a
+id="tourbrowse" href="/explore/"><i
+class="fa fa-columns"></i> Cheat Sheets</a><ul
+class="hideMobile"><li
+class=" "><i
+class="fa fa-fw fa-graduation-cap"></i><a
+href="/explore/new/">New Cheat Sheets</a></li><li
+class=" "><i
+class="fa fa-fw fa-star"></i><a
+href="/explore/popular/">Popular Cheat Sheets</a></li><li
+class=" menu_separate  "><i
+class="fa fa-fw fa-book"></i><a
+href="/explore/">Cheat Sheets by Topic</a></li><li
+class=" "><i
+class="fa fa-fw fa-tag"></i><a
+href="/explore/tags/">Cheat Sheets by Tag</a></li><li
+class=" "><i
+class="fa fa-fw fa-globe"></i><a
+href="/language/">Cheat Sheets by Language</a></li><li
+class=" "><i
+class="fa fa-fw fa-list"></i><a
+href="/explore/lists/">Cheat Sheets Lists</a></li><li
+class=" menu_separate  "><i
+class="fa fa-fw fa-link"></i><a
+href="/external/">Cheat Sheet Links</a></li></ul></li><li
+class=""><a
+id="tourcreate" href="/create/"><i
+class="fa fa-pencil"></i> Create</a><ul
+class="hideMobile"><li
+class=" "><i
+class="fa fa-fw fa-question"></i><a
+href="/create/">Getting Started</a></li><li
+class=" logged_in"><i
+class="fa fa-fw fa-columns"></i><a
+href="/create/cheat-sheet/">Create a New Cheat Sheet</a></li><li
+class=" logged_in"><i
+class="fa fa-fw fa-upload"></i><a
+href="/create/cheat-sheet-upload/">Upload a Cheat Sheet</a></li><li
+class=" logged_in"><i
+class="fa fa-fw fa-link"></i><a
+href="/create/cheat-sheet-link/">Link to a Cheat Sheet</a></li><li
+class=" menu_separate  logged_in"><i
+class="fa fa-fw fa-list"></i><a
+href="/create/list/">New Cheat Sheet List</a></li><li
+class="menu_separate"><i
+class="fa fa-fw fa-smile-o"></i>A <a
+href="/davechild/cheat-sheets/cheatography/">Cheat Sheet</a> for Making Cheat Sheets!</li></ul></li><li><a
+id="tourcommunity" href="/members/"><i
+class="fa fa-users"></i> Community</a><ul
+class="hideMobile"><li
+class=" "><i
+class="fa fa-fw fa-globe"></i><a
+href="/members/">Community</a></li><li
+class=" "><i
+class="fa fa-fw fa-bookmark"></i><a
+href="/blog/">Blog</a></li><li
+class=" "><i
+class="fa fa-fw fa-trophy"></i><a
+href="/badges/">Badges</a></li><li
+class=" menu_separate  logged_in"><i
+class="fa fa-fw fa-heart"></i><a
+href="/davechild/followers/">Friends</a></li><li
+class=" logged_out"><i
+class="fa fa-fw fa-user"></i><a
+href="/members/register/">Join Us!</a></li><li
+class=" menu_separate  logged_out"><i
+class="fa fa-fw fa-key"></i><a
+href="/members/login/">Login</a></li><li
+class=" menu_separate  "><i
+class="fa fa-fw fa-twitter"></i><a
+href="http://twitter.com/Cheatography/">Twitter</a></li><li
+class=" "><i
+class="fa fa-fw fa-facebook"></i><a
+href="http://www.facebook.com/Cheatography">Facebook</a></li><li
+class=" "><i
+class="fa fa-fw fa-pinterest"></i><a
+href="http://www.pinterest.com/cheatography/">Pinterest</a></li><li
+class=" "><i
+class="fa fa-fw fa-instagram"></i><a
+href="http://www.instagram.com/newcheatsheets/">Instagram</a></li></ul></li><li
+class="last"><a
+href="/help/"><i
+class="fa fa-question-circle"></i> Help</a><ul
+class="hideMobile"><li
+class=" "><i
+class="fa fa-fw fa-info-circle"></i><a
+href="/help/">General Help Information</a></li><li><i
+class="fa fa-fw fa-ticket"></i><a
+href="http://getsatisfaction.com/cheatography">Cheatography Support</a></li><li
+class="logged_in"><i
+class="fa fa-fw fa-location-arrow"></i><a
+href="/davechild/cheat-sheets/cheatography/?show_tour">Take the Tour!</a></li></ul></li></ul><div
+class="hidden showMobile logged_in" id="user_dropdown_mobile"></div></nav><div
+class="clear"></div></div></div></div><div
+id="content"itemscope itemtype="http://schema.org/CreativeWork"><div
+id="content_inner"><div
+class="hideMobile" id="cs_menu_wrapper"><div
+id="cs_menu"><div
+class="download_menu" id="tourcheatsheetmenu"><ul
+class="hideMobile noicon downloadItem"><li
+style="float: left; border-right: none;"><i
+class="fa fa-fw fa-download"></i> <a
+href="/makahoshi1/cheat-sheets/operating-systems/#downloads" onclick="trackDownloadPopup();">Download This Cheat Sheet (PDF)</a></li></ul><ul
+class="hideMobile noicon"><li><i
+class="fa fa-fw fa-comments"></i> <a
+href="/makahoshi1/cheat-sheets/operating-systems/#comments">5 Comments</a></li><li
+class="ratingStars">Rating:
+<i
+class="fa fa-spin fa-spinner"></i> <i></i> <i></i> <i></i> <i></i> <span
+id="ratingStarsCount" style="display: none;">(<a
+href="/makahoshi1/cheat-sheets/operating-systems/ratings/"></a>)</span></a></li><li><a
+href="#" title="Add or remove this cheat sheet from your favourites" class="imagelink toggle_favourite_link" id="item_cs_5440"><i
+class="fa fa-heart-o"></i></a></li></ul></div></div></div><div
+class="clear"></div><div
+id="pagetitle"><h1><span
+itemprop="name">Operating Systems Cheat Sheet</span> <span
+class="subhead"> by  <span
+itemprop="author" itemscope itemtype="http://schema.org/Person"><a
+href="http://www.cheatography.com/makahoshi1/" class="user_hover" itemprop="url"><span
+itemprop="name">makahoshi1</span></a></span></span></h1><div
+class="clear"></div></div><div
+id="body_wide"><div
+id="body_wide_inner"><div
+id="body_wide_shadow"> <script type="text/javascript">var defaultRating = 4.6667;
+    var ratingCount = 15;
+    ratableCheatSheetId = '5440';
+    var hasUserRating = false;</script> <script type="text/javascript">var redirectTimeout;
+var cheat_sheet_id = 5440; // Used in ajax
+var cheatSheetName = 'Operating Systems Cheat Sheet';
+    var bTracking = false;
+$(document).ready(function() {
+    $('#tabs').tabs();
+    var hiddenBlocks = new Array();
+    if ($.cookie('hiddenBlocks')) {
+        hiddenBlocks = $.cookie('hiddenBlocks').split('-');
+        for (var i = 0; i < hiddenBlocks.length; i++) {
+            $('#block_' + hiddenBlocks[i]).slideUp(400);
+        }
+    }
+    $('.cheat_sheet_output_title').click(function() {
+        var block_id = this.id.substr(6);
+        // Check to see if it's hidden
+        if ($.inArray(block_id, hiddenBlocks) === -1) {
+            $('#block_' + block_id).slideUp(400);
+            hiddenBlocks[hiddenBlocks.length] = block_id;
+        } else {
+            $('#block_' + block_id).slideDown(400);
+            for (var i = 0; i < hiddenBlocks.length; i++) {
+                if (hiddenBlocks[i] == block_id) {
+                    hiddenBlocks.splice(i, 1);
+                }
+            }
+        }
+        // Now, toggle all those items with cookies
+        $.cookie('hiddenBlocks', hiddenBlocks.join('-'));
+    });
+    });</script> <div
+class="clear"></div><style type="text/css">h2, .sidebar_box h4 {
+                border-bottom: 3px solid #0CC7C7;
+            }
+
+            /*.sidebar_box.cheat_sheet_footer h4 {
+                border-bottom: 0;
+                border-radius: 3px;
+                padding: 6px 8px;
+                line-height: 1.7;
+                background: #0CC7C7;
+                                    color: #D5F5F5;
+                            }
+
+            .sidebar_box.cheat_sheet_footer a {
+                color: #0CC7C7;
+                border-color: #0CC7C7;
+            }*/
+
+            .cheat_sheet_output_wrapper {
+                background: #0CC7C7;
+                border-bottom: 3px solid #0CC7C7;
+            }
+
+                .cheat_sheet_output_wrapper a, .cheat_sheet_output_wrapper a:visited, .cheat_sheet_output_wrapper a:focus, .cheat_sheet_output_wrapper a:link, .cheat_sheet_output_wrapper a:hover {
+                    color: #0CC7C7;
+                    border-color: #0CC7C7;
+                }
+
+                .cheat_sheet_output_wrapper .cheat_sheet_output_block tr.altrow td, .cheat_sheet_output_wrapper .cheat_sheet_note {
+                    background: #D5F5F5;
+                }
+
+                .cheat_sheet_output_wrapper .cheat_sheet_note {
+                    border-top: 3px solid #0CC7C7;
+                }
+
+                .cheat_sheet_output_wrapper h3.cheat_sheet_output_title {
+                                            color: #D5F5F5;
+                                    }
+
+            /* Breaks */
+            .cheat_sheet_output_column_columnbreak, .cheat_sheet_output_column_pagebreak {
+                border-color: #eee;
+            }
+
+                .cheat_sheet_output_wrapper.cheat_sheet_output_column_columnbreak .cheat_sheet_output_block,
+                .cheat_sheet_output_wrapper.cheat_sheet_output_column_pagebreak .cheat_sheet_output_block {
+                    border-top: none;
+                }
+
+                .cheat_sheet_output_wrapper.cheat_sheet_output_column_columnbreak h3.cheat_sheet_output_title,
+                .cheat_sheet_output_wrapper.cheat_sheet_output_column_pagebreak h3.cheat_sheet_output_title {
+                    color: #999;
+                    background: #eee;
+                }
+
+            /* Buttons */
+            .button_add, .button_add:visited, .button_add:active, .button_add:hover {
+                background-color: #0CC7C7;
+                border: 1px solid #0CC7C7;
+                color: #D5F5F5;
+            }
+
+                .button_add:hover {
+                    background-color: #D5F5F5;
+                    color: #0CC7C7;
+                }
+
+            .download_menu {
+                background-color: #0CC7C7;
+            }
+
+            #content #content_inner, #cs_menu {
+                border-top-color: #0CC7C7;
+            }
+
+            #content #content_inner {
+                /*top: -3px;*/
+                border: none;
+            }
+
+            #menubar .inner {
+                border-top-color: #0CC7C7;
+            }
+
+            .cheat_sheet_output_block div {
+                border-color: #0CC7C7 !important;
+            }
+
+            .footer_popup {
+                background-color: #D5F5F5;
+                box-shadow: 0 0 3px #0CC7C7;
+            }</style><table
+border="0" cellspacing="0" width="100%" cellpadding="0" class="cheat_sheet_output"><tr><td
+width="32%" valign="top" class="cheat_sheet_output_sortable cheat_sheet_output_column_1"><div
+class="cheat_sheet_output_wrapper cheat_sheet_output_column_onecol" style="z-index: 30; page-break-inside: avoid;" id="block_19230"><h3 class="cheat_sheet_output_title" id="title_5440_19230">Introd&#173;uction</h3><div
+class="cheat_sheet_output_block" id="block_5440_19230"><table
+border="0" cellspacing="0" cellpadding="0" id="cheat_sheet_output_table" class="cheat_sheet_output_onecol"><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>What is an Operating System?</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">A program that acts as an interm&#173;ediary between a user and the hardware, it is between the applic&#173;ation program and the hardware</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>What are the three main purposes of an operating system?</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">to provide an enviro&#173;nment for a computer user to execute programs. <br>to allocate and separate resources of the computer as needed. <br>to serve as a control program: supervise the execution of user programs, management of the operation control of i/o devices</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>What does and Operating System Do?</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><em>Resource Alloca&#173;tor</em>: reallo&#173;cates the resources, manages all of the resources, decides between the requests for efficient and fair resource use. <br><em>Control Program</em>: Controls the execution of programs to prevent errors and improper use of the computer</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>GOALS of the operating system</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">execute programs and make solving problems easier, make the computer system easy to use, use the computer hardware in an efficient manner.</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>What happens when you start your comput&#173;er?</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">when you start your computer the bootstrap program is loaded at power-up or reboot.  This program is usually stored in the ROM or the EROM generally known as <em>Firmware</em> . This program loads the operating system kernel and starts the execution.  The one program running at all times is the <em>kernel</em></div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>What are interrupts and how are they used?</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">an interrupt is an electronic signal , interrupts serve as a mechanism for process cooper&#173;ation and are often used to control I/O, a program issues an interrupt to request the operating system support.  The hardware requests an interrupt and then transfers the control to the interrupt handler, where the interrupt then ends.</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>The operating System Struct&#173;ure</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">the operating system utilizes multip&#173;rog&#173;ram&#173;ming.  multip&#173;rog&#173;ramming organizes jobs so that the CPU always has something to do, this allows no wasted time. in multip&#173;rog&#173;ramming one job is selected and run via the job schedu&#173;ling. when it is waiting the os switches to another job</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>How does the operating system run a program, What does it need to do?</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">1.) reserve machine time <br>2.) manually load urge program into memory <br>3.) load starting address and begin execution <br>4.) monitor and control execution of program from console</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>What is a process?</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">A process is a program in execution, it s active, while a program is passive.  The program becomes the process when it is running. <br>The process needs resources to complete its task so it waits. <br>A process includes: a counter, a stack, and a data section.</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>What is process manage&#173;ment?</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">The operating system is respon&#173;sible for managing the processes. The os <br>1.) creates and deletes the user and system processes. <br>2.) suspends and resumes processes. <br>3.) provides mechanisms for process synchr&#173;oni&#173;zation <br>4.) provides mechanisms for process commun&#173;ication <br>5.) provides mechanisms for deadlock handling</div></td></tr></table></div></div><div
+class="cheat_sheet_output_wrapper cheat_sheet_output_column_onecol" style="z-index: 30; page-break-inside: avoid;" id="block_19234"><h3 class="cheat_sheet_output_title" id="title_5440_19234">Problems that Processes run in to</h3><div
+class="cheat_sheet_output_block" id="block_5440_19234"><table
+border="0" cellspacing="0" cellpadding="0" id="cheat_sheet_output_table" class="cheat_sheet_output_onecol"><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>The Producer and Consumer Problem</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">in cooper&#173;ating processes the produc&#173;e-c&#173;onsumer problem is common where the producer process produces inform&#173;ation that is consumed by the consumer process <br></div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Producer and Consumer Explai&#173;ned</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">he Producer relies on the Consumer to make space in the data-area so that it may insert more inform&#173;ation whilst at the same time, the Consumer relies on the Producer to insert inform&#173;ation into the data area so that it may remove that inform&#173;ation</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>examples of Producer - Consumer Problem</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">Client - Server paradigm, the client is the consumer and the server as the producer</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Solution to the Producer- Consumer problem</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">the solution and producer processes must run concur&#173;rently, to allow this there needs to be an available buffer of items that can be filled by the producer and emptied by the consumer. <br>the producer can produce one item while the consumer is consuming another item. <br>the producer and consumer must be synchr&#173;onized, so that the consumer does not try to consume an item that has not been produced</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Two types of buffers can be used</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">Unbounded buffer- no limit on the size of the buffer <br>Bounded buffer- there is a fixed buffer size, in this case the consumer must wait if the buffer is empty and the producer must wait if the buffer is full</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Bounded Buffer Solution</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">The bounded buffer can be used to enable processes to share memory, in the example code the variable 'in' points to the next free position in the buffer. 'out' points to the first full position in the buffer.<br>The buffer is empty when in == out.<br>when (in+1)% buffer size == out then the buffer is full</div></td></tr></table></div></div><div
+class="cheat_sheet_output_wrapper cheat_sheet_output_column_onecol" style="z-index: 30; page-break-inside: avoid;" id="block_19233"><h3 class="cheat_sheet_output_title" id="title_5440_19233">CPU Scheduling</h3><div
+class="cheat_sheet_output_block" id="block_5440_19233"><table
+border="0" cellspacing="0" cellpadding="0" id="cheat_sheet_output_table" class="cheat_sheet_output_onecol"><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>What is CPU schedu&#173;ling?</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">The basis of multip&#173;rog&#173;rammed operating systems</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>What is the basic concept of CPU schedu&#173;ling?</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">To be able to have a process running at all time to maximize CPU utiliz&#173;ation. The operating system takes the CPU away from a process that is in wait, and gives the CPU to another process.</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>What is a CPU-I/O Burst Cycle?</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">The process execution cycle where the process alternates between CPU execution and I/O wait. Begins with CPU burst, then I/O burst, and then CPU burst, and so on. The CPU burst eventually ends with a system request to terminate execution.</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>What is a CPU Scheduler? (Also called short-term schedu&#173;ler)</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">Carries out a selection process that picks a process in the ready que to be executed if the CPU becomes idle. It then allocates the CPU to that process.</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>When might a CPU scheduling decision happen?</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">1) Switches from running to waiting state <br> 2) Switches from running to ready state <br> 3) Switches from waiting to ready state<br> 4) Process terminates<br><br>  The scheduling under 1 and 4 is nonpre&#173;emptive (or cooper&#173;ative), otherwise it is preemp&#173;tive. Preemp&#173;tive: Priority to high priority processes, Nonpre&#173;eme&#173;ptive: Running task is executed till completion and can not be interr&#173;upted.</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Pote&#173;ntial issues with preemptive schedu&#173;ling? </strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">1) Processes that share data: While one is in a state of updating its data, another process is given priority to run but can not read the data from the first process. <br><br> 2) Operating system kernal: Another process might be given priority while the kernal is being utilized by another process. The kernal might be going through important data changes, leaving it in a vulnerable state. A possible solution is waiting for the kernal to return to a consistent state before starting another process.</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>What is the dispat&#173;cher?</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">It is a module that gives control of the CPU to the process selected by the CPU scheduler. This involves {{nl})a) switching context <br>b) switching to user mode <br> c) jumping to the proper location in the user program to restart that program. <br><br> It is involked in every process switch; the time the dispatcher takes to stop one process and start another is the dispatch latency.</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Describe the Scheduling Criteria</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">Various criterias used when comparing various CPU- scheduling algori&#173;thms. <br> <strong>a)</strong> CPU utiliz&#173;ation: Keep the CPU as busy as possible. Ranges from 0 to 10%, usually ranges from 40% (lightly loaded system) to 90% (heavily loaded system). <br><strong>b)</strong> Throug&#173;hput: Measures the number of processes that are completed per time unit. <br> <strong>c)</strong> Turnaround time: Amount of time to execute a a particular process. It is the sum of time spent waiting to get into memory, waiting in the ready queue, executing on the CPU, and doing I/O. <br> <strong>d)</strong> Waiting time: The time spent waiting in the ready queue. <br> <strong>e)</strong> Response time: The amount of time it takes to produce a response after a submission of a request. Generally limited by the speed of the output device. <br><br> Best to maximize CPU utiliz&#173;ation and throug&#173;hput, and minimize turnaround time, waiting time, and response time, but can still vary depending on the task.</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Describe the First-&#173;Come, First-&#173;Served scheduling algori&#173;thm</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">The process that requests the CPU first is allocated the CPU first. The <strong>Gantt chart</strong> illust&#173;rates a schedule of start and finish times of each process. The average waiting time is heavily dependent on the order of arrival of the processes. If a processes with longer burst time arrive first, the entire process order will now have a longer average wait time. This effect is called the <strong>convoy effect</strong></div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Describe the short-&#173;job&#173;-first scheduling algori&#173;thm</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">Associates processes by the length of their next CPU burst and gives CPU priority to the process with the smallest next CPU burst. If the next CPU burst of multiple processes are the same, First-&#173;com&#173;e-f&#173;irs&#173;t-serve scheduling is used. It is difficult to know the length of the next CPU request even though it is optimal over FCFS.</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>What is expone&#173;ntial averaging? </strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">Uses the previous CPU bursts to predict future bursts. The formula is Tn+1 = α tn+ (1 - α) Tn. tn is the length of the nth CPU burst and Tn+1 is the predicted value of the next burst. α is a value from 0 to 1. If α = 0 the recent history has no effect and current conditions are seen as consis&#173;tent. If α = 1 then only the most recent CPU burst matters. Most commonly α =1/2, where recent and past history are equally weighted. In a <strong>shor&#173;tes&#173;t-r&#173;ema&#173;ini&#173;ng-&#173;tim&#173;e-f&#173;irst</strong> expone&#173;ntial averaging, you line up the previous processes based on their burst times ascending instead. <br>Example of shorte&#173;st-&#173;rem&#173;ain&#173;ing&#173;-ti&#173;me-&#173;first expone&#173;ntial averaging: If T1 = 10 and α = 0.5 and the previous runs are 8,7,4,16. <br>T2=.5(4+10) =7<br> T3=.5(7+7)=7<br>T3=.5(8+7)=7.5<br>T4=.5(16+7.5)=11.25</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>What is priority schedu&#173;ling?</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">A priority number is assigned to each process based on its CPU burst. Higher burst gets a lower priority and vice versa. <br><br><strong>Interally</strong> defined priority  uses measurable qualities such as average I/O burst, time limits, memory requir&#173;ements, etc. <br><strong>externally</strong> defined priorities are criteria set not by the OS, mostly human qualities like the type of work, importance of the process in relation to business, amount of funds being paid, etc. <br><br><strong>Preemptive priority</strong> will ask the CPU if the newly arrived process is higher priority than the currently running process. A <strong>nonp&#173;ree&#173;mptive priority</strong> will simply put the new process at the head of the queue.</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Pote&#173;ntial problems with priority schedu&#173;ling?</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>inde&#173;finite blocking</strong> (also called starva&#173;tion): A process that is ready to run is left waiting indefi&#173;nitely because the computer is constantly getting higher&#173;-pr&#173;iority processes. <strong>Aging</strong> is a solution where the priority of waiting processes are increased as time goes on.</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Describe the Round-&#173;Robin scheduling algori&#173;thm</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">Similar to first-&#173;com&#173;e-f&#173;irs&#173;t-s&#173;erve, but each process is given a unit of time called the time quantum (usually between 10 to 100 milise&#173;cond), where the CPU is given to the next process after the time quantum(s) for the current process is over - regardless of if the process is finished or not. If the process is interr&#173;upted, it is prempted and put back in the ready queue. Depending on the size of the time quantum, the RR policy can appear like a first-&#173;com&#173;e-f&#173;irs&#173;t-serve policy or <strong>proc&#173;essor sharing</strong>, where it creates an appearance that each processor has its own processor because it is switching from one process to the next so quickly.<br><br> Turnaround time is dependent on the size of the time quantum, where the average turnaround time does not always improve as the time quantum size increased, but improves when most processes finish their CPU burst in a single time quantum. A rule of thumb is 80% of CPU bursts should be shorter than the time quantum in order to keep the context switches low.</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Describe the multilevel queue schedu&#173;ling</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">It is a method of scheduling algorithm that separates priority based on the type of processes in this order:<br>1) system processes <br>2)interactive proesses <br>3)interactive editing processes <br>4)batch processes<br>5)student processes<br><br>Each queue also has it's own scheduling alogor&#173;ithm, so System processes could use FCFS while student processes use RR.  Each queue has absolute priority over lower priority queues, but it is possible to time-slice among queues so each queue gets a certain portion of CPU time.</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Describe a multilevel feedback queue schedu&#173;ler</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">Works similarly as the multilevel queue scheduler, but can separate queues further based on their CPU bursts. its parameters are: <br>The number of queues<br>The scheduling algorithm for each queue<br>The method used to determine when to upgrade a process<br>the method used to determine when to demote a process<br>The method used to determine which queue a process will enter when the process needs service<br><br>It is by definition the most general CPU-sc&#173;hed&#173;uling algorithm, but it is also the most complex.</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Describe thread schedu&#173;ling</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>User level threads</strong>: Managed by a thread library that the kernel is unaware of and is mapped to an associated kernel level thread, and runs on available light weight process. This is called <strong>proc&#173;ess&#173;-co&#173;nte&#173;ntion scope (PCS)</strong> since it makes threads belonging to the same process compete for CPU. Priority is set by the programmer and not adjusted by the thread library<br><br><strong>Kernel-level threads</strong>: Scheduled by the operating system, and uses the <strong>syst&#173;em-&#173;con&#173;tention scope</strong> to schedule kernel threads onto a CPU, where compet&#173;ition for the CPU takes place among all threads in the system. PCS is done according to priority</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Describe Pthread schedu&#173;ling</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">The POSIX Pthread API allows for specifying either PCS or SCS during thread creation where PTHREA&#173;D_S&#173;COP&#173;E_P&#173;ROCESS schedules threads using PCS and PTHREA&#173;D_S&#173;COP&#173;E_S&#173;YSTEM handles SCS. On systems with the many-t&#173;o-many model, the PTHREA&#173;D_S&#173;COP&#173;E_P&#173;ROCESS policy schedules user-level threads onto LWPs, whereas the PTHREA&#173;D_S&#173;COP&#173;E_S&#173;YSTEM creates and binds LWP for each user-level thread. Linux and Mac OS X only allow PTHREA&#173;D_S&#173;COP&#173;E_S&#173;YSTEM.</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Describe how multip&#173;le-&#173;pro&#173;cessor scheduling works</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">Multiple processes are balances between multiple processors through load sharing. One approach is through <strong>asym&#173;metric multip&#173;roc&#173;ess&#173;ing</strong> where one processor acts as the master, is in charge of all the schedu&#173;ling, controls all activites, and runs all kernel code, while the rest of the processors only run user code. <strong>symm&#173;etric multip&#173;roc&#173;essing, SMP</strong>  has each processor self schedule throgh a common ready queue, or seperate ready queues for each processor. Almost all modern OSes support SMP. <br><br>Processors contain cache memory and if a process were switch from processor to another, the cache data would be invali&#173;dated and have to be reloaded. SMP tries to keep familiar processes on the same processor through <strong>proc&#173;essor affini&#173;ty</strong>. Soft affinity attempts to keep processes on the same processor, but makes no guaran&#173;tees. Hard affinity specifies that a process is not moved between proces&#173;sors. <br><br><strong>Load balanc&#173;ing</strong> tries to balance the work done between processors so none sits idle while another is overlo&#173;aded. <strong>Push migrat&#173;ion</strong> uses a separate process that runs period&#173;ically and moves processes from heavily loaded processors onto less loaded ones. <br><strong>Pull migrat&#173;ion</strong> makes idole processors take processes from other proces&#173;sors. Push and pull are not mutually exclusive, and can also counteract possessor affinity if not carefully managed.</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">To remedy this, modern hardware designs implem&#173;ented multit&#173;hreaded processor cores in which two or more hardware threads are assigned to each core, so if one is stalling the core can switch to another thread.</div></td></tr></table></div></div></td><td
+class="cheat_sheet_output_column_spacer" width="2%">&nbsp;</td><td
+width="32%" valign="top" class="cheat_sheet_output_sortable cheat_sheet_output_column_2"><div
+class="cheat_sheet_output_wrapper cheat_sheet_output_column_onecol" style="z-index: 30; page-break-inside: avoid;" id="block_19231"><h3 class="cheat_sheet_output_title" id="title_5440_19231">Processes</h3><div
+class="cheat_sheet_output_block" id="block_5440_19231"><table
+border="0" cellspacing="0" cellpadding="0" id="cheat_sheet_output_table" class="cheat_sheet_output_onecol"><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Obje&#173;ctive of multip&#173;rog&#173;ram&#173;ming</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">is to have some process running at all times, to maximize CPU utiliz&#173;ation.</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>How does multip&#173;rog&#173;ramming work?</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">several processes are stored in memory at one time, when one process is done and is waiting, the os takes the CPU away from that process and gives it to another process</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Benefits of multip&#173;rog&#173;ram&#173;ming</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">higher throughput (amount of work accomp&#173;lished in a given time interval) and increased CPU utiliz&#173;ation</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>What is a process?</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">A process is a program in execution</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>What do processes <em>need</em>?</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">A process needs: CPU time, memory, files, and i/o devices</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>What are the Process States?</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">New: the process is being created <br>Ready: The process is  waiting to be assigned to a processor<br>Waiting: The process is waiting for some event to occur<br>Running: instru&#173;ctions are being executed <br> Termin&#173;ated: the process has finished execution</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Why is the operating system good for resource alloca&#173;tion?</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">The operating system is good for resource allocation because it acts as hardware /software interface</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>What does a Process include?</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">1.) a program counter <br>2.) stack: contains temporary data  <br>3.) data section: contains global variables</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>What is the Process Control Block?</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">processes are repres&#173;ented in the operating system by a PCB <br>The process control block includes: <br>1.) Process state <br>2.) program counter <br>3.) CPU registers <br>4.) CPU scheduling inform&#173;ation <br>5.) Memory Management <br>6.) Accounting inform&#173;ation <br>7.) I/O status</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Why is the PCB created?</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">A process control block is created so that the operating system knows inform&#173;ation on the process.</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>What happens when a program enters the system?</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">When a program enters the system it is placed in the queue by the queuing routine and the scheduler redirects the program from the queue and loads it into memory</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Why are queues and schedulers import&#173;ant?</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">they determine which program is loaded into memory after one program finishes processes and when the space is available</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>What is a CPU switch and how is it used?</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">when the os does a switch it stops one process from executing (idling it) and allows another process to use the processor</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>What is process schedu&#173;ling?</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">the process scheduler selects among the available processes for next execution on CPU</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>QUEUE</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">generally the first program on the queue is loaded first but there are situations where there are multiple queues, <br>1.) job Queue: when processes enter the system they are put into the job queue <br>2.) Ready Queue: the processes that are <em>ready</em> and <em>waiting</em> to execute are kept on a list (the ready queue) <br>3.) Device Queue: are the processes that are waiting for a particular i/o device (each device has its own device queue</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>How does the operating decide which queue the program goes to?</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">it is based on what resources the program needs, and it will be placed in the corres&#173;ponding queue</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>What are the types of Schedu&#173;lers?</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">1.) long term scheduler: selects which processes should be brought into the ready queue <br>2.) short term scheduler: selects which process should be executed next and then allocates CPU</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>What is a context switch?</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">a context switch is needed so that the CPU can switch to another process, in the context switch urge system saves the state of the process</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Proc&#173;esses run concur&#173;ren&#173;tly</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">No two processes can be running <em>simul&#173;tan&#173;eously</em> (at the same time) but they can be running <em>concu&#173;rre&#173;ntly</em>  where the CPU is multit&#173;asking</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>How are processes created?</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">The parent creates the child which can create more processes. <br>The child process is a duplicate of the parent process</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>fork()</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">fork creates a new process <br>when you run the fork command it either returns a 0 or a 1.  <br>the 0 means that it is a child process <br>the 1 means that it is a parent process</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>exec&#173;ve()</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">the execve system call is used to assign a new program to a child.  <br>it is used after the fork command to replace the process' memory space with a new program</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Process Creation</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">every process has a process id, to know what process you are on and for process management every process has an id <br><em>very important</em> when a process is created with the fork() only the shared memory segments are shared between the parent process and the child process, copies of the stack and the heap are made for the new child</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Process Creation Continue</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">when a process creates a new process the parent can continue to run concur&#173;rently or the parent can wait until all of the children terminate</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>How are processes termin&#173;ated?</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">A process terminates when it is done executing the last statement, when the child is terminated it may return data back to the parent through an exit status uses the <em>exit()</em> system call</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Can a process terminate if it is not done?</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">Yes, the parent may terminate the child (<em>abort</em>) if: <br> the child has exceeded its usage of some of its resources it has been allocated <br>the task assigned to the child is no longer needed</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>wait() or waitpi&#173;d()</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">these are the system call command that are used for process termin&#173;ation</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Casc&#173;ading Termin&#173;ation</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">some operating systems do not allow children to be alive if the parent has died, in this case if the parent is termin&#173;ated, then the children must also terminate. this is known as cascading termin&#173;ation</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Proc&#173;esses may be either <em>Coope&#173;rating</em> or <em>Indep&#173;end&#173;ent</strong></em></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><em>Coope&#173;rat&#173;ing</em>: the process may be cooper&#173;ating if it can affect or be affectedly the other processes executing in the system. <br>Some charac&#173;ter&#173;istics of cooper&#173;ating processes include: state is shared, the result of execution is nondet&#173;erm&#173;ini&#173;stic, result of execution cannot be predicted. <br>Independent: a process can be indepe&#173;ndent if it cannot be affected or affect the other processes. <br>Some charac&#173;ter&#173;istics of indepe&#173;ndent processes include: state not shared, execution is determ&#173;inistic and depends on input, execution is reprod&#173;ucible and will always be the same, or if the execution can be stopped.</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Adva&#173;ntages of Process Cooper&#173;ation</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">inform&#173;ation sharing, comput&#173;ation speed-up, modula&#173;rity, conven&#173;ience</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>What is Interp&#173;rocess Commun&#173;ica&#173;tion</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">Cooper&#173;ating processes need <em>inter&#173;process commun&#173;ica&#173;tion</em> a mechanism that will allow them to exchange data and inform&#173;ation <br>There are two models of IPC: shared memory and Message passing</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>What is Shared Memory?</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">a region of memory that is shared by cooper&#173;ating processes is establ&#173;ished, processes can exchange inform&#173;ation by reading and writing to the shared region <br>Benefits of Shared Memory: allows maximum speed and conven&#173;ience of commun&#173;ication and is faster than message passing.</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>What is Message Passing</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">message passing is a mechanism for processes to commun&#173;icate and to synchr&#173;onize their actions. processes commun&#173;icate with each other without sharing variables <br>Benefits of message passing: message passing is easier to implement for inter computer commun&#173;ication and is useful for smaller amounts of data <br>Message passing can be either Blocking or Non-Bl&#173;ocking</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Message Passing facili&#173;tat&#173;es:</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">the message passing facility provides two operat&#173;ions: <br>send(message)- message size fixed or variable <br>receive(message)</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>How do processes P and Q commun&#173;icate</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">for two processes to commun&#173;icate they must: <br>1.) send messages to an receive messages from each other <br>2.) they must establish a commun&#173;ication link between them, this link can be implem&#173;ented in a variety of ways.</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Impl&#173;eme&#173;nta&#173;tions of commun&#173;ication link include</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">1.) physical (ex. shared memory, hardware bus) <br>2.) logical (direc&#173;t/i&#173;ndi&#173;rect, synchr&#173;ono&#173;us/&#173;asy&#173;nch&#173;ronous, automa&#173;tic&#173;/ex&#173;plicit buffering</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Direct vs. Indirect Commun&#173;ication Links</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><em>Direct Commun&#173;ication Link</em>: processes must name each other explic&#173;itly, they must state where they are sending the message and where they are receiving the message. <br>this can be either symmetric where they both name each other or asymmetric where only the sender names the receipient <br><br> <em>Indirect Commun&#173;ication Link</em>: messages are sent to and received from mailboxes or ports.</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Prop&#173;erties of Direct Commun&#173;ication Link</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">1.) Links are establ&#173;ished automa&#173;tically <br>2.) A link is associated with one pair of commun&#173;icating processes <br>3.) between each pair there exists exactly one link <br>4.) the link may be unidir&#173;ect&#173;ional or bidire&#173;ctional (usually bidire&#173;cti&#173;onal)</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Prop&#173;erties of Indirect Commun&#173;ication Links</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">1.) Link establ&#173;ished only if processes share a mailbox <br>2.) a link may be associated with many processes <br>3.) each pair of processes may share several commun&#173;ication links <br>4.) link may be unidir&#173;ect&#173;ional or bidrie&#173;ctional</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Mess&#173;age&#173;-Pa&#173;ssing Synchr&#173;oni&#173;zat&#173;ion</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">Message Passing may be either <em>blocking</em> or <em>non blocking</em> <br>Blocking is considered synchr&#173;onous, sends and receives until a message is availa&#173;ble&#173;/re&#173;ceived <br>Nonblocking is considered asynch&#173;ronous, the sender sends process and resumes operation, the receiver retrieves either a message or null</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Buff&#173;ering</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">In both direct and indirect commun&#173;ication messages exchanges are placed in a temporary queue.  These queues are implem&#173;ented in three ways <br>1.) zero capacity: has a max length of 0, the link cannot have any messages waiting in it. sender blocks until recepient receives <br>Bounded capacity: the queue has finite length n, at most n messages can be placed there. the sender must wait if link is full <br>Unbounded Capacity: the queues length is potent&#173;ially infinite, any number of messages can wait in it. the sender never blocks</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Other strategies for commun&#173;ica&#173;tion</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">Some other ways for commun&#173;ication include: Sockets, Remote Procedure Calls, and Pipes</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Sock&#173;ets</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">sockets is defined as an endpoint for commun&#173;ica&#173;tion, need a pair of sockets-- one for each process. <br>A socket is defined by an IP address concat&#173;enated with a port number</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Remote Procedure Controls</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">A way to abstract the proced&#173;ure&#173;-call mechanism for use between systems with network connec&#173;tions. <br>the RPC scheme is useful in implem&#173;enting a distri&#173;buted file system</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Pipes</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">A pipe acts as a conduit allowing two processes to commun&#173;icate. Pipes were one of the first IPC mechanisms and provided one of the simpler ways for processes to commun&#173;icate with one another, there are however limita&#173;tions</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Ordinary Pipes</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">allow commun&#173;ication in standard produc&#173;er-&#173;con&#173;sumer style <br>ordinary pipes are unidir&#173;ect&#173;ional <br>an ordinary pipe cannot be accessed from outside the process that creates it.  typically a parent process creates a pipe and uses it to commun&#173;icate with a child process <br>only exists while the processes are commun&#173;icating</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Named Pipes</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">more powerful than ordinary pipes <br> commun&#173;ication can be bidire&#173;ctional <br> no parent- child relati&#173;onship is required <br>once a name pipe is establ&#173;ished several processes can be used for named pipes</div></td></tr></table></div></div><div
+class="hideprint" style="margin: 10px 0 20px 0;">
+ <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <ins
+class="adsbygoogle"
+style="display:inline-block;width:300px;height:250px"
+data-ad-client="ca-pub-2965569270921917"
+data-ad-slot="6925390326"></ins> <script>(adsbygoogle = window.adsbygoogle || []).push({});</script> </div></td><td
+class="cheat_sheet_output_column_spacer" width="2%">&nbsp;</td><td
+width="32%" valign="top" class="cheat_sheet_output_sortable cheat_sheet_output_column_3"><div
+class="cheat_sheet_output_wrapper cheat_sheet_output_column_onecol" style="z-index: 30; page-break-inside: avoid;" id="block_19232"><h3 class="cheat_sheet_output_title" id="title_5440_19232">Threads</h3><div
+class="cheat_sheet_output_block" id="block_5440_19232"><table
+border="0" cellspacing="0" cellpadding="0" id="cheat_sheet_output_table" class="cheat_sheet_output_onecol"><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>What is a thread?</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">A basic unit of CPU utiliz&#173;ation, consisting of a program counter, a stack, and a set of registers. They also form the basics of multit&#173;hre&#173;ading.</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Benefits of multi-&#173;thr&#173;ead&#173;ing?</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Resp&#173;ons&#173;ive&#173;ness:</strong> Threads may provide rapid response while other threads are busy. <br> <strong>Resource Sharing:</strong> Threads share common code, data, and other resources, which allows multiple tasks to be performed simult&#173;ane&#173;ously in a single address space.<br> <strong>Econ&#173;omy:</strong> Creating and managing threads is much faster than performing the same tasks for processes. <br><strong>Scalability:</strong> A single threaded process can only run on one CPU, whereas the execution of a multi-&#173;thr&#173;eaded applic&#173;ation may be split amongst available proces&#173;sors.</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Mult&#173;icore Progra&#173;mming Challe&#173;nges</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Dividing Tasks:</strong> Examining applic&#173;ations to find activities that can be performed concur&#173;rently. <br> <strong>Bala&#173;nce:</strong> Finding tasks to run concur&#173;rently that provide equal value. I.e. don't waste a thread on trivial tasks.<br> <strong> Data Splitt&#173;ing:</strong> To prevent the threads from interf&#173;ering with one another. <br> <strong>Data Depend&#173;ency: </strong> If one task is dependent upon the results of another, then the tasks need to be synchr&#173;onized to assure access in the proper order. <br> <strong>Testing and Debugg&#173;ing:</strong> Inherently more difficult in parallel processing situat&#173;ions, as the race conditions become much more complex and difficult to identify.</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Mult&#173;ith&#173;reading Models</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Many&#173;-To&#173;-One: </strong> Many user-level threads are all mapped onto a single kernel thread. <br><strong>One-To-One: </strong> Creates a separate kernel thread to handle each user thread. Most implem&#173;ent&#173;ations of this model place a limit on how many threads can be created. <br> <strong>Many&#173;-To&#173;-Many: </strong> Allows many user level threads to be mapped to many kernel threads. Processes can be split across multiple proces&#173;sors. Allows the OS to create a sufficient number of kernel threads.</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Thread Librar&#173;ies</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">Provide progra&#173;mmers with an API for creating and managing threads. Implem&#173;ented either in User Space or Kernel Space.  <br> <strong>User Space:</strong> API functions are implem&#173;ented solely within user space. &amp; no kernel support. <br> <strong> Kernel Space: </strong>Involves system calls and requires a kernel with thread library support.</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Three main thread librar&#173;ies:</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>POSIX Pthrea&#173;ds:</strong> Provided as either a user or kernel library, as an extension to the POSIX standard. <br> <strong>Win32 Threads: </strong> Provided as a kernel&#173;-level library on Windows systems. <br> <strong>Java Threads: </strong> Implem&#173;ent&#173;ation of threads is based upon whatever OS and hardware the JVM is running on, i.e. either Pthreads or Win32 threads depending on the system.</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Pthr&#173;eads</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">*POSIX standard defines the specif&#173;ication for pThreads, not the implem&#173;ent&#173;ation. <br> * Global variables are shared amongst all threads. <br> *One thread can wait for the others to rejoin before contin&#173;uing. <br> *Avai&#173;lable on Solaris, Linux, Mac OSX, Tru64, and via public domain shareware for Windows.</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong> Java Threads</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">*Managed by the JVM <br> *Imle&#173;mented using the threads model provided by underlying OS. <br> *Threads are created by extending thread class and by implem&#173;enting the Runnable interface.</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Thread Pools</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">A solution that creates a number of threads when a process first starts, and places them into a thread pool to avoid ineffi&#173;cient thread use. <br> * Threads are allocated from the pool as needed, and returned to the pool when no longer needed. <br> * When no threads are available in the pool, the process may have to wait until one becomes available. <br> * The max. number of threads available in a thread pool may be determined by adjustable parame&#173;ters, possibly dynami&#173;cally in response to changing system loads.</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Thre&#173;ading Issues</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>The fork( ) and exec( ) System Calls</strong> <br><em> Q: If one thread forks, is the entire process copied, or is the new process single&#173;-th&#173;rea&#173;ded?</em> <br> *A: System dependent. <br> *A: If the new process execs right away, there is no need to copy all the other threads. If it doesn't, then the entire process should be copied. <br> *A: Many versions of UNIX provide multiple versions of the fork call for this purpose. <br> <strong>Signal Handling</strong> used to process signals by <em>gener&#173;ating</em> a particular event, <em>deliv&#173;ering</em> it to a process, and <em>handling</em> it.)  <br> <em>Q: When a multi-&#173;thr&#173;eaded process receives a signal, to what thread should that signal be delive&#173;red?</em> <br> A: There are four major options: <br> *Deliver the signal to the thread to which the signal applies. <br>* Deliver the signal to every thread in the process. <br> *Deliver the signal to certain threads in the process. <br>* Assign a specific thread to receive all signals in a process.<br>  <strong>Thread Cancel&#173;lat&#173;ion</strong> can be done in one of two ways <br> *Asyn&#173;chr&#173;onous Cancel&#173;lation: cancels the thread immedi&#173;ately. <br> *Deferred Cancel&#173;lation: sets a flag indicating the thread should cancel itself when it is conven&#173;ient. It is then up to the cancelled thread to check this flag period&#173;ically and exit nicely when it sees the flag set. <br><strong>Scheduler Activa&#173;tions</strong> <br> Provide Upcalls, a commun&#173;ication mechanism from the kernel to the thread library. This commun&#173;ication allows an applic&#173;ation to maintain the correct number kernel threads.</div></td></tr></table></div></div><div
+class="cheat_sheet_output_wrapper cheat_sheet_output_column_qanda" style="z-index: 30; page-break-inside: avoid;" id="block_19250"><h3 class="cheat_sheet_output_title" id="title_5440_19250">Synchr&#173;oni&#173;zation</h3><div
+class="cheat_sheet_output_block" id="block_5440_19250"><table
+border="0" cellspacing="0" cellpadding="0" id="cheat_sheet_output_table" class="cheat_sheet_output_qanda"><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1"><div
+style="padding: 3px 8px;">Background</div><div
+style="padding: 3px 8px; margin: 0 8px 3px; border-left: 2px solid #0CC7C7;">Concurrent access to shared data may result in data incons&#173;ist&#173;ency.  Mainta&#173;ining data consis&#173;tency requires mechanisms to ensure the orderly execution of cooper&#173;ating processes.</div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1"><div
+style="padding: 3px 8px;">Race Condition</div><div
+style="padding: 3px 8px; margin: 0 8px 3px; border-left: 2px solid #0CC7C7;">A situation where several processes access and manipulate the same data concur&#173;rently and the outcome of the execution depends on the particular order in which the access take place.</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1"><div
+style="padding: 3px 8px;">Critical Section</div><div
+style="padding: 3px 8px; margin: 0 8px 3px; border-left: 2px solid #0CC7C7;">Each process has a critical section segment of code.  When one process is in critical section, no other may be in its critical section.</div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1"><div
+style="padding: 3px 8px;">Parts of Critical Section</div><div
+style="padding: 3px 8px; margin: 0 8px 3px; border-left: 2px solid #0CC7C7;">Each process must ask permission to enter critical section in <strong>entry section</strong>, may follow critical section with <strong>exit section</strong>, then <strong>rema&#173;inder section</strong>.</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1"><div
+style="padding: 3px 8px;">Solutions to Critical Section Problem</div><div
+style="padding: 3px 8px; margin: 0 8px 3px; border-left: 2px solid #0CC7C7;">The three possible solutions are <strong>Mutual Exclus&#173;ion</strong>, <strong>prog&#173;ress</strong>, and <strong>bounded waiting</strong>.</div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1"><div
+style="padding: 3px 8px;">Mutual Exclusion</div><div
+style="padding: 3px 8px; margin: 0 8px 3px; border-left: 2px solid #0CC7C7;">If process Pi is executing in its critical section, then no other processes can be executing in their critical sections.</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1"><div
+style="padding: 3px 8px;">Progress</div><div
+style="padding: 3px 8px; margin: 0 8px 3px; border-left: 2px solid #0CC7C7;">If no process is executing in its critical section and there exists some processes that wish to execute their critical section, then the selection of the process that will enter the critical section cannot be postponed indefi&#173;nitely.</div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1"><div
+style="padding: 3px 8px;">Bounded Waiting</div><div
+style="padding: 3px 8px; margin: 0 8px 3px; border-left: 2px solid #0CC7C7;">A bound must exist on the number of times that other processes are allowed to enter their critical sections after a process has made a request to enter its critical section and before that request is granted.</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1"><div
+style="padding: 3px 8px;">Peterson's Solution</div><div
+style="padding: 3px 8px; margin: 0 8px 3px; border-left: 2px solid #0CC7C7;">Two process solution.  Assume that LOAD and STORE instru&#173;ctions are atomic; that is, cannot be interr&#173;upted.  The two processes share two variables: int turn and Boolean flag[2].  Turn indicates whose turn it is to enter the critical section.  The flag array is used to indicate if a process is ready to enter the critical section.</div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1"><div
+style="padding: 3px 8px;">Synchr&#173;oni&#173;zation Hardware</div><div
+style="padding: 3px 8px; margin: 0 8px 3px; border-left: 2px solid #0CC7C7;">Many systems provide hardware support for critical section code.  Modern machines provide special atomic hardware instru&#173;ctions.</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1"><div
+style="padding: 3px 8px;">Semaphore</div><div
+style="padding: 3px 8px; margin: 0 8px 3px; border-left: 2px solid #0CC7C7;">A semaphore is a synchr&#173;oni&#173;zation tool that does not require busy waiting.  You can have a counting semaphore or a binary semaphore.  Semaphores provide mutual exclusion.</div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1"><div
+style="padding: 3px 8px;">Semaphore Implem&#173;ent&#173;ation</div><div
+style="padding: 3px 8px; margin: 0 8px 3px; border-left: 2px solid #0CC7C7;">When implem&#173;enting semaphores you must guarantee that no two processes can execute <strong>wait ()</strong> and <strong>signal ()</strong> on the same semaphore at the same time.</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1"><div
+style="padding: 3px 8px;">Deadlock</div><div
+style="padding: 3px 8px; margin: 0 8px 3px; border-left: 2px solid #0CC7C7;">Deadlock is when two or more processes are waiting indefi&#173;nitely for an even that can only be caused by one of the waiting processes.</div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1"><div
+style="padding: 3px 8px;">Starvation</div><div
+style="padding: 3px 8px; margin: 0 8px 3px; border-left: 2px solid #0CC7C7;">Indefinite blocking.  A process may never be removed from the semaphore queue in which it is suspended.</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1"><div
+style="padding: 3px 8px;">Bounded Buffer Problem</div><div
+style="padding: 3px 8px; margin: 0 8px 3px; border-left: 2px solid #0CC7C7;">The problem describes two processes, the producer and the consumer, who share a common, fixed-size buffer used as a queue. The producer's job is to generate a piece of data, put it into the buffer and start again. At the same time, the consumer is consuming the data (i.e., removing it from the buffer) one piece at a time. The problem is to make sure that the producer won't try to add data into the buffer if it's full and that the consumer won't try to remove data from an empty buffer.</div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1"><div
+style="padding: 3px 8px;">Readers Writers Problem</div><div
+style="padding: 3px 8px; margin: 0 8px 3px; border-left: 2px solid #0CC7C7;">The problem is that you want multiple readers to be able to read at the same time but only one single writer can access the shared data at a time.</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1"><div
+style="padding: 3px 8px;">Dining Philos&#173;ophers Problem</div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1"><div
+style="padding: 3px 8px;">Monitors</div><div
+style="padding: 3px 8px; margin: 0 8px 3px; border-left: 2px solid #0CC7C7;">A high level abstra&#173;ction.  <em>Abstract data type</em>, internal variables only accessible by code within the procedure.  Only one process may be active within the monitor at a given time.</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1">
+&nbsp;</td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1"><div
+style="padding: 3px 8px;">Race Condition</div><div
+style="padding: 3px 8px; margin: 0 8px 3px; border-left: 2px solid #0CC7C7;">A situation where several processes access and manipulate the same data concur&#173;rently and the outcome of the execution depends on the particular order in which the access take place.</div></td></tr></table></div></div><div
+class="cheat_sheet_output_wrapper cheat_sheet_output_column_onecol" style="z-index: 30; page-break-inside: avoid;" id="block_19287"><h3 class="cheat_sheet_output_title" id="title_5440_19287">Semaphore</h3><div
+class="cheat_sheet_output_block" id="block_5440_19287"><table
+border="0" cellspacing="0" cellpadding="0" id="cheat_sheet_output_table" class="cheat_sheet_output_onecol"><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Sema&#173;phore</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">A genera&#173;liz&#173;ation of a spin-lock process, a more complex kind of mutual exclusion <br>The semaphore provides mutual exclusion in a protected region for groups of processes, not just one process at a time</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Why are semaphores used?</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">Semaphores are used in cases where you have n amount of processes in a critical section problem</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>How do you initialize a semaph&#173;ore</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">You initialize a semaphore with the semaph&#173;ore&#173;_init --&gt; the shared int sem holds the semaphore identifier</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Wait and Signal</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">A simple way to understand wait (P) and signal (V) operations is:      wait: If the value of semaphore variable is not negative, decrements it by 1. If the semaphore variable is now negative, the process executing wait is blocked (i.e., added to the semaph&#173;ore's queue) until the value is greater or equal to 1. Otherwise, the process continues execution, having used a unit of the resource.     signal: Increments the value of semaphore variable by 1. After the increment, if the pre-in&#173;crement value was negative (meaning there are processes waiting for a resource), it transfers a blocked process from the semaph&#173;ore's waiting queue to the ready queue.</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>How do we get rid of the busy waiting problem?</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">Rather than busy waiting the process can <em>block</em> itself, the block operation places a process into a waiting queue and the state is changed to waiting</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Signal</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;">A process that is blocked can be waked up which is done with the signal operation that removes one process from the list of waiting processes, the wakeup resumes the  operation of the blocked process. <br>removes the busy waiting from the entry of the critical section of the applic&#173;ation</div></td></tr><tr
+class="altrow countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>in busy waiting there may be a negative semaphore value</strong></div></td></tr><tr
+class="countrow"><td
+valign="top" class="cheat_sheet_output_cell_1" colspan="1"><div
+style="padding: 3px 8px;"><strong>Dead&#173;locks and Starva&#173;tion</strong></div></td></tr></table></div></div></td></tr></table><div
+id="sponsor" style="color: #fff; text-align: center; width: 100%; padding: 0 20px; border-top: 10px solid #dddddd; margin-top: 50px; position: relative; left: -20px; right: -20px; background: #dddddd;"><div
+style="color: #fff; text-align: center; border-radius: 10px; width: 100%; position: relative; left: -20px; padding: 30px 20px; background: linear-gradient(#293044, #cd2082);"><h3 style="font-size: 2em; margin: 0 0 20px; text-align: center;">How's Your Readability?</h3><p
+style="text-align: center; margin: 0 0 30px; font-size: 1.3em; padding: 0 100px;">Cheatography is sponsored by <strong><a
+style="color: #fff; border-color: #fff;" href="https://readable.com/">Readable.com</a></strong>. Check out Readable.com to make your content and copy more engaging and support Cheatography!</p><p
+style="text-align: center; margin: 0 0 20px; font-size: 1.3em; padding: 0 100px;"><a
+style="border-radius: 5px;background: #fff; padding: 10px; color: #222; border: none;" href="https://readable.com/text/">Measure Your Readability Now!</a></p></div></div><div
+id="downloads" style="margin-top: 0;"><div
+class="clear"></div><div
+class="triptychdbll"><h2 class="notopmargin">Download the Operating Systems Cheat Sheet</h2><div
+class="biptych1"><div
+class="padded">
+<a
+style="line-height: 1; display: block; height: 200px; overflow: hidden; position: relative; box-shadow: 1px 1px 3px #666; " class="imagelink" href="#" onclick="showPopup('https://www.cheatography.com//makahoshi1/cheat-sheets/operating-systems/pdf/'); return false;"><img
+style="line-height: 1;" width="100%" src="//media.cheatography.com/storage/thumb/makahoshi1_operating-systems.750.jpg?last=1463133916"><span
+class="page_count" style="background-color: #D5F5F5">9 Pages</span></a><div
+style="display: none;">
+<span
+itemprop="url">http://www.cheatography.com/makahoshi1/cheat-sheets/operating-systems/</span>
+<span
+itemprop="thumbnailUrl">//media.cheatography.com/storage/thumb/makahoshi1_operating-systems.750.jpg</span></div></div></div><div
+class="biptych2"><div
+class="padded"><p
+class="padded"><strong>PDF</strong> (recommended)</p><ul
+class="noicon" style="margin-bottom: 20px;"><li><i
+class="fa fa-fw fa-file-pdf-o"></i> <a
+target="_blank" href="#" onclick="showPopup('https://www.cheatography.com/makahoshi1/cheat-sheets/operating-systems/pdf/'); trackDownload('PDF', this.href); return false;">PDF (9 pages)</a></li></ul><p
+class="padded"><strong>Alternative&nbsp;Downloads</strong></p><ul
+class="noicon"><li><i
+class="fa fa-fw fa-file-pdf-o"></i> <a
+target="_blank" href="#" onclick="showPopup('https://www.cheatography.com/makahoshi1/cheat-sheets/operating-systems/pdf_bw/'); trackDownload('PDF - Black and White', this.href); return false;">PDF (black and white)</a></li><li><i
+class="fa fa-fw fa-file-text-o"></i> <a
+target="_blank" href="#" onclick="showPopup('https://www.cheatography.com/makahoshi1/cheat-sheets/operating-systems/latex/'); trackDownload('LaTeX', this.href); return false;">LaTeX</a></li></ul></div></div><div
+class="clear"></div></div><div
+class="triptych3"><h2 class="notopmargin" style="padding: 0;">Share This Cheat Sheet!</h2><div
+class="imagelink addthis_toolbox addthis_default_style addthis_32x32_style" style="width:430px; margin: 30px auto; text-align: center;">
+<a
+class="addthis_button_facebook"></a>
+<a
+class="addthis_button_twitter"></a>
+<a
+class="addthis_button_google_plusone_badge" g:plusone:count="false" g:plusone:size="medium"></a>
+<a
+class="addthis_button_pinterest_share" pi:pinit:media="//media.cheatography.com/storage/thumb/makahoshi1_operating-systems.600.jpg?last=1463133916"></a>
+<a
+class="addthis_button_reddit"></a><div
+class="clear"></div>
+<a
+class="addthis_button_stumbleupon"></a>
+<a
+class="addthis_button_email"></a>
+<a
+class="addthis_button_favorites"></a>
+<a
+class="addthis_button_compact"></a></div></div><div
+class="clear"></div> <script type="text/javascript">$(document).ready(function() {
+                    $('#download_box').hide();
+                    $('#download_box').css('position', 'fixed');
+                });
+                var timeToGo = 5;
+                var downloadTimer = false;
+                var downloadTarget = false;
+                function showPopup(target) {
+window.location.replace(target);
+return false;
+                    downloadTarget = target;
+                    timeToGo = 5;
+                    doCountdown();
+                    downloadTimer = setInterval(doCountdown, 1000);
+                    $('#showClose').hide();
+                    $('#download_box').show();
+                }
+                function doCountdown() {
+                    $('#counter').text(timeToGo);
+                    timeToGo = timeToGo - 1;
+                    if (timeToGo <= 0) {
+                        $('#showClose').fadeIn();
+                        clearInterval(downloadTimer);
+                        window.location.replace(downloadTarget);
+                    }
+                }</script> <div
+style="display: none; padding: 100px; text-align: center; background: #fff; background: rgba(255, 255, 255, 0.9); z-index: 3000; left: 0; right: 0; top: 0; bottom: 0; display: none;" id="download_box"><p
+style="text-align: center; font-size: 1.5em; color: #333;">Your Download Will Begin Automatically in <span
+id="counter">5</span> Seconds.<span
+id="showClose"><br><a
+onclick="$('#download_box').hide(); return false;" id="closebox">Close</a></span></p></div></div><div
+id="comments"><div
+class="clear">&nbsp;</div><div
+class="triptych3"><div
+class="sidebar_box cheat_sheet_footer"><div
+id="tourauthors" class="sidebar_box_first_row"><h2 class="newsectiontitle notopmargin">Cheatographers</h2></div><div
+class="sidebar_box_row">
+<a
+style="float: left; margin: 6px 10px 10px 0" href="/makahoshi1/" class="imagelink"><img
+class="gravatar lazy" style="vertical-align: middle;" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/225cc507029bf612c6e089142a2ded3e.32.jpg" width="32" height="32" alt="makahoshi1"></a><a
+href="/makahoshi1/" class="user_hover">makahoshi1</a></div><div
+class="clear"></div><div
+class="sidebar_box_row">
+<a
+style="float: left; margin: 6px 10px 10px 0" href="/yemariam/" class="imagelink"><img
+class="gravatar lazy" style="vertical-align: middle;" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/e93ea6dacb1c024bda4ed68140c30902.32.jpg" width="32" height="32" alt="Yemariam"></a><a
+href="/yemariam/" class="user_hover">Yemariam</a></div><div
+class="clear"></div></div><div
+class="sidebar_box cheat_sheet_footer"><div
+class="sidebar_box_first_row"><h2 class="newsectiontitle">Metadata</h2></div><div
+class="sidebar_box_row"><ul
+class="small_content_list"><li>Languages:<meta
+itemprop="inLanguage" content="en"/>
+<a
+href="/language/en/">English</a></li><meta
+itemprop="datePublished" content="2015-10-21"><li>Published: <span
+class="publish_date">21st October, 2015</span></li><li>Rated: <span
+itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating"><span
+itemprop="ratingValue">5</span> stars based on <span
+itemprop="reviewCount">15</span> ratings</span></li></ul></div></div><div
+class="sidebar_box"><div
+class="sidebar_box_first_row"><h2 class="newsectiontitle">Favourited By</h2></div><div
+class="sidebar_box_row"><p
+style="line-height: 36px; vertical-align: middle;">
+<a
+href="/peterceeau/" class="imagelink user_hover" title="PeterCeeAU"><img
+class="gravatar lazy" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/2c16bc71ea7a1882948d4993dd7ab6b9.32.jpg" width="32" height="32" alt="PeterCeeAU"></a>
+<a
+href="/little-monkey/" class="imagelink user_hover" title="Little Monkey"><img
+class="gravatar lazy" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/63f757b0a356b3eb37bcc3c217d4701d.32.jpg" width="32" height="32" alt="Little Monkey"></a>
+<a
+href="/patrickdahal/" class="imagelink user_hover" title="patrickdahal"><img
+class="gravatar lazy" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/a94228e9faaba6a3dbe7d6bde2d1a311.32.jpg" width="32" height="32" alt="patrickdahal"></a>
+<a
+href="/imjustsarah/" class="imagelink user_hover" title="imjustsarah"><img
+class="gravatar lazy" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/c4cf696008f0463951950f61f1fc256e.32.jpg" width="32" height="32" alt="imjustsarah"></a>
+<a
+href="/seidkarl/" class="imagelink user_hover" title="seidkarl"><img
+class="gravatar lazy" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/c94fcbb15d6e24891f80008c700e87d3.32.jpg" width="32" height="32" alt="seidkarl"></a>
+<a
+href="/cynicalstoic/" class="imagelink user_hover" title="cynicalstoic"><img
+class="gravatar lazy" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/eb208a070c239e606cb34064f9b4cc38.32.jpg" width="32" height="32" alt="cynicalstoic"></a>
+<a
+href="/greatnessgone/" class="imagelink user_hover" title="GreatnessGone"><img
+class="gravatar lazy" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/8cece12312b489ffe96ed0f8025a6406.32.jpg" width="32" height="32" alt="GreatnessGone"></a></p></div></div></div><div
+class="triptychdbll"><h2 class="newsectiontitle notopmargin">Comments</h2><div
+class="commentblock" id="comment30105"><p
+class="commenter">
+<a
+href="/davechild/" class="imagelink"><img
+style="margin: 0 8px 0 0;" class="lazy" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/fd7e3b77a3f3007ff30d932b65084851.32.jpg" alt="DaveChild" width="32" height="32"></a>
+<a
+href="/davechild/" class="user_hover">DaveChild</a>,
+<a
+href="https://www.cheatography.com:443/makahoshi1/cheat-sheets/operating-systems/#comment30105">09:50 22 Oct 15</a></p><p
+class="commentext">Wow, great cheat sheet! And really nice to see so much collaboration in one cheat sheet, too :)</p><div
+class="commentreply" id="reply_30105"></div></div><div
+class="commentblock" id="comment30108"><p
+class="commenter">
+<img
+style="margin: 0 8px 0 0;" class="lazy" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/3669755d05163d0987d1d2cc7093bf35.32.jpg" alt="Brett Ellingson" width="32" height="32">
+Brett Ellingson,
+<a
+href="https://www.cheatography.com:443/makahoshi1/cheat-sheets/operating-systems/#comment30108">10:36 26 Oct 15</a></p><p
+class="commentext">Wow. Awesome information!!</p><div
+class="commentreply" id="reply_30108"></div></div><div
+class="commentblock" id="comment30166"><p
+class="commenter">
+<img
+style="margin: 0 8px 0 0;" class="lazy" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/5928e5209d6583858dfb0c582f7a8041.32.jpg" alt="Tomas J" width="32" height="32">
+Tomas J,
+<a
+href="https://www.cheatography.com:443/makahoshi1/cheat-sheets/operating-systems/#comment30166">21:27 26 Jan 16</a></p><p
+class="commentext">Damn this is a nice find, good work, thank's...</p><div
+class="commentreply" id="reply_30166"></div></div><div
+class="commentblock" id="comment30462"><p
+class="commenter">
+<a
+href="/xsmycsheet/" class="imagelink"><img
+style="margin: 0 8px 0 0;" class="lazy" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/ef5fd416d20b71d6e16bf1567c267f6d.32.jpg" alt="xsmycsheet" width="32" height="32"></a>
+<a
+href="/xsmycsheet/" class="user_hover">xsmycsheet</a>,
+<a
+href="https://www.cheatography.com:443/makahoshi1/cheat-sheets/operating-systems/#comment30462">18:31 21 Feb 17</a></p><p
+class="commentext">Very impressive cheat sheet and I love using this for exams!</p><div
+class="commentreply" id="reply_30462"></div></div><div
+class="commentblock" id="comment30481"><p
+class="commenter">
+<a
+href="/nethead21/" class="imagelink"><img
+style="margin: 0 8px 0 0;" class="lazy" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/7044253dd0789bc0dab48d3d80445dbf.32.jpg" alt="NetHead21" width="32" height="32"></a>
+<a
+href="/nethead21/" class="user_hover">NetHead21</a>,
+<a
+href="https://www.cheatography.com:443/makahoshi1/cheat-sheets/operating-systems/#comment30481">04:33 28 May 17</a></p><p
+class="commentext">Ahoy! Mates, wonderful. Thank you very much.</p><div
+class="commentreply" id="reply_30481"></div></div><h2 class="newsectiontitle">Add a Comment</h2><div
+id="reply_default"><div
+id="comment_form"><form
+novalidate class="pageForm" id="commentForm" method="POST" action="https://www.cheatography.com:443/makahoshi1/cheat-sheets/operating-systems/#comment_form">
+<input
+type="hidden" name="action" value="comment"/>
+<input
+type="hidden" name="spamkey" value="2.019022081288E+20">
+<input
+type="text" name="website" id="comment_form_url" value="http://"><fieldset><legend>Your Comment</legend><div
+class="formrow"><p
+class="forminfo"><span>Please enter your name.</span></p><label
+for="commenter_name">Your Name</label><input
+required  type="text" id="commenter_name" name="commenter_name"><div
+class="clear"></div><ul
+class="error off"></ul><div
+class="clear"></div></div><div
+class="formrow"><p
+class="forminfo"><span>Please enter your email address</span></p><label
+for="commenter_email">Your Email Address</label><input
+required  type="email" id="commenter_email" name="commenter_email"><div
+class="clear"></div><ul
+class="error off"></ul><div
+class="clear"></div></div><div
+class="formrow"><p
+class="forminfo"><span>Please enter your Comment.</span></p><label
+for="comment_text">Your Comment</label><textarea cols="50" rows="5" name="comment_text" id="comment_text" required  id="comment_text" name="comment_text"></textarea><div
+class="clear"></div><ul
+class="error off"></ul><div
+class="clear"></div></div><div
+class="buttonrow"><button
+name="continue" id="continue" value="continue" type="submit" id="continue" name="continue"><div><span><strong>Post</strong> Your Comment</span></div></button><div
+class="clear"></div><ul
+class="error off"></ul><div
+class="clear"></div></div></fieldset></form></div></div> <script type="text/javascript">$(document).ready(function () {
+            $("#commentForm").validate({
+                unhighlight: function (el, error, valid, _orig) {
+                    if (el.id == 'sidebar_username') {
+                    }
+                    $(el).parent().find('p').addClass("valid");
+                    $(el).parent().find('p').removeClass("invalid");
+                    $(el).parent().find('ul.error').hide('slow');
+                },
+                highlight: function (el, error, valid, _orig) {
+                    $(el).parent().find('p').removeClass("valid");
+                    $(el).parent().find('p').addClass("invalid");
+                },
+                errorPlacement: function(error, el) {
+                    $(el).parent().find('ul.error').html('<li>' + $(error).text() + '</li>');
+                    $(el).parent().find('ul.error').show('slow');
+                    //$(el).parent().find('span').html($(error).text());
+                    return true;
+                }
+            });
+        });</script> <script type="text/javascript">function replyTo(reply_comment_id, thread) {
+        if (reply_comment_id == 0) {
+            // Move comment_form to reply_default
+            $("#comment_form").prependTo("#reply_default");
+            // Set comment_reply_id to 0
+            $("#comment_reply_id").val(0);
+            $('#replytext').hide();
+        } else {
+            // Move comment_form to reply_<reply_comment_id>
+            if (thread) {
+                $("#comment_form").prependTo("#comment_thread_" + reply_comment_id);
+            } else {
+                $("#comment_form").prependTo("#reply_" + reply_comment_id);
+            }
+            // Set comment_reply_id to <reply_comment_id>
+            $("#comment_reply_id").val(reply_comment_id);
+            $('#replytext').show();
+        }
+        return false;
+    }</script> </div><div
+class="clear"></div><div
+class="clear"></div><div
+class="clear"></div></div><div
+id="login_popup" class="footer_popup"><div
+id="login_popup_inner" class="footer_popup_inner">
+What could you use a cheat sheet for?<br>Please <a
+href="/members/login">login</a> or <a
+href="/members/register/">register</a> and make your own today!</div></div><div
+class="clear"></div></div></div></div><div
+class="clear"></div></div></div><div
+class="clear"></div><div
+id="footer"><div
+id="footer_inner"><div
+class="triptych1"><h2>Latest Cheat Sheet</h2><div
+class="sidebar_box"><div
+class="sidebar_box_row"><div
+id="cheat_sheet_18856" class="cheat_sheet_row altrow tag-cms tag-top tag-food tag-nutrition tag-concerns tag-services tag-audit tag-regulations tag-f-tag lang-en rating-unrated" style="margin-bottom: 20px; position: relative; padding: 10px 0 0 0; min-height: 220px; background: #048376 url('/images/ajax-loader.gif') 50% 40% no-repeat;"><a
+class="lazy" data-original="//media.cheatography.com/storage/thumb/davidpol_483-60-food-and-nutrition-services-top-10.400.jpg?time=1550629993" style="position: absolute; bottom: 0; left: 10px; right: 10px; background: url('/images/spacer.png') -13px -52px no-repeat; height: 220px;" href="/davidpol/cheat-sheets/483-60-food-and-nutrition-services-top-10/"></a><div
+style="z-index: 801; position: absolute; bottom: 0; left: 0; right: 0; color: #D4EFEC; background: #03524A;"><div
+style="padding: 10px 15px;"><strong><a
+style="font-size: 1.3em; color: #D4EFEC; border-color: #D4EFEC;" href="/davidpol/cheat-sheets/483-60-food-and-nutrition-services-top-10/">§483.60 Food & Nutrition Services Top 10 Cheat Sheet</a></strong><div
+class="extrainfo" style="display: none; line-height: 25px; padding: 0 0 5px;"><div
+style="padding: 5px 0 0;">§483.60 Food &amp; Nutrition Services Top 10</div><div
+class="triptych1"><span
+style="white-space: nowrap;"><img
+style="position: relative; left: 0; top: 5px; padding-right: 5px;" width="16" height="16" src="//media.cheatography.com/images/users/eb694a9eff9d21c2efc3e82183bebbd7.16.jpg"><a
+style="color: #D4EFEC; border-color: #D4EFEC;" href="/davidpol/" class="user_hover">Davidpol</a></span></div><div
+class="triptych2"><i
+class="fa fa-fw fa-calendar"></i>20 Feb 19</div><div
+class="triptych3"><i
+class="fa fa-fw fa-book"></i>1 Page</div><div
+class="clear"></div><div><i
+class="fa fa-fw fa-tag"></i><a
+style="color: #D4EFEC; border-color: #D4EFEC;" href="/tag/cms/cheat-sheets/">cms</a>, <a
+style="color: #D4EFEC; border-color: #D4EFEC;" href="/tag/top/cheat-sheets/">top</a>, <a
+style="color: #D4EFEC; border-color: #D4EFEC;" href="/tag/food/cheat-sheets/">food</a>, <a
+style="color: #D4EFEC; border-color: #D4EFEC;" href="/tag/nutrition/cheat-sheets/">nutrition</a>, <a
+style="color: #D4EFEC; border-color: #D4EFEC;" href="/tag/concerns/cheat-sheets/">concerns</a> and 4 more&nbsp;...</div></div></div></div><div
+class="clear"></div></div></div></div></div><div
+class="triptych2"><h2>Most Popular Cheat Sheet</h2><div
+class="sidebar_box"><div
+class="sidebar_box_row"><div
+id="cheat_sheet_5" class="cheat_sheet_row altrow tag-development tag-regex tag-regular tag-expressions tag-programming lang-en rating-5" style="margin-bottom: 20px; position: relative; padding: 10px 0 0 0; min-height: 220px; background: #9B0436 url('/images/ajax-loader.gif') 50% 40% no-repeat;"><div
+style="z-index: 100; position: absolute; top: 0; padding: 0 0 0 6px; border-bottom-left-radius: 3px; right: 10px; color: #F4D4DF; background: #9B0436;"><i
+class="fa fa-star"></i> <i
+class="fa fa-star"></i> <i
+class="fa fa-star"></i> <i
+class="fa fa-star"></i> <i
+class="fa fa-star"></i></div><a
+class="lazy" data-original="//media.cheatography.com/storage/thumb/davechild_regular-expressions.400.jpg?time=1463066188" style="position: absolute; bottom: 0; left: 10px; right: 10px; background: url('/images/spacer.png') -13px -52px no-repeat; height: 220px;" href="/davechild/cheat-sheets/regular-expressions/"></a><div
+style="z-index: 801; position: absolute; bottom: 0; left: 0; right: 0; color: #F4D4DF; background: #610222;"><div
+style="padding: 10px 15px;"><strong><a
+style="font-size: 1.3em; color: #F4D4DF; border-color: #F4D4DF;" href="/davechild/cheat-sheets/regular-expressions/">Regular Expressions Cheat Sheet</a></strong><div
+class="extrainfo" style="display: none; line-height: 25px; padding: 0 0 5px;"><div
+style="padding: 5px 0 0;">A quick reference guide for regular expressions (regex), including symbols, ranges, grouping, assertions and some sample patterns to get you started.</div><div
+class="triptych1"><span
+style="white-space: nowrap;"><img
+style="position: relative; left: 0; top: 5px; padding-right: 5px;" width="16" height="16" src="//media.cheatography.com/images/users/fd7e3b77a3f3007ff30d932b65084851.16.jpg"><a
+style="color: #F4D4DF; border-color: #F4D4DF;" href="/davechild/" class="user_hover">DaveChild</a></span></div><div
+class="triptych2"><i
+class="fa fa-fw fa-calendar"></i>19 Oct 11</div><div
+class="triptych3"><i
+class="fa fa-fw fa-book"></i>1 Page</div><div
+class="clear"></div><div><i
+class="fa fa-fw fa-tag"></i><a
+style="color: #F4D4DF; border-color: #F4D4DF;" href="/tag/development/cheat-sheets/">development</a>, <a
+style="color: #F4D4DF; border-color: #F4D4DF;" href="/tag/regex/cheat-sheets/">regex</a>, <a
+style="color: #F4D4DF; border-color: #F4D4DF;" href="/tag/regular/cheat-sheets/">regular</a>, <a
+style="color: #F4D4DF; border-color: #F4D4DF;" href="/tag/expressions/cheat-sheets/">expressions</a>, <a
+style="color: #F4D4DF; border-color: #F4D4DF;" href="/tag/programming/cheat-sheets/">programming</a></div></div></div></div><div
+class="clear"></div></div></div></div></div><div
+class="triptych3"><h2>Random Cheat Sheet</h2><div
+class="sidebar_box"><div
+class="sidebar_box_row"><div
+id="cheat_sheet_18173" class="cheat_sheet_row altrow tag-nursing tag-medical tag-healthcare tag-magnesium tag-hypomagnesemia tag-hypermagnesemia lang-en rating-unrated" style="margin-bottom: 20px; position: relative; padding: 10px 0 0 0; min-height: 220px; background: #6E2983 url('/images/ajax-loader.gif') 50% 40% no-repeat;"><a
+class="lazy" data-original="//media.cheatography.com/storage/thumb/harpieee_hypomagnesemia-and-hypermagnesemia.400.jpg?time=1546576261" style="position: absolute; bottom: 0; left: 10px; right: 10px; background: url('/images/spacer.png') -13px -52px no-repeat; height: 220px;" href="/harpieee/cheat-sheets/hypomagnesemia-and-hypermagnesemia/"></a><div
+style="z-index: 801; position: absolute; bottom: 0; left: 0; right: 0; color: #EADCEF; background: #451A52;"><div
+style="padding: 10px 15px;"><strong><a
+style="font-size: 1.3em; color: #EADCEF; border-color: #EADCEF;" href="/harpieee/cheat-sheets/hypomagnesemia-and-hypermagnesemia/">Hypomagnesemia & Hypermagnesemia Cheat Sheet</a></strong><div
+class="extrainfo" style="display: none; line-height: 25px; padding: 0 0 5px;"><div
+class="triptych1"><span
+style="white-space: nowrap;"><img
+style="position: relative; left: 0; top: 5px; padding-right: 5px;" width="16" height="16" src="//media.cheatography.com/images/users/688f8246c56b11752bb521299a35bd1a.16.jpg"><a
+style="color: #EADCEF; border-color: #EADCEF;" href="/harpieee/" class="user_hover">harpieee</a></span></div><div
+class="triptych2"><i
+class="fa fa-fw fa-calendar"></i>4 Jan 19</div><div
+class="triptych3"><i
+class="fa fa-fw fa-book"></i>1 Page</div><div
+class="clear"></div><div><i
+class="fa fa-fw fa-tag"></i><a
+style="color: #EADCEF; border-color: #EADCEF;" href="/tag/nursing/cheat-sheets/">nursing</a>, <a
+style="color: #EADCEF; border-color: #EADCEF;" href="/tag/medical/cheat-sheets/">medical</a>, <a
+style="color: #EADCEF; border-color: #EADCEF;" href="/tag/healthcare/cheat-sheets/">healthcare</a>, <a
+style="color: #EADCEF; border-color: #EADCEF;" href="/tag/magnesium/cheat-sheets/">magnesium</a>, <a
+style="color: #EADCEF; border-color: #EADCEF;" href="/tag/hypomagnesemia/cheat-sheets/">hypomagnesemia</a>, <a
+style="color: #EADCEF; border-color: #EADCEF;" href="/tag/hypermagnesemia/cheat-sheets/">hypermagnesemia</a></div></div></div></div><div
+class="clear"></div></div></div></div></div><div
+class="clear"></div><div
+class="triptych1"><h2>About Cheatography</h2><div
+class="sidebar_box"><div
+class="sidebar_box_row"><strong><a
+href="/about/">Cheatography</a></strong> is a collection of <strong><a
+href="/explore/">4930 cheat sheets</a></strong> and quick references in <strong><a
+href="/language/">25 languages</a></strong> for everything from <strong><a
+href="/tag/french/">French</a></strong> to <strong><a
+href="/tag/science/">science</a></strong>!</div></div></div><div
+class="triptych2"><div
+class="sidebar_box footer_blog"><div
+class="sidebar_box_first_row"><h4><em
+style="float: right; font-weight: normal;">10th June</em>On The Blog</h4></div><div
+class="sidebar_box_row sidebar_box_last_row"><strong
+style="display: block; padding: 10px 0;"><a
+href="/blog/5-ways-cheatography-benefits-your-business/">5 Ways Cheatography Benefits Your Business</a></strong>Cheatography Cheat Sheets are a great timesaver for individuals - coders, gardeners, musicians, everybody! But businesses can benefit from them as well - read on to find out more.</div></div></div><div
+class="triptych3"><h2>Recent Activity</h2><div
+class="sidebar_box"><div
+class="sidebar_box_row footer_recent_activity_1"><a
+class="imagelink" style="float: left; margin: 5px 8px 5px 0;" href="davidpol/"><img
+class="gravatar lazy" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/eb694a9eff9d21c2efc3e82183bebbd7.32.jpg" width="32" height="32" alt="Davidpol"></a> <a
+href="davidpol/" class="user_hover">Davidpol</a> published <a
+href="/davidpol/cheat-sheets/483-60-food-and-nutrition-services-top-10/">§483.60 Food &amp; Nutrition Services Top 10</a>.<br><span
+class="sidebar_event_date">1 hour 59 mins ago</span></div><div
+class="sidebar_box_row footer_recent_activity_2"><a
+class="imagelink" style="float: left; margin: 5px 8px 5px 0;" href="zoltan/"><img
+class="gravatar lazy" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/f9b8681a722542ff61cea74c2115c915.32.jpg" width="32" height="32" alt="Zoltan"></a> <a
+href="zoltan/" class="user_hover">Zoltan</a> updated <a
+href="/zoltan/cheat-sheets/pico-8/">Pico-8</a>.<br><span
+class="sidebar_event_date">4 hours 39 mins ago</span></div><div
+class="sidebar_box_row footer_recent_activity_3"><a
+class="imagelink" style="float: left; margin: 5px 8px 5px 0;" href="mia2696/"><img
+class="gravatar lazy" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/d94f5087484ce3089f5c8239c68d92bb.32.jpg" width="32" height="32" alt="mia2696"></a> <a
+href="mia2696/" class="user_hover">mia2696</a> published <a
+href="/mia2696/cheat-sheets/port-state-control/">port state control</a>.<br><span
+class="sidebar_event_date">5 hours 37 mins ago</span></div><div
+class="sidebar_box_row footer_recent_activity_4"><a
+class="imagelink" style="float: left; margin: 5px 8px 5px 0;" href="frankieali4/"><img
+class="gravatar lazy" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/4eb5a299dc41bf853beb69def19e455e.32.jpg" width="32" height="32" alt="frankieali4"></a> <a
+href="frankieali4/" class="user_hover">frankieali4</a> published <a
+href="/frankieali4/cheat-sheets/vscode-es7-react-redux-snippets/">VSCode ES7 React/Redux snippets</a>.<br><span
+class="sidebar_event_date">6 hours 34 mins ago</span></div><div
+class="sidebar_box_row sidebar_box_last_row footer_recent_activity_5"><a
+class="imagelink" style="float: left; margin: 5px 8px 5px 0;" href="funthomas424242/"><img
+class="gravatar lazy" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/f8f392b6607e627d89adbbb0ac809e4c.32.jpg" width="32" height="32" alt="FunThomas424242"></a> <a
+href="funthomas424242/" class="user_hover">FunThomas424242</a> updated <a
+href="/funthomas424242/cheat-sheets/docker/">Docker</a>.<br><span
+class="sidebar_event_date">1 day 7 hours ago</span></div><div
+class="clear"></div></div></div><div
+class="clear"></div><div
+class="triptych1"><div
+class="sidebar_box"><div
+class="sidebar_box_first_row"><h4>Behind the Scenes</h4></div><div
+class="sidebar_box_row">If you have any problems, or just want to say hi, you can find us right here:</div><div
+class="sidebar_box_row"><div
+class="biptych1"><a
+class="imagelink" style="float: left; margin: 5px 8px 0 0;" href="davechild/"><img
+class="lazy gravatar" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/fd7e3b77a3f3007ff30d932b65084851.32.jpg" width="32" height="32" alt="DaveChild"></a> <a
+href="davechild/" class="user_hover" style="line-height: 42px;">DaveChild</a><div
+class="clear"></div></div><div
+class="biptych2"><a
+class="imagelink" style="float: left; margin: 5px 8px 0 0;" href="spaceduck/"><img
+class="lazy gravatar" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/e5f4dc698559e9cdd546c749924c2342.32.jpg" width="32" height="32" alt="SpaceDuck"></a> <a
+href="spaceduck/" class="user_hover" style="line-height: 42px;">SpaceDuck</a><div
+class="clear"></div></div><div
+class="biptych1"><a
+class="imagelink" style="float: left; margin: 5px 8px 0 0;" href="cheatography/"><img
+class="lazy gravatar" src="/images/spacer.png" data-original="//media.cheatography.com/images/users/ae07a15380055b9d1da4dd5fb7538457.32.jpg" width="32" height="32" alt="Cheatography"></a> <a
+href="cheatography/" class="user_hover" style="line-height: 42px;">Cheatography</a><div
+class="clear"></div></div></div><div
+class="clear"></div></div></div><div
+class="triptych2"><div
+class="sidebar_box"><div
+class="sidebar_box_first_row"><h4>Cheatography RSS Feeds</h4></div><ul><li
+class="icon_feed"><a
+href="/explore/new/rss/">Latest Cheat Sheets</a></li><li
+class="icon_feed"><a
+href="/blog/rss/">Latest Blog Posts</a></li></ul></div></div><div
+class="triptych3"><div
+class="imagelink addthis_toolbox addthis_default_style addthis_32x32_style" style="margin: 0 0 50px;" addthis:url="http://www.cheatography.com" addthis:title="Cheatography: Make and Share Free Cheat Sheets!"><h2 style="margin: 0 0 5px 0;">Share Cheatography!</h2><div
+class="padded">
+<a
+class="addthis_button_facebook"></a>
+<a
+class="addthis_button_twitter"></a>
+<a
+class="addthis_button_reddit"></a>
+<a
+class="addthis_button_stumbleupon"></a>
+<a
+class="addthis_button_favorites"></a>
+<a
+class="addthis_button_compact"></a>
+<a
+class="addthis_counter addthis_bubble_style"></a></div> <script type="text/javascript">var addthis_config = {
+                            "data_track_clickback":true,
+                            "services_exclude":'print',
+                            data_ga_property:'UA-4997759-8',
+                            pubid: 'ra-4db5226a16bf710d'
+                        };</script> <script type="text/javascript" src="//s7.addthis.com/js/250/addthis_widget.js#async=1"></script> </div></div><div
+class="clear"></div><div
+class="legal"><div
+class="legal_left">
+&copy; 2011  - 2019 Cheatography.com &nbsp; | &nbsp; <a
+href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">CC License</a> &nbsp; | &nbsp; <a
+href="/terms-and-conditions/">Terms</a> &nbsp; | &nbsp;  <a
+href="/privacy/">Privacy</a></div><div
+class="legal_right">
+Site by <a
+href="https://getpostcookie.com/">Get. Post. Cookie.</a></div><div
+class="clear"></div></div><div
+class="clear"></div></div><div
+class="clear"></div></div><div
+class="clear"></div></div></div><div
+class="hidden">
+<a
+href="#welcome_popup" id="welcome_popup_trigger">open</a><div
+id="welcome_popup"><div
+id="welcome_popup_inner"><div
+style="padding: 20px; width: 400px;" ><h1 class="notopmargin">Keep Up To Date!</h1><p>We announce all new cheat sheet releases on our Twitter account. Follow us to make sure you don't miss out!</p><p
+style="text-align: center; margin: 30px; font-size: 3em;"><a
+class="imagelink" style="background: #fa6900; color: #fff; padding: 12px 25px; border-radius: 5px; white-space: nowrap;" href="http://twitter.com/Cheatography" target="_blank" onclick="$.fancybox.close();"><i
+class="fa fa-twitter"></i> Cheatography</a></p></div></div></div></div></body><head><link
+href="/scripts/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css"> <script type="text/javascript" src="/scripts/fancybox/jquery.fancybox.pack.js"></script> <script type="text/javascript" src="/scripts/jquery.cookie.js"></script> <script type="text/javascript" src="/scripts/jquery.formalize.min.js"></script> <script type="text/javascript" src="/scripts/jquery.hoverintent.js"></script> <script type="text/javascript" src="/scripts/jquery.tagsinput.min.js"></script> <script type="text/javascript" src="/scripts/jquery.matchheight.min.js"></script> <script type="text/javascript" src="/scripts/jquery.validation.min.js"></script> <script type="text/javascript" src="/scripts/jquery.hoverIntent.minified.js"></script> <script type="text/javascript" src="/scripts/chosen.jquery.min.js"></script> <script type="text/javascript" src="/scripts/jquery.lazyload.min.js"></script> <link
+href='//fonts.googleapis.com/css?family=Noto+Serif' rel='stylesheet' type='text/css'><!--[if lt IE 7]> <script type="text/javascript" src="https://www.cheatography.com/scripts/iepngfix.htc"></script> <style type="text/css">body {
+                behavior: url("https://www.cheatography.com/scripts/csshover.htc");
+            }</style><![endif]-->
+<!--[if IE 7]><style type="text/css"></style><![endif]--> <script type="text/javascript" src="/scripts/mobile.min.js"></script> <script type="text/javascript" src="/scripts/ajax.min.js"></script> <script type="text/javascript" src="/scripts/useful.min.js?v=2"></script> <script type="text/javascript">$(document).ready(function() {
+            $(".lazy").lazyload({
+                effect : "fadeIn",
+                failure_limit : 10
+            });
+            /*$("div.lazy").lazyload({
+                effect : "fadeIn"
+            });*/
+            $('#welcome_popup_trigger').fancybox({
+                'autoDimensions': true
+            });
+            setTimeout(function(){
+                if (!$.cookie('seenTwitterPrompt')) {
+                    $('#welcome_popup_trigger').trigger('click');
+                    $.cookie('seenTwitterPrompt', 'yes', { expires: 60, path: '/' });
+                }
+            }, 10000);
+            // Hide elements not relevant to non-logged-in users
+            var loggedIn = $.cookie('frontLoggedIn');
+            var loggedInUserId = $.cookie('frontUserId');
+            var isAdmin = $.cookie('frontUserAdmin');
+            if (loggedIn == 1) {
+                $.cookie('seenTwitterPrompt', 'yes', { expires: 6000, path: '/' });
+                // Replacements
+                $('.replace_username').html($.cookie('frontUserName'));
+                $('a.replace_userlink, .replace_userlink a').each(function(){
+                    var oldHref = $(this).attr('href');
+                    var newHref = oldHref.replace('davechild', $.cookie('frontUserAlias'));
+                    $(this).attr('href', newHref);
+                });
+                $('.replace_usergravatar').attr('src', $.cookie('frontUserAvatar32'));
+                // Show and hide
+                //$('.logged_in').show();
+                $('.logged_out').hide();
+
+                if (isAdmin) {
+                    $('.admin_view').show();
+                }
+
+                $('.user_view').each(function(){
+                    var userIds = $(this).attr('data-userid').split(',');
+                    if ($.inArray(loggedInUserId, userIds)) {
+                        $(this).show();
+                    }
+                });
+
+            } else {
+                $('.logged_in').hide();
+                //$('.logged_out').show();
+            }
+            addthis.init();
+        });</script> </head></html>
+
+<!-- http://www.cheatography.com/makahoshi1/cheat-sheets/operating-systems/ from cache: makahoshi1-cheat-sheets-operating-systems-1ef31cec313baf98501e08209bbad6f8.cache -->
